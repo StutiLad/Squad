@@ -1,0 +1,52 @@
+
+@media  (max-width: 768px) {
+
+    .mx-5,
+    .mx-4,
+    .mx-3,
+    .mx-2,
+    .mx-1,
+    .my-5,
+    .my-4,
+    .my-3,
+    .my-2,
+    .my-1,
+    .me-5,
+    .me-4,
+    .me-3,
+    .me-2,
+    .me-1,
+    .ms-5,
+    .ms-4,
+    .ms-3,
+    .ms-2,
+    .ms-1,
+    .mt-5,
+    .mt-4,
+    .mt-3,
+    .mt-2,
+    .mt-1,
+    .mb-5,
+    .mb-4,
+    .mb-3,
+    .mb-2,
+    .mb-1 {
+        margin: 0 !important;
+    }
+
+    .show-l{
+        display: none;
+    }
+
+    .copyrights{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+}
+
+@media (min-width: 992px){
+    .show-m{
+        display: none;
+    }
+}

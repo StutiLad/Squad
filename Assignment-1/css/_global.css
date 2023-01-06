@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+:root {
+    --black-color: black;
+    --white-color: white;
+    --blue-background: rgb(11, 1, 43);
+    --orange-color: rgb(224, 65, 0);
+    --grey-background: rgba(208, 201, 195, 0.938);
+    --darkgrey-color: rgb(80, 79, 78);
+}
+
+/* Sizing */
+
+.base-p {
+    padding: 5rem 0;
+}
+
+.base {
+    margin: 5rem 0;
+}
+
+.base-1 {
+    margin-top: 3rem;
+}
+
+/* Typography */
+
+.bold {
+    font-weight: bold;
+}
+
+.b-500 {
+    font-weight: 500;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+/* Section - use bold class with this  */
+
+.section-content .section-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-content .section-text p {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 3rem;
+}
+
+/* Icon Section */
+.icon-section {
+    text-align: center;
+}
+
+.icon-section .icon i {
+    color: var(--orange-color);
+    font-size: 50px;
+}
+
+.icon-section .icon-text p {
+    margin: 1rem 0;
+}
+
+
+
+
+/* Buttons */
+.nav-btn {
+    color: var(--orange-color);
+    letter-spacing: 1px;
+}
+
+.card-btn {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+.card-btn:hover {
+    color: var(--white-color);
+}
+
+.about-btn {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: 0;
+    font-weight: lighter;
+    height: 40px;
+}
+
+.about-btn:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color)
+}
+
+.footer-btn {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: 0;
+    font-weight: lighter;
+}
+
+.footer-btn:hover {
+    background-color: var(--orange-color);
+}
+
+.nav-btn:focus,
+.card-btn:focus,
+.about-btn:focus,
+.footer-btn:focus {
+    box-shadow: none;
+}
+
+
