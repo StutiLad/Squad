@@ -186,7 +186,7 @@
 }
 
 
-button.glider-dot.active {
+.offer_area .glider-dot.active {
     border: 2px solid var(--orange-color) !important;
     background-color: var(--blue-background) !important;
 }
@@ -275,6 +275,13 @@ button.glider-dot.active {
     font-size: 32px;
 }
 
+.about_area .about-carousel{
+    margin-top: 1.5rem;
+}
+
+.about_area .about-glider .dots{
+display: none;
+}
 .about_area .about-carousel .col-2 {
     padding: 0;
 }

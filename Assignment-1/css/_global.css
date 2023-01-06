@@ -132,3 +132,8 @@
     font-weight: 300;
     margin-top: 0.2rem;
 }
+
+.glider-contain .glider-next,
+.glider-contain .glider-prev {
+    display: none;
+}

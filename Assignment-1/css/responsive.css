@@ -1,5 +1,4 @@
-
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
 
     .mx-5,
     .mx-4,
@@ -34,19 +33,81 @@
         margin: 0 !important;
     }
 
-    .show-l{
+    .show-l {
         display: none;
     }
 
-    .copyrights{
+    .copyrights {
         text-align: center;
         margin-top: 2rem;
     }
 
+    .footer-abt,
+    .card {
+        margin-top: 1rem;
+    }
+
+    .card-icon {
+        margin-top: 0.5rem !important;
+    }
+
+    .card-icon span {
+        margin-right: 10px !important;
+    }
+
+    .card-icon span i,.card-icon a i {
+        margin-right: 8px !important;
+    }
+
+    .place-filter,
+    .about_area .about-btn {
+        margin-top: 1rem !important;
+    }
 }
 
-@media (min-width: 992px){
-    .show-m{
+@media (min-width: 992px) {
+    .show-m {
         display: none;
     }
+
+}
+
+@media (max-width: 991px) {
+    .base-p {
+        padding: 2rem 0;
+    }
+
+    .base {
+        margin: 2rem 0;
+    }
+
+    .show-l {
+        display: none;
+    }
+
+    .copyrights {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .about_area .about-carousel {
+        margin-top: 0.5rem !important;
+    }
+
+    .mt-3 {
+        margin-top: 0rem !important;
+    }
+
+    .mt-5{
+        margin-top: 1rem !important;
+    }
+
+    .ms-5 {
+        margin-left: 0rem !important;
+    }
+
+    .ms-4{
+        margin: 0 !important;
+    }
+    
 }
