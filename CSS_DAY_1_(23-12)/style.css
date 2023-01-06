@@ -1,0 +1,191 @@
+/* Background */
+body {
+    background: white url('https://www.w3schools.com/css/img_tree.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+/* Universal selector */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: black;
+}
+
+/* Element selector */
+pre {
+    color: palevioletred;
+}
+
+/* Id selector */
+#id {
+    color: tomato;
+    text-align: left;
+}
+
+/* Classs selector */
+.class {
+    color: darkblue;
+    text-align: end;
+}
+
+/* Group selector */
+pre,
+.h3,
+h4 {
+    color: green;
+}
+
+/* border property */
+p.one {
+    border-style: solid;
+    border-color: red;
+}
+
+p.two {
+    border-style: solid;
+    border-color: darkblue;
+}
+
+/* Radius Property of border */
+
+#left {
+    border-top-left-radius: 250px;
+    background: purple;
+    padding: 50px;
+    border: 6px ridge red;
+    width: 300px;
+    height: 100px;
+    font-size: 25px;
+}
+
+/* Collapse, seprated and spacing property of broder  */
+table {
+    border: 2px solid blue;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    height: 50%;
+}
+
+th {
+    border: 5px solid red;
+    background-color: yellow;
+}
+
+td {
+    border: 5px solid violet;
+    background-color: cyan;
+}
+
+#t1 {
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+/* Border style */
+p.dotted {
+    border-style: dotted;
+}
+
+p.dashed {
+    border-style: dashed;
+}
+
+p.solid {
+    border-style: solid;
+}
+
+p.double {
+    border-style: double;
+}
+
+p.groove {
+    border-style: groove;
+}
+
+p.ridge {
+    border-style: ridge;
+}
+
+p.inset {
+    border-style: inset;
+}
+
+p.outset {
+    border-style: outset;
+}
+
+p.none {
+    border-style: none;
+}
+
+p.hidden {
+    border-style: hidden;
+}
+
+p.mix {
+    border-style: dotted dashed solid double;
+}
+
+/* Width property */
+p.one {
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+
+p.three {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+p.four {
+    border-style: dotted;
+    border-width: thick;
+}
+
+p.five {
+    border-style: double;
+    border-width: 15px;
+}
+
+p.six {
+    border-style: double;
+    border-width: thick;
+}
+
+p.seven {
+    border-style: solid;
+    border-width: 20px 5px;
+}
+
+/* border color */
+p.color {
+    border-style: solid;
+    border-width: 5px 5px;
+    border-color: red green blue yellow;
+}
+
+/* border sides */
+p.four-side {
+    border-style: dotted solid double dashed;
+}
+
+p.three-side {
+
+    border-style: dotted solid double;
+}
+
+p.two-side {
+    border-style: dotted solid;
+}
+
+p.one-side {
+    border-style: dotted;
+}

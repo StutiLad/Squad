@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <!-- ---------- Bootstrap CSS --------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- ---------- Custom CSS ---------- -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Bootstrap Day 2</title>
+</head>
+
+<body>
+
+    <!-- ---------- Navbar ---------- -->
+
+    <nav class="navbar navbar-light m-auto" style="background-color: #e3f2fd;">
+        <div class="container-fluid flex-column">
+            <h2>Bootstrap-5</h2>
+            <h6>Day-2 : Typography, Lists, Table, Images</h6>
+        </div>
+    </nav>
+
+    <!-- ---------- Main ---------- -->
+
+    <div class="main container-fluid">
+
+        <div class="container my-5">
+            <div class="accordion" id="accordionExample">
+
+                <!-- ========== Typography & List ========== -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h2 class="main-title">Typography & Lists</h2>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container">
+
+
+                                <!-- ---------- Headings ------------ -->
+
+                                <div class="heading container">
+                                    <h4 class="sub-title my-3">: Headings :</h4>
+                                    <div class="row">
+                                        <div class="col">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Types</th>
+                                                        <th scope="col">h1</th>
+                                                        <th scope="col">h2</th>
+                                                        <th scope="col">h3</th>
+                                                        <th scope="col">h4</th>
+                                                        <th scope="col">h5</th>
+                                                        <th scope="col">h6</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Heading</th>
+                                                        <td>
+                                                            <h1>h1</h1>
+                                                        </td>
+                                                        <td>
+                                                            <h2>h2</h2>
+                                                        </td>
+                                                        <td>
+                                                            <h3>h3</h3>
+                                                        </td>
+                                                        <td>
+                                                            <h4>h4</h4>
+                                                        </td>
+                                                        <td>
+                                                            <h5>h5</h5>
+                                                        </td>
+                                                        <td>
+                                                            <h6>h6</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Heading By Class</th>
+                                                        <td>
+                                                            <p class="h1">p.h1</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="h2">p.h2</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="h3">p.h3</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="h4">p.h4</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="h5">p.h5</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="h6">p.h6</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="row my-3 pb-2">
+                                        <div class="col">
+                                            <h5>Customizing Headings :-</h5>
+                                            <h5>
+                                                - Fancy display heading
+                                                <small class="text-muted">With faded secondary text ( small.text-muted
+                                                    )</small>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------- Paragraph & Text Styling ---------- -->
+                                <div class="para container">
+                                    <h4 class="sub-title my-3">: Paragraph & Text Styling :</h4>
+                                    <div class="row my-4">
+                                        <div class="col">
+                                            <p class="lead">
+                                                p.lead - This is a lead paragraph. It stands out from regular
+                                                paragraphs.
+                                            </p>
+                                            <p>mark - You can use the mark tag to <mark>highlight</mark> text.</p>
+                                            <p><del>del - This line of text is meant to be treated as deleted
+                                                    text.</del></p>
+                                            <p><s>s - This line of text is meant to be treated as no longer
+                                                    accurate.</s>
+                                            </p>
+                                            <p><ins>ins - This line of text is meant to be treated as an addition to the
+                                                    document.</ins></p>
+                                            <p><u>u - This line of text will render as underlined.</u></p>
+                                            <p><small>small - This line of text is meant to be treated as fine
+                                                    print.</small>
+                                            </p>
+                                            <p><strong>strong - This line rendered as bold text.</strong></p>
+                                            <p><em>em - This line rendered as italicized text.</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------- Text Utilities ---------- -->
+                                <div class="util container">
+                                    <h4 class="sub-title my-3">: Text Utilities :</h4>
+                                    <div class="row my-4">
+                                        <div class="col">
+                                            <table class="table">
+                                                <thead>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Example</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Abbrivation</th>
+                                                        <td>
+                                                            <p><abbr title="attribute">attr</abbr></p>
+                                                            <p><abbr title="HyperText Markup Language"
+                                                                    class="initialism">HTML</abbr></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Blockquote</th>
+                                                        <td>
+                                                            <blockquote class="blockquote">
+                                                                <pre>A well-known quote,contained in a blockquote element.</pre>
+                                                            </blockquote>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="sap my-4">
+                                            </div>
+
+                                            <table class="table">
+                                                <thead>
+                                                    <th scope="col">Naming a source</th>
+                                                    <th scope="col">Example</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Left</th>
+                                                        <td>
+                                                            <figure>
+                                                                <blockquote class="blockquote">
+                                                                    <p>A well-known quote, contained in a blockquote
+                                                                        element.
+                                                                    </p>
+                                                                </blockquote>
+                                                                <figcaption class="blockquote-footer">
+                                                                    Someone famous in <cite title="Source Title">Source
+                                                                        Title</cite>
+                                                                </figcaption>
+                                                            </figure>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Center</th>
+                                                        <td>
+                                                            <figure class="text-center">
+                                                                <blockquote class="blockquote">
+                                                                    <p>A well-known quote, contained in a blockquote
+                                                                        element.
+                                                                    </p>
+                                                                </blockquote>
+                                                                <figcaption class="blockquote-footer">
+                                                                    Someone famous in <cite title="Source Title">Source
+                                                                        Title</cite>
+                                                                </figcaption>
+                                                            </figure>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Right</th>
+                                                        <td>
+                                                            <figure class="text-end">
+                                                                <blockquote class="blockquote">
+                                                                    <p>A well-known quote, contained in a blockquote
+                                                                        element.
+                                                                    </p>
+                                                                </blockquote>
+                                                                <figcaption class="blockquote-footer">
+                                                                    Someone famous in <cite title="Source Title">Source
+                                                                        Title</cite>
+                                                                </figcaption>
+                                                            </figure>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------- List ---------- -->
+                                <div class="list container">
+                                    <h4 class="sub-title my-3">: Lists :</h4>
+                                    <div class="row my-4">
+                                        <div class="col">
+                                            <table class="table">
+                                                <thead>
+                                                    <th scope="col">Unstyled List</th>
+                                                    <th scope="col">Inline List</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <ul class="list-unstyled text-start">
+                                                                <li>This is a list.</li>
+                                                                <li>It appears completely unstyled.</li>
+                                                                <li>Structurally, it's still a list.</li>
+                                                                <li>However, this style only applies to immediate child
+                                                                    elements.</li>
+                                                                <li>Nested lists:
+                                                                    <ul>
+                                                                        <li>are unaffected by this style</li>
+                                                                        <li>will still show a bullet</li>
+                                                                        <li>and have appropriate left margin</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>This may still come in handy in some situations.
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item">This is a list item.</li>
+                                                                <li class="list-inline-item">And another one.</li>
+                                                                <li class="list-inline-item">But they're displayed
+                                                                    inline.</li>
+                                                            </ul>
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item">This is a list item.</li>
+                                                                <li class="list-inline-item">And another one.</li>
+                                                                <li class="list-inline-item">But they're displayed
+                                                                    inline.</li>
+                                                            </ul>
+                                                            <ul class="list-inline">
+                                                                <li class="list-inline-item">This is a list item.</li>
+                                                                <li class="list-inline-item">And another one.</li>
+                                                                <li class="list-inline-item">But they're displayed
+                                                                    inline.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="dla table">
+                                                <thead>
+                                                    <th scope="col">Description list alignment</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <dl class="row mx-5  text-start">
+                                                                <dt class="col-sm-3">Description lists</dt>
+                                                                <dd class="col-sm-9">A description list is perfect for
+                                                                    defining terms.</dd>
+
+                                                                <dt class="col-sm-3">Term</dt>
+                                                                <dd class="col-sm-9">
+                                                                    <p>Definition for the term.</p>
+                                                                    <p>And some more placeholder definition text.</p>
+                                                                </dd>
+
+                                                                <dt class="col-sm-3">Another term</dt>
+                                                                <dd class="col-sm-9">This definition is short, so no
+                                                                    extra
+                                                                    paragraphs or
+                                                                    anything.</dd>
+
+                                                                <dt class="col-sm-3 text-truncate">Truncated term is
+                                                                    truncated
+                                                                </dt>
+                                                                <dd class="col-sm-9">This can be useful when space is
+                                                                    tight.
+                                                                    Adds an
+                                                                    ellipsis at the end.</dd>
+
+                                                                <dt class="col-sm-3">Nesting</dt>
+                                                                <dd class="col-sm-9">
+                                                                    <dl class="row">
+                                                                        <dt class="col-sm-4">Nested definition list</dt>
+                                                                        <dd class="col-sm-8">I heard you like definition
+                                                                            lists. Let me put a definition list inside
+                                                                            your definition list.
+                                                                        </dd>
+                                                                    </dl>
+                                                                </dd>
+                                                            </dl>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------- List Group ---------- -->
+                                <div class="list-grp container">
+                                    <h4 class="sub-title my-3">: Lists Group :</h4>
+                                    <div class="row my-4">
+                                        <div class="col">
+                                            <table class="table table-1">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="col">Active & Disabled</th>
+                                                        <th class="col">Link & buttons</th>
+                                                        <th class="col">Checkbox & radio</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item active" aria-current="true">
+                                                                    An Active item</li>
+                                                                <li class="list-group-item">Second item </li>
+                                                                <li class="list-group-item">Third item </li>
+                                                                <li class="list-group-item disabled">A disabled item
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <div class="list-group">
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action active"
+                                                                    aria-current="true">
+                                                                    The current link item
+                                                                </a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">A
+                                                                    second link item</a>
+                                                                <button type="button"
+                                                                    class="list-group-item list-group-item-action">A
+                                                                    third button item</button>
+                                                                <button type="button"
+                                                                    class="list-group-item list-group-item-action">A
+                                                                    fourth button item</button>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-group text-start">
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox"
+                                                                        value="" aria-label="...">
+                                                                    First checkbox
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="radio"
+                                                                        value="" aria-label="...">
+                                                                    Second radio
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="checkbox"
+                                                                        value="" aria-label="...">
+                                                                    Third checkbox
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <input class="form-check-input me-1" type="radio"
+                                                                        value="" aria-label="...">
+                                                                    Fourth radio
+                                                                </li>
+
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="col">Horizontal</th>
+                                                        <th class="col">Flush</th>
+                                                        <th class="col">Color</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <ul class="list-group list-group-horizontal">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">Second item</li>
+                                                                <li class="list-group-item">Third item</li>
+                                                            </ul>
+                                                            <ul class="list-group list-group-horizontal-sm">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">Second item </li>
+                                                                <li class="list-group-item">Third item</li>
+                                                            </ul>
+                                                            <ul class="list-group list-group-horizontal-md">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">Second item </li>
+                                                                <li class="list-group-item">Third item</li>
+                                                            </ul>
+                                                            <ul class="list-group list-group-horizontal-md">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">Second item </li>
+                                                                <li class="list-group-item">Third item</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A Second item</li>
+                                                                <li class="list-group-item">A Third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">A fifth item</li>
+                                                                <li class="list-group-item">A sixth item</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item">A simple default list group
+                                                                    item</li>
+
+                                                                <li class="list-group-item list-group-item-primary">A
+                                                                    simple primary list group item</li>
+                                                                <li class="list-group-item list-group-item-secondary">A
+                                                                    simple secondary list group item</li>
+                                                                <li class="list-group-item list-group-item-success">A
+                                                                    simple success list group item</li>
+                                                                <li class="list-group-item list-group-item-danger">A
+                                                                    simple danger list group item</li>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action list-group-item-warning">A
+                                                                    simple warning list group item</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action list-group-item-info">A
+                                                                    simple info list group item</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action list-group-item-light">A
+                                                                    simple light list group item</a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action list-group-item-dark">A
+                                                                    simple dark list group item</a>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="col">Number</th>
+                                                        <th class="col">Number badges</th>
+                                                        <th class="col">badges</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <ol class="list-group list-group-numbered">
+                                                                <li class="list-group-item">Cras justo odio</li>
+                                                                <li class="list-group-item">Cras justo odio</li>
+                                                                <li class="list-group-item">Cras justo odio</li>
+                                                            </ol>
+                                                        </td>
+                                                        <td>
+                                                            <ol class="list-group list-group-numbered">
+                                                                <li
+                                                                    class="list-group-item d-flex justify-content-between align-items-start">
+                                                                    <div class="ms-2 me-auto">
+                                                                        <div class="fw-bold">Subheading</div>
+                                                                        Cras justo odio
+                                                                    </div>
+                                                                    <span
+                                                                        class="badge bg-primary rounded-pill">14</span>
+                                                                </li>
+                                                                <li
+                                                                    class="list-group-item d-flex justify-content-between align-items-start">
+                                                                    <div class="ms-2 me-auto">
+                                                                        <div class="fw-bold">Subheading</div>
+                                                                        Cras justo odio
+                                                                    </div>
+                                                                    <span
+                                                                        class="badge bg-primary rounded-pill">14</span>
+                                                                </li>
+                                                                <li
+                                                                    class="list-group-item d-flex justify-content-between align-items-start">
+                                                                    <div class="ms-2 me-auto">
+                                                                        <div class="fw-bold">Subheading</div>
+                                                                        Cras justo odio
+                                                                    </div>
+                                                                    <span
+                                                                        class="badge bg-primary rounded-pill">14</span>
+                                                                </li>
+                                                            </ol>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-group">
+                                                                <li
+                                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    A list item
+                                                                    <span
+                                                                        class="badge bg-primary rounded-pill">14</span>
+                                                                </li>
+                                                                <li
+                                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    A second list item
+                                                                    <span class="badge bg-primary rounded-pill">2</span>
+                                                                </li>
+                                                                <li
+                                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                                    A third list item
+                                                                    <span class="badge bg-primary rounded-pill">1</span>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table class="table table-2">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="row">Custom content</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="list-group">
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action active"
+                                                                    aria-current="true">
+                                                                    <div class="d-flex w-100 justify-content-between">
+                                                                        <h5 class="mb-1">List group item heading</h5>
+                                                                        <small>3 days ago</small>
+                                                                    </div>
+                                                                    <p class="mb-1">Some placeholder content in a
+                                                                        paragraph.</p>
+                                                                    <small>And some small print.</small>
+                                                                </a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">
+                                                                    <div class="d-flex w-100 justify-content-between">
+                                                                        <h5 class="mb-1">List group item heading</h5>
+                                                                        <small class="text-muted">3 days ago</small>
+                                                                    </div>
+                                                                    <p class="mb-1">Some placeholder content in a
+                                                                        paragraph.</p>
+                                                                    <small class="text-muted">And some muted small
+                                                                        print.</small>
+                                                                </a>
+                                                                <a href="#"
+                                                                    class="list-group-item list-group-item-action">
+                                                                    <div class="d-flex w-100 justify-content-between">
+                                                                        <h5 class="mb-1">List group item heading</h5>
+                                                                        <small class="text-muted">3 days ago</small>
+                                                                    </div>
+                                                                    <p class="mb-1">Some placeholder content in a
+                                                                        paragraph.</p>
+                                                                    <small class="text-muted">And some muted small
+                                                                        print.</small>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== Tables ========== -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h2 class="main-title">Tables</h2>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Table type</th>
+                                        <th scope="col">Example</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- ========== Striped rows ========== -->
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Striped rows</td>
+                                        <td>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Dark Striped rows ========== -->
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Dark Striped rows</td>
+                                        <td>
+                                            <table class="table  table-dark table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Success Striped rows ========== -->
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Success Striped rows</td>
+                                        <td>
+                                            <table class="table table-success table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Hoverable rows ========== -->
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Hoverable rows</td>
+                                        <td>
+                                            <table class="table  table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Dark Hoverable rows ========== -->
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Dark Hoverable rows</td>
+                                        <td>
+                                            <table class="table table-dark table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Striped Hoverable tables ========== -->
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Striped Hoverable tables</td>
+                                        <td>
+                                            <table class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Active tables ========== -->
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Active tables</td>
+                                        <td>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2" class="table-active">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Dark Active tables ========== -->
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>Dark Active tables</td>
+                                        <td>
+                                            <table class="table table-dark">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2" class="table-active">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <!-- ========== Variants ========== -->
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>Variants</td>
+                                        <td>
+                                            <table class="table table-secondary">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="table-success">
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td colspan="2" class="table-danger">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== Image & Figures ========== -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h2 class="main-title">Image & Figures</h2>
+                        </button>
+                    </h2>
+
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container images">
+
+                                <!-- ---------- Image --------- -->
+                                <h4 class="sub-title my-3">: Images :</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="table-danger">
+                                            <th scope="row">Responsive images</th>
+                                            <th scope="row">Image thumbnails</th>
+                                            <th scope="row">Aligning images end</th>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="./logo.jpg" class="img-fluid" alt="logo"></td>
+                                            <td><img src="./coding-folder.png" class="img-thumbnail"
+                                                    alt="coding-folder"></td>
+                                            <td><img src="./coder.gif" class="rounded float-end" alt="coder"></td>
+                                        </tr>
+                                        <tr class="table-info">
+                                            <th scope="row">Aligning images center</th>
+                                            <th scope="row">Aligning images start</th>
+                                            <th scope="row">Aligning images center</th>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <img src="./coding-folder.png" class="rounded mx-auto d-block"
+                                                    alt="coding-folder">
+                                            </td>
+                                            <td><img src="./coder.gif" class="rounded float-start" alt="coder"></td>
+                                            <td>
+                                                <div class="text-center">
+                                                    <img src="./coding-folder.png" class="rounded" alt="coding-folder">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- ---------- figures --------- -->
+                                <h4 class="sub-title my-3">: Figures :</h4>
+                                <table class="table fig">
+                                    <tbody>
+                                        <tr class="table-danger">
+                                            <th scope="row">Figure Caption left</th>
+                                            <th scope="row">Figure Caption right</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <figure class="figure">
+                                                    <img src="./coder.gif" class="figure-img img-fluid rounded"
+                                                        alt="Coder">
+                                                    <figcaption class="figure-caption text-start">Coder imgae.
+                                                    </figcaption>
+                                                </figure>
+                                            </td>
+                                            <td>
+                                                <figure class="figure">
+                                                    <img src="./coding-folder.png"
+                                                        class="figure-img img-fluid rounded border" alt="coding-folder">
+                                                    <figcaption class="figure-caption text-end">Coding folder image.
+                                                    </figcaption>
+                                                </figure>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== Forms ========== -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h2 class="main-title">Forms</h2>
+                        </button>
+                    </h2>
+
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container forms">
+
+                                <!-- ---------- Form Control ---------- -->
+                                <div class="row">
+                                    <h4 class="sub-title my-3">Form Control :</h4>
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Sizing :</h5>
+                                        <div class="col-6">
+                                            <input class="form-control form-control-lg my-2" type="text"
+                                                placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                            <input class="form-control my-2" type="text"
+                                                placeholder=".form-control (Default input)"
+                                                aria-label="default input example">
+                                            <input class="form-control form-control-sm my-2" type="text"
+                                                placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Disabled :</h5>
+                                        <div class="col-6">
+                                            <input class="form-control my-2" type="text" placeholder="Disabled input"
+                                                aria-label="Disabled input example" disabled>
+                                            <input class="form-control my-2" type="text" value="Disabled readonly input"
+                                                aria-label="Disabled input example" disabled readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Readonly :</h5>
+                                        <div class="col-6">
+                                            <input class="form-control my-2" type="text" value="Readonly input here..."
+                                                aria-label="readonly input example" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Readonly plain text :</h5>
+                                        <div class="col-6">
+                                            <div class="mb-3 row">
+                                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" readonly class="form-control-plaintext"
+                                                        id="staticEmail" value="email@example.com">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="inputPassword"
+                                                    class="col-sm-2 col-form-label">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control" id="inputPassword">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 mt-4">
+                                            <form class="row g-3">
+                                                <div class="col-auto">
+                                                    <label for="staticEmail2" class="visually-hidden">Email</label>
+                                                    <input type="text" readonly class="form-control-plaintext"
+                                                        id="staticEmail2" value="email@example.com">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <label for="inputPassword2" class="visually-hidden">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword2"
+                                                        placeholder="Password">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button type="submit" class="btn btn-primary mb-3">Confirm
+                                                        identity</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: File input :</h5>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Default file input
+                                                    example</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formFileMultiple" class="form-label">Multiple files input
+                                                    example</label>
+                                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formFileDisabled" class="form-label">Disabled file input
+                                                    example</label>
+                                                <input class="form-control" type="file" id="formFileDisabled" disabled>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formFileSm" class="form-label">Small file input
+                                                    example</label>
+                                                <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                            </div>
+                                            <div>
+                                                <label for="formFileLg" class="form-label">Large file input
+                                                    example</label>
+                                                <input class="form-control form-control-lg mb-3" id="formFileLg"
+                                                    type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Color :</h5>
+                                        <div class="col-6"><label for="exampleColorInput" class="form-label">Color
+                                                picker</label>
+                                            <input type="color" class="form-control form-control-color mb-3"
+                                                id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Datalists :</h5>
+                                        <div class="col-6 mb-3">
+                                            <label for="exampleDataList" class="form-label">Datalist example</label>
+                                            <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Type to search...">
+                                            <datalist id="datalistOptions">
+                                                <option value="San Francisco">
+                                                <option value="New York">
+                                                <option value="Seattle">
+                                                <option value="Los Angeles">
+                                                <option value="Chicago">
+                                            </datalist>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sap my-3"></div>
+
+                                <!-- ---------- Select ---------- -->
+                                <div class="row">
+                                    <h4 class="sub-title my-3">Select :</h4>
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Sizing :</h5>
+                                        <div class="col-6">
+                                            <select class="form-select form-select-lg mb-3"
+                                                aria-label=".form-select-lg example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6 my-3">
+                                            <select class="form-select" multiple aria-label="multiple select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6 my-3">
+                                            <select class="form-select" size="3" aria-label="size 3 select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                                <option value="4">Four</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 my-3">
+                                        <h5 class="title ">: Disabled :</h5>
+                                        <div class="col-6">
+                                            <select class="form-select" aria-label="Disabled select example" disabled>
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sap my-3"></div>
+
+                                <!-- ---------- Range ---------- -->
+                                <div class="row">
+                                    <h4 class="sub-title my-3">Range :</h4>
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Min & Max :</h5>
+                                        <div class="col-6">
+                                            <label for="customRange2" class="form-label">Example range</label>
+                                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Step :</h5>
+                                        <div class="col-6">
+                                            <label for="customRange3" class="form-label">Example range</label>
+                                            <input type="range" class="form-range" min="0" max="5" step="0.5"
+                                                id="customRange3">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sap my-3"></div>
+
+                                <!-- ---------- Checkbox & Radio ---------- -->
+                                <div class="row">
+                                    <h4 class="sub-title my-3">Checkbox & Radio :</h4>
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: Disabled :</h5>
+                                        <div class="row">
+
+                                            <div class="col-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck2">
+                                                    <label class="form-check-label" for="defaultCheck2">
+                                                        checkbox
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck2">
+                                                    <label class="form-check-label" for="defaultCheck2">
+                                                        checkbox
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck2" disabled>
+                                                    <label class="form-check-label" for="defaultCheck2">
+                                                        Disabled checkbox
+                                                    </label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        Default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        Second default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        Third default radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios3" value="option3" disabled>
+                                                    <label class="form-check-label" for="exampleRadios3">
+                                                        Disabled radio
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Default
+                                                        switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked
+                                                        switch checkbox input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckDisabled" disabled>
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckDisabled">Disabled switch checkbox
+                                                        input</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckCheckedDisabled">Disabled checked switch
+                                                        checkbox input</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <h5 class="title my-3">: inline :</h5>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                value="option3" disabled>
+                                            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="option3" disabled>
+                                            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sap my-3"></div>
+
+                                <!-- ---------- Floating Labels ---------- -->
+                                <div class="row">
+                                    <h4 class="sub-title my-3">Floating Labels :</h4>
+                                    <div class="col-4">
+                                        <h5 class="title my-3">: Input :</h5>
+                                        <div class="col">
+                                            <div class="form-floating">
+                                                <input class="form-control" placeholder="Leave a comment here"
+                                                    id="floatingInput"></input>
+                                                <label for="floatingInput">Input</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <h5 class="title my-3">: Textarea :</h5>
+                                        <div class="col">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here"
+                                                    id="floatingTextarea2" style="height: 70px"></textarea>
+                                                <label for="floatingTextarea2">Textarea</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <h5 class="title my-3">: Select :</h5>
+                                        <div class="col">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="floatingSelect"
+                                                    aria-label="Floating label select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <label for="floatingSelect">Works with selects</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <h5 class="title my-3">: Layout :</h5>
+                                        <div class="row g-2">
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input type="email" class="form-control" id="floatingInputGrid"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInputGrid">Email address</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="floatingSelectGrid"
+                                                        aria-label="Floating label select example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Works with selects</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="sap my-3"></div>
+
+                                <!-- ---------- Layout of Form ---------- -->
+                                <div class="row">
+                                    <h4 class="sub-title my-3">Form :</h4>
+                                    <div class="col-8">
+                                        <h5 class="title my-3">: Form :</h5>
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="1234 Main St">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                                <input type="text" class="form-control" id="inputAddress2"
+                                                    placeholder="Apartment, studio, or floor">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">State</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="sap my-3"></div>
+                                    <div class="col-8">
+                                        <h5 class="title my-3">: Horizontal form :</h5>
+                                        <form>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="inputEmail3">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputPassword3"
+                                                    class="col-sm-2 col-form-label">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control" id="inputPassword3">
+                                                </div>
+                                            </div>
+                                            <fieldset class="row mb-3">
+                                                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="gridRadios1">
+                                                            First radio
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios2" value="option2">
+                                                        <label class="form-check-label" for="gridRadios2">
+                                                            Second radio
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check disabled">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                            id="gridRadios3" value="option3" disabled>
+                                                        <label class="form-check-label" for="gridRadios3">
+                                                            Third disabled radio
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="row mb-3">
+                                                <div class="col-sm-10 offset-sm-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                        <label class="form-check-label" for="gridCheck1">
+                                                            Example checkbox
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="sap my-3"></div>
+
+                                <div class="row">
+                                    <h4 class="sub-title my-3">Validated Form:</h4>
+                                    <div class="col-8">
+                                        <h5 class="title my-3">: Form :</h5>
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom01" class="form-label">First name</label>
+                                                <input type="text" class="form-control" id="validationCustom01"
+                                                    value="Mark" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustom02" class="form-label">Last name</label>
+                                                <input type="text" class="form-control" id="validationCustom02"
+                                                    value="Otto" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="validationCustomUsername"
+                                                    class="form-label">Username</label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                    <input type="text" class="form-control"
+                                                        id="validationCustomUsername"
+                                                        aria-describedby="inputGroupPrepend" required>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="validationCustom03" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="validationCustom03"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid city.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationCustom04" class="form-label">State</label>
+                                                <select class="form-select" id="validationCustom04" required>
+                                                    <option selected disabled value="">Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid state.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label for="validationCustom05" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="validationCustom05"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid zip.
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="invalidCheck" required>
+                                                    <label class="form-check-label" for="invalidCheck">
+                                                        Agree to terms and conditions
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        You must agree before submitting.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- ----------Bootstrap Bundle with Popper---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>

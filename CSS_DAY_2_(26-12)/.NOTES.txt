@@ -1,0 +1,44 @@
+=> Text Alignment:
+
+	/* Keyword values */
+	text-align: start;
+	text-align: end;
+	text-align: left;
+	text-align: right;
+	text-align: center;
+	text-align: justify;
+	text-align: justify-all;
+	text-align: match-parent;
+
+	/* Character-based alignment in a table column */
+	text-align: ".";
+	text-align: "." center;
+
+	/* Block alignment values (Non-standard syntax) */
+	text-align: -moz-center;
+	text-align: -webkit-center;
+
+	/* Global values */
+	text-align: inherit;
+	text-align: initial;
+	text-align: revert;
+	text-align: revert-layer;
+	text-align: unset;	
+
+=> Text-align-last: ( Chnages only last line of the text )
+
+	/* Keyword values */
+	text-align-last: auto;
+	text-align-last: start;
+	text-align-last: end;
+	text-align-last: left;
+	text-align-last: right;
+	text-align-last: center;
+	text-align-last: justify;
+
+	/* Global values */
+	text-align-last: inherit;
+	text-align-last: initial;
+	text-align-last: revert;
+	text-align-last: revert-layer;
+	text-align-last: unset;

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS_DAY_1(Selectors)</title>
+    <link rel="stylesheet" href="./selector.css">
+</head>
+
+<body>
+    <div>
+
+        <div class="target">
+            <h1>Target</h1>
+            <ul>
+                <li><a href="#combi-select">Combinator Selector</a></li>
+                <li><a href="#attr">Attribute Selectors</a></li>
+                <li><a href="#element">Pseudo-element Selector</a></li>
+                <li><a href="#pseudo-classt">Pseudo-class Selector</a></li>
+            </ul>
+        </div>
+
+        <!-- ----------Combinator Selector---------- -->
+        <div id="combi-select">
+            <h2>Combinator selector</h2>
+            <h4>Descendant</h4>
+            <p>Occaecat ex in qui do laborum minim nisi pariatur tempor sit. Sunt incididunt adipisicing duis elit velit
+                consequat id sunt fugiat. Pariatur elit incididunt eu duis excepteur. Lorem commodo est est ea voluptate
+                proident aliquip excepteur consectetur ipsum. Non deserunt Lorem Lorem do.</p>
+            <pre>Nisi proident elit consectetur sint esse minim aute adipisicing culpa pariatur eu duis elit.</pre>
+
+            <h4>Direct Child - red <br>Adjacent Sibling - purple <br>General Sibling - darkblue </h4>
+            <ul class="list">
+                <li>Eiusmod exercitation elit aliqua labore Lorem reprehenderit.</li>
+                <li>Eiusmod exercitation elit aliqua labore Lorem reprehenderit.</li>
+                <li>Eiusmod exercitation elit aliqua labore Lorem reprehenderit.
+                    <ul id="inner_list">
+                        <li>Sint ipsum reprehenderit duis sunt tempor esse veniam ad consectetur anim.</li>
+                        <li>Sint ipsum reprehenderit duis sunt tempor esse veniam ad consectetur anim.</li>
+                    </ul>
+                </li>
+                <li>Enim laboris nostrud pariatur cupidatat fugiat nostrud nisi et est ad.</li>
+            </ul>
+            <p>Cupidatat laborum est ipsum fugiat nisi ipsum amet.</p>
+            <p>Cupidatat laborum est ipsum fugiat nisi ipsum amet.</p>
+            <pre>Tempor anim deserunt consequat aute dolore anim laboris fugiat ad adipisicing adipisicing occaecat nulla.</pre>
+            <pre>Tempor anim deserunt consequat aute dolore anim laboris fugiat ad adipisicing adipisicing occaecat nulla.</pre>
+            <pre>Tempor anim deserunt consequat aute dolore anim laboris fugiat ad adipisicing adipisicing occaecat nulla.</pre>
+        </div>
+        <hr>
+
+        <!-- ----------Attribute Selectors---------- -->
+        <div id="attr">
+            <h2>Attribute Selector</h2>
+            <pre>
+                <b>a[attr]</b> - element with specific attribute  - <b>darkgreen</b>
+                <b>a[attr=val]</b> - attribute whose vaue is exactly same value - <b>red</b> 
+                <b>a[attr^= val]</b>  -  Attribute begins with particular value - <b>darkblue</b> 
+                <b>a[attr|= val]</b>  - Attribute begins with value - <b>darkgoldenrod</b> 
+                <b>a[attr$=val]</b>  - Attribute ends with particular value - <b>purple</b> 
+                <b>a[attr*=val]</b>  - Value occure any where in attribute - <b>darkcyan</b>
+                <b>a[attr~=val]</b>  -  Matches value in attribute's space separated list - <b>saddlebrown</b>
+            </pre>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="fathername">Enter your fathername:</label>
+            <input type="text" name="name" id="fathername">
+            <br><br>
+            <label for="address">Enter your address:</label>
+            <textarea name="address" id="address" cols="10" rows="2"></textarea>
+            <br><br>
+            <table>
+                <tr>
+                    <td><img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="image-of-trulli">
+                        <figcaption>Attribute begins with particular value</figcaption>
+                    </td>
+                    <td><img src="https://www.w3schools.com/css/img_forest.jpg" alt="Image-of-forest">
+                        <figcaption>Attribute begins with value</figcaption>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.w3schools.com/html/img_girl.jpg" alt="img-of-girl">
+                        <figcaption>Attribute ends with particular value</figcaption>
+                    </td>
+                    <td><img src="https://www.w3schools.com/html/img_chania.jpg" alt="pic of chania">
+                        <figcaption>Value occure any where in attribute</figcaption>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.w3schools.com/css/paris.jpg" alt="pic of paris">
+                        <figcaption>Value occure any where in attribute</figcaption>
+                    </td>
+                    <td> <img src="https://www.w3schools.com/css/img_tree.png" alt="tree image background">
+                        <figcaption>Matches value in attribute's space separated list</figcaption>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <!-- ----------Pseudo-element Selectors---------- -->
+        <div id="element">
+            <h2>Pseudo-element Selector</h2>
+            <p>Laboris et sint in amet ea consectetur eu irure culpa enim et adipisicing amet. Eiusmod ipsum aliqua ea
+                esse cupidatat proident. Pariatur voluptate in voluptate velit eu. Ex esse minim voluptate nostrud qui
+                eu sunt nisi dolore excepteur voluptate. Qui Lorem dolore id exercitation ullamco mollit Lorem ullamco
+                minim. Culpa irure exercitation voluptate labore aliquip labore tempor eiusmod Lorem id adipisicing
+                consectetur. Quis ut officia exercitation anim non ullamco.</p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br><br>
+            <pre>Incididunt non aliquip ea eu laboris voluptate ipsum tempor.</pre>
+        </div>
+        <hr>
+
+        <!-- ----------Pseudo-class Selectors---------- -->
+        <div id="pseudo-class">
+            <h2>Pseudo-class Selector</h2>
+            <div class="fl-child">
+                <h3>First-child, last child & only child</h3>
+                <ul>
+                    <li>Aliquip irure magna excepteur excepteur veniam magna tempor fugiat ipsum.</li>
+                    <li>Excepteur veniam labore ea duis veniam exercitation occaecat excepteur mollit eu officia
+                        deserunt cillum labore.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                </ul>
+                <p>Aliqua velit exercitation aliquip fugiat duis. Eiusmod aliqua esse laborum consequat proident
+                    incididunt elit eu sint ea eiusmod est ad voluptate. Reprehenderit irure laborum pariatur mollit
+                    proident eiusmod fugiat.</p>
+                <ul>
+                    <li>Aliquip irure magna excepteur excepteur veniam magna tempor fugiat ipsum.</li>
+                    <li>Excepteur veniam labore ea duis veniam exercitation occaecat excepteur mollit eu officia
+                        deserunt cillum labore.</li>
+                    <li>Duis ut esse nisi esse culpa sint ad enim voluptate incididunt excepteur fugiat ea voluptate.
+                    </li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                </ul>
+                <p>Aliqua velit exercitation aliquip fugiat duis. Eiusmod aliqua esse laborum consequat proident
+                    incididunt elit eu sint ea eiusmod est ad voluptate. Reprehenderit irure laborum pariatur mollit
+                    proident eiusmod fugiat.</p>
+                <ul>
+                    <li>Duis ut esse nisi esse culpa sint ad enim voluptate incididunt excepteur fugiat ea voluptate.
+                    </li>
+                </ul>
+            </div>
+            <div></div>
+            <div class="nth-child">
+                <h3>nth child (blue) & nth last child (purple)</h3>
+                <ul>
+                    <li>Aliquip irure magna excepteur excepteur veniam magna tempor fugiat ipsum.</li>
+                    <li>Excepteur veniam labore ea duis veniam exercitation occaecat excepteur mollit eu officia
+                        deserunt cillum labore.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                </ul>
+                <p>Aliqua velit exercitation aliquip fugiat duis. Eiusmod aliqua esse laborum consequat proident
+                    incididunt elit eu sint ea eiusmod est ad voluptate. Reprehenderit irure laborum pariatur mollit
+                    proident eiusmod fugiat.</p>
+                <ul>
+                    <li>Aliquip irure magna excepteur excepteur veniam magna tempor fugiat ipsum.</li>
+                    <li>Excepteur veniam labore ea duis veniam exercitation occaecat excepteur mollit eu officia
+                        deserunt cillum labore.</li>
+                    <li>Duis ut esse nisi esse culpa sint ad enim voluptate incididunt excepteur fugiat ea voluptate.
+                    </li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                </ul>
+            </div>
+            <div></div>
+            <div class="type-of">
+                <h3>Nth of type (green), nth last of type(blueviolet) & only of type(Crimson)</h3>
+                <p>Ex duis fugiat ea cupidatat veniam cupidatat velit occaecat elit consectetur exercitation ut duis.
+                    Cupidatat labore sit proident minim minim aliquip voluptate magna cupidatat labore ea consectetur.
+                    Occaecat dolore occaecat proident enim magna fugiat veniam deserunt eiusmod adipisicing culpa ex
+                    pariatur. Anim sit sit Lorem nulla eu nostrud id ipsum ut id dolore dolor qui excepteur. Nostrud sit
+                    et occaecat fugiat. Ad laborum sint laboris sunt eiusmod enim voluptate aliquip ad aliqua culpa
+                    culpa laboris esse. Ut cupidatat non pariatur nostrud adipisicing anim do elit.</p>
+                <p>Dolore nostrud pariatur ad eiusmod cupidatat ea fugiat reprehenderit minim id.</p>
+                <p>Culpa minim nostrud incididunt eu irure sit esse est duis culpa tempor nostrud. Ipsum reprehenderit
+                    exercitation veniam fugiat proident nisi sunt ut incididunt ea cupidatat deserunt deserunt elit.
+                    Duis consequat reprehenderit Lorem non laborum labore adipisicing aliqua dolore eiusmod nisi.</p>
+                <ul>
+                    <li>Aliquip irure magna excepteur excepteur veniam magna tempor fugiat ipsum.</li>
+                    <li>Excepteur veniam labore ea duis veniam exercitation occaecat excepteur mollit eu officia
+                        deserunt cillum labore.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                </ul>
+                <p>Aliqua velit exercitation aliquip fugiat duis. Eiusmod aliqua esse laborum consequat proident
+                    incididunt elit eu sint ea eiusmod est ad voluptate. Reprehenderit irure laborum pariatur mollit
+                    proident eiusmod fugiat.</p>
+
+                <p>Culpa minim nostrud incididunt eu irure sit esse est duis culpa tempor nostrud. Ipsum reprehenderit
+                    exercitation veniam fugiat proident nisi sunt ut incididunt ea cupidatat deserunt deserunt elit.
+                    Duis consequat reprehenderit Lorem non laborum labore adipisicing aliqua dolore eiusmod nisi.</p>
+                <p>Culpa minim nostrud incididunt eu irure sit esse est duis culpa tempor nostrud. Ipsum reprehenderit
+                    exercitation veniam fugiat proident nisi sunt ut incididunt ea cupidatat deserunt deserunt elit.
+                    Duis consequat reprehenderit Lorem non laborum labore adipisicing aliqua dolore eiusmod nisi.</p>
+                <p>Culpa minim nostrud incididunt eu irure sit esse est duis culpa tempor nostrud. Ipsum reprehenderit
+                    exercitation veniam fugiat proident nisi sunt ut incididunt ea cupidatat deserunt deserunt elit.
+                    Duis consequat reprehenderit Lorem non laborum labore adipisicing aliqua dolore eiusmod nisi.</p>
+                <ul>
+                    <li>Duis ut esse nisi esse culpa sint ad enim voluptate incididunt excepteur fugiat ea voluptate.
+                    </li>
+                </ul>
+            </div>
+            <div></div>
+            <div class="fl-type-of">
+                <h3>Frist of type(darkblue) and last of type(red)</h3>
+                <p>Ex duis fugiat ea cupidatat veniam cupidatat velit occaecat elit consectetur exercitation ut duis.
+                    Cupidatat labore sit proident minim minim aliquip voluptate magna cupidatat labore ea consectetur.
+                    Occaecat dolore occaecat proident enim magna fugiat veniam deserunt eiusmod adipisicing culpa ex
+                    pariatur. Anim sit sit Lorem nulla eu nostrud id ipsum ut id dolore dolor qui excepteur. Nostrud sit
+                    et occaecat fugiat. Ad laborum sint laboris sunt eiusmod enim voluptate aliquip ad aliqua culpa
+                    culpa laboris esse. Ut cupidatat non pariatur nostrud adipisicing anim do elit.</p>
+                <p>Dolore nostrud pariatur ad eiusmod cupidatat ea fugiat reprehenderit minim id.</p>
+                <p>Culpa minim nostrud incididunt eu irure sit esse est duis culpa tempor nostrud. Ipsum reprehenderit
+                    exercitation veniam fugiat proident nisi sunt ut incididunt ea cupidatat deserunt deserunt elit.
+                    Duis consequat reprehenderit Lorem non laborum labore adipisicing aliqua dolore eiusmod nisi.</p>
+                <ul>
+                    <li>Aliquip irure magna excepteur excepteur veniam magna tempor fugiat ipsum.</li>
+                    <li>Excepteur veniam labore ea duis veniam exercitation occaecat excepteur mollit eu officia
+                        deserunt cillum labore.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                    <li>Adipisicing dolor eu occaecat incididunt adipisicing sunt sint amet et veniam sunt.</li>
+                </ul>
+                <p>Aliqua velit exercitation aliquip fugiat duis. Eiusmod aliqua esse laborum consequat proident
+                    incididunt elit eu sint ea eiusmod est ad voluptate. Reprehenderit irure laborum pariatur mollit
+                    proident eiusmod fugiat.</p>
+
+                <p>Culpa minim nostrud incididunt eu irure sit esse est duis culpa tempor nostrud. Ipsum reprehenderit
+                    exercitation veniam fugiat proident nisi sunt ut incididunt ea cupidatat deserunt deserunt elit.
+                    Duis consequat reprehenderit Lorem non laborum labore adipisicing aliqua dolore eiusmod nisi.</p>
+
+                <ul>
+                    <li>Duis ut esse nisi esse culpa sint ad enim voluptate incididunt excepteur fugiat ea voluptate.
+                    </li>
+                </ul>
+            </div>
+            <div></div>
+            <div class="not">
+                <h3>Not Selector</h3>
+                <p>Hello friend</p>
+                <p class="fr">Salut l'ami</p>
+                <p>Hallo Freund</p>
+            </div>
+            <div></div>
+            <div class="lang">
+                <h3>language selector</h3>
+                <p lang="en">Hello friend</p>
+                <p lang="fr">Salut l'ami</p>
+                <p lang="de">Hallo Freund</p>
+            </div>
+            <div></div>
+            <div class="form">
+                <h3>Form related Selector</h3>
+                <form>
+                    <!-- input-type: text -->
+                    <label>Name: </label>
+                    <input type="text" name="name" id="name" required> <br>
+                    <br>
+                    <label>Father name: </label>
+                    <input type="text" name="name" id="name" disabled> <br>
+                    <br>
+                    <label>age:</label>
+                    <input type="number" id="age" name="age" min="10" max="20">
+                    <br><br>
+                    <!-- input-type: checkbox -->
+                    <label>Select multiple options: </label> <br>
+                    <input type="checkbox" name="check_box" id="HTML">
+                    <label> HTML </label><br>
+                    <input type="checkbox" name="check_box" id="CSS">
+                    <label> CSS </label><br>
+                    <input type="checkbox" name="check_box" id="JS">
+                    <label> JavaScript </label><br>
+                    <br>
+                    <!-- input-type: radio -->
+                    <label>Select option: </label> <br>
+                    <input type="radio" name="radio_button" id="HTML">
+                    <label> HTML </label><br>
+                    <input type="radio" name="radio_button" id="CSS" checked>
+                    <label> CSS </label><br>
+                    <input type="radio" name="radio_button" id="JS">
+                    <label>JavaScript </label><br>
+                        <br>
+                        <!-- Select tag -->
+                        <label>Choose any: </label>
+                        <select name="value" id="select">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JS">JavaScript</option>
+                        </select>
+                        <br><br>
+                        <!-- textarea tag -->
+                        <label>Enter Address: </label>
+                        <textarea name="address" id="add" cols="30" rows="5"></textarea>
+                        <br><br>
+                        <!-- Button tag -->
+                        <button type="submit">submit</button>
+                        <br><br>
+                </form>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+</body>
+
+</html>

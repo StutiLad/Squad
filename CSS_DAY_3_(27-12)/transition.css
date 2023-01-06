@@ -1,0 +1,113 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+
+.trans div {
+    width: 100px;
+    height: 100px;
+}
+
+/* width */
+.trans .w {
+    background: red;
+    transition: width 2s;
+}
+
+.trans .w:hover {
+    width: 300px;
+}
+
+/* width and height */
+
+.trans .wh {
+    background-color: blueviolet;
+    transition: width 2s, height 4s;
+}
+
+.trans .wh:hover {
+    width: 300px;
+    height: 300px;
+}
+
+/* transition-timing-function Property */
+.trans #div1,
+.trans #div2,
+.trans #div3,
+.trans #div4,
+.trans #div5 {
+    background-color: lightgreen;
+    transition: width 2s;
+}
+
+.trans #div1 {
+    transition-timing-function: linear;
+}
+
+.trans #div2 {
+    transition-timing-function: ease;
+}
+
+.trans #div3 {
+    transition-timing-function: ease-in;
+}
+
+.trans #div4 {
+    transition-timing-function: ease-out;
+}
+
+.trans #div5 {
+    transition-timing-function: ease-in-out;
+}
+
+.trans #div1:hover,
+.trans #div2:hover,
+.trans #div3:hover,
+.trans #div4:hover,
+.trans #div5:hover {
+    width: 300px;
+}
+
+/* transition-delay Property */
+
+.trans .td {
+    background-color: lightsalmon;
+    transition: width 3s;
+    transition-delay: 1s;
+}
+
+.trans .td:hover {
+    width: 300px;
+}
+
+/* Transition + Transform */
+
+.trans .tt {
+    background-color: burlywood;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.trans .tt:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+/* The transition Properties Specified One by One */
+
+.trans .all {
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+.trans .all:hover {
+    width: 300px;
+}

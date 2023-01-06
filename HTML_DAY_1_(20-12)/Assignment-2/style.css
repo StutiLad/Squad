@@ -1,0 +1,152 @@
+/* Header */
+
+header,
+.nav {
+    background-color: rgb(240, 240, 240);
+}
+
+.head {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.head h2,
+.head img {
+    align-items: center;
+    display: inline-flex;
+}
+
+.head img {
+    float: right;
+    width: 10%;
+}
+
+.head h2 {
+    letter-spacing: 2px;
+    color: rgb(66, 66, 66);
+}
+
+/* Navigation */
+.nav {
+    border-top: 5px solid rgb(207, 207, 207);
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.nav ul li {
+    display: inline-flex;
+}
+
+.nav ul li img {
+    padding: 5px 10px;
+}
+
+/* Banner */
+.banner-img,
+.banner {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-img img {
+    width: 100%;
+    border-bottom: 10px solid rgb(207, 207, 207);
+}
+
+/* section */
+
+.sec {
+    margin: 0;
+    padding: 0;
+}
+
+.sec-1 {
+    width: 80%;
+    background-color: rgb(207, 207, 207);
+}
+.sec-3{
+    padding-top: 0 !important;
+}
+
+.sec-3 .sec-head .sec-title{
+    margin-top: 0;
+}
+.sec-2 h4{
+    color:rgb(66, 66, 66);
+    font-size: 30px;
+}
+
+.row {
+    display: inline-flex;
+    content: "";
+    width: 100%;
+}
+
+.row .col-2 {
+    float: left;
+    padding: 10px;
+}
+
+.row .col-3 {
+    float: left;
+    padding: 10px;
+}
+
+.col-3 p,
+.col-2 p {
+    text-align: justify;
+}
+
+.sec-1,
+.sec-head .sec-title {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: rgb(207, 207, 207);
+    padding: 10px;
+}
+
+.sec-head .sec-title{
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+}
+
+/* footer */
+.footer{
+    color:rgb(66, 66, 66);
+}
+.center-text {
+    text-align: center;
+}
+
+.footer .navigation p {
+    display: inline-block;
+}
+.footer{
+    border-top: 5px solid rgb(207, 207, 207);
+}
+.footer .navigation  p {
+    border-left: 0.5px solid black;
+    padding: 3px;
+    line-height: 60%;
+    margin-bottom: 0;
+}
+
+.footer .navigation  p:first-child{
+    border: none;
+}
+
+.footer .rights p{
+    margin-top: 0;
+    padding-bottom: 10px;
+}

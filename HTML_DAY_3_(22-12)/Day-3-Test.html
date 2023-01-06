@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Day - 3</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">HTML Graphics, Geo-location and media</h2>
+    <div>
+        <h3>Graphics</h3>
+        <!-- Graphics -->
+        <!-- Canvas: Draw the graphics on fly with JavaScript -->
+        <canvas id="myCanvas" width="200px" height="100px" style="border: 1px solid black;">
+        </canvas>
+        <br><br>
+        <!-- SVG (Scalabel Vector Graphics) -->
+        <!-- It is a container for graphics -->
+        <svg width="200px" height="100px">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        <br><br>
+
+        <h3>Geo-location</h3>
+
+        <!-- Three method to embedded Geo-location in any html web page
+             1> through google maps - get the embedded html by entering location after sharing. 
+             2> through Google API key which we can get from Google Maps Platefrom 
+             3> By JavaScript - by getCurrentPosition method() we can get the users current position.
+        -->
+
+        <!-- Google Maps -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.6066884314378!2d72.52327681428342!3d23.07487682016307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b4e86045b53%3A0x53cdb0d2cbe08c97!2sSquad%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1671688461970!5m2!1sen!2sin"
+            width="50%" height="200" style="border: 2px solid black; display: block; margin: auto;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <br><br>
+
+        <!-- By JavaScript -->
+        <p>Click the button to get your loaction: </p>
+        <button onclick="getLocation()">Get location</button>
+        <p id="getLoc"></p>
+        <br><br>
+
+        <!-- -----Media----- -->
+        <h3>Media</h3>
+        <!-- audio -->
+        <audio controls>
+            <source src="horse.ogv" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+
+        <!-- video -->
+        <video width="200px" height="100px" controls autoplay loop muted>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the audio element.
+        </video>
+        <br><br>
+        <!-- -----Plug-ins----- -->
+        <!-- To run java applets, display flash movies, display maps, scan viruses, verify bank id -->
+        <!-- now a days plugins are not supported in web browsers -->
+
+        <!-- object -->
+        <object data="./Day-3-Test.html" type="html"></object>
+        <br><br>
+
+        <!-- embed -->
+        <embed src="./Day-3-Test.html" type="html">
+
+        <br><br>
+
+        <details>
+            <summary>Epcot Center</summary>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
+                pavilions, award-winning fireworks and seasonal special events.</p>
+        </details>
+
+    </div>
+
+</body>
+
+
+<!-- JavaScript -->
+<script>
+    // Canvas
+    // Step-1: find element
+    var c = document.getElementById("myCanvas");
+    // Step-2: Drawing object 
+    var ctx = c.getContext("2d");
+    // Step-3: Draw on canvas
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello World", 10, 50);
+
+    // Geo-Loacation
+    var getLoc = document.getElementById("getLoc");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            getLoc.innerHTML = "Geo-location is not supported in thisbrowser..!"
+        }
+    }
+
+    function showPosition(position) {
+        getLoc.innerHTML = "Latitude : " + position.coords.latitude +
+            "<br>Longitude : " + position.coords.longitude;
+    }
+
+</script>
+
+</html>

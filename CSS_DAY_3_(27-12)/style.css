@@ -1,0 +1,547 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+div:empty {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+
+h2,
+figcaption {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 5px 0;
+    margin: 20px 0;
+}
+
+table {
+    margin: auto;
+    width: 50%;
+}
+
+table tr td {
+    border: 0.5px solid lightgrey;
+    padding: 20px;
+    width: 25%;
+}
+
+table caption {
+    font-weight: bold;
+    color: darkblue;
+}
+
+table tr td figcaption {
+    padding-top: 10px;
+}
+
+table tr td div:first-child {
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+table tr td div {
+    display: inline-flexbox;
+    width: 100%;
+    height: 3.5vw;
+    text-align: center;
+}
+
+.box-shad table tr td div div {
+    border: 1px solid;
+    width: 54px;
+    height: 16px;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ==========Gradient========== */
+
+/* linear gradient */
+
+/* linear gradient-direction */
+.grad .linear table tr td .dir1 {
+    background-image: linear-gradient(red, blue);
+}
+
+.grad .linear table tr td .dir2 {
+    background-image: linear-gradient(to right, red, blue);
+}
+
+.grad .linear table tr td .dir3 {
+    background-image: linear-gradient(to bottom left, red, blue);
+}
+
+/* linear gradient-degree */
+.grad .linear table tr td .deg1 {
+    background-image: linear-gradient(0deg, red, blue);
+}
+
+.grad .linear table tr td .deg2 {
+    background-image: linear-gradient(270deg, red, blue);
+}
+
+.grad .linear table tr td .deg3 {
+    background-image: linear-gradient(10deg, red, blue);
+}
+
+/* linear gradient-other */
+.grad .linear table tr td .multi {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.grad .linear table tr td .trans {
+    background-color: black;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+.grad .linear table tr td .repeat {
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    ;
+}
+
+/* radial gradient */
+
+.grad .radial table tr td .shape1 {
+    background-image: radial-gradient(red, yellow, green);
+}
+
+.grad .radial table tr td .shape2 {
+    background-image: radial-gradient(red 10%, yellow 20%, magenta 70%);
+}
+
+.grad .radial table tr td .shape3 {
+    background-image: radial-gradient(circle, red, yellow, blue);
+}
+
+.grad .radial table tr td .repeat {
+    background-image: repeating-radial-gradient(darkblue, blue 10%, lightblue 15%);
+}
+
+.grad .radial table tr td .size1 {
+    background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+
+.grad .radial table tr td .size2 {
+    background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+}
+
+.grad .radial table tr td .size3 {
+    background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+}
+
+.grad .radial table tr td .size4 {
+    background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+}
+
+/* Conic Gradient */
+
+.grad .conic table tr td .type1 {
+    background-image: conic-gradient(red, yellow, green);
+}
+
+.grad .conic table tr td .type2 {
+    background-image: conic-gradient(red, yellow, green, blue, black);
+}
+
+.grad .conic table tr td .type3 {
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+}
+
+.grad .conic table tr td .type4 {
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+}
+
+.grad .conic table tr td .type5 {
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+}
+
+.grad .conic table tr td .type6 {
+    background-image: repeating-conic-gradient(darkblue 10%, darkgrey 20%);
+    border-radius: 50%;
+}
+
+.grad .conic table tr td .type7 {
+    background-image: conic-gradient(from 90deg, lightgrey, yellow, lightgreen);
+}
+
+.grad .conic table tr td .type8 {
+    background-image: conic-gradient(at 60% 45%, pink, yellow, skyblue);
+}
+
+.grad .conic table tr td .type9 {
+    background-image: repeating-conic-gradient(magenta 0deg 10deg, purple 10deg 20deg, pink 20deg 30deg);
+    border-radius: 50%;
+}
+
+/* Gradient on image */
+
+
+/* ========== Shadow ========= */
+
+/* Text Shadow */
+.shadow .text-shad table tr td p {
+    font-size: 86px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.shadow .text-shad table tr td .shad1 p {
+    text-shadow: 2px 2px;
+}
+
+.shadow .text-shad table tr td .shad2 p {
+    text-shadow: 3px 4px purple;
+}
+
+.shadow .text-shad table tr td .shad3 p {
+    text-shadow: 2px 5px 5px darkblue;
+}
+
+.shadow .text-shad table tr td .shad4 p {
+    text-shadow: 1px 0 10px darkgreen, 0 1px 5px darkblue;
+}
+
+.shadow .text-shad table tr td .shad5 p {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.shadow .text-shad table tr td .shad6 p {
+    color: plum;
+    text-shadow: -1px 0 black, 0 1px navy, 1px 0 black, 0 -1px navy;
+}
+
+/* Box Shadow */
+.shadow .box-shad table tr td .box1 div {
+    background-color: darkcyan;
+    box-shadow: 10px 10px;
+}
+
+.shadow .box-shad table tr td .box2 div {
+    background-color: pink;
+    box-shadow: 10px 10px lightblue;
+}
+
+.shadow .box-shad table tr td .box3 div {
+    background-color: darkgrey;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.shadow .box-shad table tr td .box4 div {
+    background-color: palevioletred;
+    box-shadow: 10px 10px 5px 6px pink;
+}
+
+.shadow .box-shad table tr td .box5 div {
+    background-color: greenyellow;
+    box-shadow: 10px 10px 5px burlywood inset;
+}
+
+.shadow .box-shad table tr td .box6 div {
+    background-color: lightskyblue;
+    box-shadow: 5px 5px darkblue, 10px 10px purple, 15px 15px palevioletred;
+}
+
+/* Crad layout */
+
+.box-shad table tr td .card1,
+.box-shad table tr td .card2 {
+    border: 1px solid black;
+    height: 300px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.box-shad table tr td .card {
+    width: 200px;
+    height: 250px;
+    box-shadow: 2px 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 15px rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+}
+
+.box-shad table tr td .card pre {
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+}
+
+.box-shad table tr td .header,
+.box-shad table tr td .container {
+    margin: 0;
+    border: none;
+    width: initial;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.box-shad table tr td .header {
+    border-bottom: 1px solid;
+    height: 95px;
+}
+
+.box-shad table tr td .container {
+    height: 31px;
+}
+
+.box-shad table tr td .card2 .header {
+    padding: 0;
+    height: 155px;
+}
+
+.box-shad table tr td .card1 .header pre {
+    font-size: 30px;
+}
+
+.box-shad table tr td .card1 .header {
+    background-color: lavenderblush;
+}
+
+.box-shad table tr td .card2 .header img {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+/* ==========Text Effect========== */
+
+.over-wrap table tr td .text1,
+.over-wrap table tr td .text2,
+.over-wrap table tr td .text3,
+.break table tr td .break1,
+.break table tr td .break2,
+.break table tr td .break3 {
+    display: block;
+    text-align: -webkit-center;
+    margin: auto;
+}
+
+/* overflow & word wrap */
+.over-wrap table tr td .text1 .test1,
+.over-wrap table tr td .text2 .test1 {
+    white-space: nowrap;
+    width: 150px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.over-wrap table tr td .text1 .test2,
+.over-wrap table tr td .text2 .test2 {
+    white-space: nowrap;
+    width: 150px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.over-wrap table tr td .text2 .test1:hover,
+.over-wrap table tr td .text2 .test2:hover {
+    overflow: visible;
+}
+
+.over-wrap table tr td .text3 .test {
+    width: 9em;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+/* word break */
+.break table tr td .break1 p,
+.break table tr td .break2 p,
+.break table tr td .break3 p {
+    border: 1px solid black;
+    width: 150px;
+    margin: 13px 0;
+    text-align: left;
+}
+
+.break table tr td .break1 p {
+    word-break: keep-all;
+}
+
+.break table tr td .break2 p {
+    word-break: break-all;
+}
+
+.break table tr td .break3 p {
+    word-break: break-word;
+}
+
+/* writing mode */
+.mode table tr td .mode1,
+.mode table tr td .mode2 {
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mode table tr td .mode1 p,
+.mode table tr td .mode2 p {
+    border: 1px solid black;
+    width: 260px;
+    margin: 13px 0;
+    text-align: left;
+}
+
+.mode table tr td .mode1 p {
+    writing-mode: horizontal-tb;
+}
+
+.mode table tr td .mode2 p .mode-test {
+    writing-mode: vertical-rl;
+}
+
+/* ========== Text Transformation ========== */
+
+/* 2D-transformation */
+.transform .trans-2d div:first-child {
+    height: 175px;
+}
+
+.transform .trans-2d .tr-1 div,
+.transform .trans-2d .tr-2 div,
+.transform .trans-2d .tr-3 div,
+.transform .trans-2d .m-1 div,
+.transform .trans-2d .m-2 div,
+.transform .trans-2d .m-3 div {
+    background-color: lightpink;
+}
+
+.transform .trans-2d .s-1 div,
+.transform .trans-2d .s-2 div,
+.transform .trans-2d .s-3 div,
+.transform .trans-2d .sk-1 div,
+.transform .trans-2d .sk-2 div,
+.transform .trans-2d .sk-3 div {
+    background-color: lightgreen;
+}
+
+.transform .trans-2d .s-4 div,
+.transform .trans-2d .s-5 div,
+.transform .trans-2d .s-6 div {
+    background-color: lightskyblue;
+}
+
+.transform .trans-2d div div:first-child {
+    border: 1px solid black;
+    margin: 15px;
+    height: 135px;
+    width: 150px;
+}
+
+/* Translate & Rotate */
+.transform .trans-2d .tr-1 div {
+    transform: translate(10px, 20px);
+}
+
+.transform .trans-2d .tr-2 div {
+    transform: rotate(20deg);
+}
+
+.transform .trans-2d .tr-3 div {
+    transform: rotate(-20deg);
+}
+
+/* Scale */
+.transform .trans-2d .s-1 div {
+    transform: scale(1.5, 1.5);
+}
+
+.transform .trans-2d .s-2 div {
+    transform: scaleX(1.5);
+}
+
+.transform .trans-2d .s-3 div {
+    transform: scaleY(1.5);
+}
+
+.transform .trans-2d .s-4 div {
+    transform: scale(0.5, 0.5);
+}
+
+.transform .trans-2d .s-5 div {
+    transform: scaleX(0.5);
+}
+
+.transform .trans-2d .s-6 div {
+    transform: scaleY(0.5);
+}
+
+/* Skew */
+.transform .trans-2d .sk-1 div {
+    transform: skew(20deg, 10deg);
+}
+
+.transform .trans-2d .sk-2 div {
+    transform: skewX(30deg);
+}
+
+.transform .trans-2d .sk-3 div {
+    transform: skewY(20deg);
+}
+
+/* Matrix */
+
+.transform .trans-2d .m-1 div {
+    border: 1px solid black;
+}
+
+.transform .trans-2d .m-2 div {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+.transform .trans-2d .m-3 div {
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+
+/* 3D-transformation */
+.transform .trans-3d .x,
+.transform .trans-3d .y,
+.transform .trans-3d .z {
+    height: 175px;
+}
+
+.transform .trans-3d .x #id-x,
+.transform .trans-3d .y #id-y,
+.transform .trans-3d .z #id-z {
+    background-color: yellow;
+    border: 1px solid black;
+    margin: 15px;
+    height: 135px;
+    width: 150px;
+}
+
+.transform .trans-3d .x #id-x {
+    transform: rotateX(150deg);
+}
+
+.transform .trans-3d .y #id-y {
+    transform: rotateY(150deg);
+}
+
+.transform .trans-3d .z #id-z {
+    transform: rotateZ(150deg);
+}

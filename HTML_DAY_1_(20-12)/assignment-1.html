@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment-1(20 Dec)</title>
+
+    <!-- Internal CSS -->
+    <style>
+        .center-text {
+            text-align: center;
+        }
+
+        .xp{
+            padding: 0 10px;
+        }
+        .head-1 {
+            padding: 20px;
+        }
+
+        .head-1 p, .footer p {
+            display: inline-block;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .product {
+            background-color: rgb(223, 208, 210);
+        }
+
+        .sec-3 td:nth-last-child(2),
+        .sec-5 td:nth-child(4),
+        .sec-6 td  {
+            text-align: right;
+        }
+
+        .sec-6 td:nth-child(2),
+        .sec-6 td:nth-child(4){
+            text-align: left;
+        }
+        .sec-3 td:last-child,
+        .sec-3 td:first-child,
+        .sec-5 td:first-child,
+        .sec-5 td:nth-child(5),
+        .sec-5 td:nth-child(6),
+        .sec-5 td:nth-child(7) {
+            text-align: center;
+        }
+
+        .sec-6 table,
+        .sec-6 tr,
+        .sec-6 td{
+            padding: 4px;
+            border: none !important;
+        }
+
+        .sec-6 tr:last-child{
+            border-bottom: 1px solid black !important;
+        }
+
+        .line {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        .footer{
+            background-color: rgb(199, 199, 199);
+        }
+        .footer p {
+            border-left: 0.5px solid black;
+            padding: 3px;
+            line-height: 60%;
+        }
+
+        .footer p:first-child{
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xp">
+        <!-- Header -->
+        <section class="product">
+            <div class="head-1">
+                <p><b>Products</b></p>
+                <p class="right">Number of Products : 15</p>
+            </div>
+        </section>
+
+        <!-- Product code -->
+
+        <section class="sec-1">
+            <p>Product Code</p>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Code1</td>
+                </tr>
+                <tr>
+                    <td>Code2</td>
+                </tr>
+                <tr>
+                    <td>Code3</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Product code and Names -->
+
+        <section class="sec-2">
+            <p>Product Code and Names</p>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Code1</td>
+                    <td>Name1</td>
+                </tr>
+                <tr>
+                    <td>Code2</td>
+                    <td>Name2</td>
+                </tr>
+                <tr>
+                    <td>Code3</td>
+                    <td>Name3</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Products -->
+        <section class="sec-3">
+            <p>Products</p>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Code1</td>
+                    <td>Name1</td>
+                    <td>Description1</td>
+                    <td>Price</td>
+                    <td>Disable</td>
+                </tr>
+                <tr>
+                    <td>Code2</td>
+                    <td>Name2</td>
+                    <td>Description1</td>
+                    <td>Price2</td>
+                    <td>Enable</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Product Drop Down -->
+
+        <section class="sec-4">
+            <p>Product Drop Down</p>
+            <label for="product">Select Product:</label>
+            <select name="product">
+                <option value="Product-1">Prod1</option>
+                <option value="Product-2">Prod2</option>
+            </select>
+        </section>
+
+        <!-- Products-table -->
+        <section class="sec-5">
+            <p>Products</p>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Code1</td>
+                    <td>Name1</td>
+                    <td>Description1</td>
+                    <td>Price</td>
+                    <td>Disable</td>
+                    <td>Info1</td>
+                    <td>Info2</td>
+                </tr>
+                <tr>
+                    <td>Code2</td>
+                    <td>Name2</td>
+                    <td>Description1</td>
+                    <td>Price2</td>
+                    <td>Enable</td>
+                    <td>Info1</td>
+                    <td>Info2</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- product -->
+
+        <section class="sec-6">
+            <p>Products</p>
+            <table style="width: 100%;">
+                <tr>
+                    <td><b>Code</b></td>
+                    <td>Code1</td>
+                    <td><b>Info</b></td>
+                    <td>Info1</td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>Name1</td>
+                    <td><b>Dim1</b></td>
+                    <td>Dim1Val</td>
+                </tr>
+                <tr>
+                    <td><b>Description</b></td>
+                    <td>Desc1</td>
+                    <td><b>Dim2</b></td>
+                    <td>Dim2Val</td>
+                </tr>
+                <tr>
+                    <td><b>Price</b></td>
+                    <td>Price1</td>
+                </tr>
+            </table>
+            <table style="width: 100%;">
+                <tr>
+                    <td><b>Code</b></td>
+                    <td>Code1</td>
+                    <td><b>Info</b></td>
+                    <td>Info1</td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>Name1</td>
+                    <td><b>Dim1</b></td>
+                    <td>Dim1Val</td>
+                </tr>
+                <tr>
+                    <td><b>Description</b></td>
+                    <td>Desc1</td>
+                    <td><b>Dim2</b></td>
+                    <td>Dim2Val</td>
+                </tr>
+                <tr>
+                    <td><b>Price</b></td>
+                    <td>Price1</td>
+                </tr>
+            </table>
+        </section>
+       
+        
+        <!-- footer -->
+        <br>
+        <footer class="footer">
+            <div class="center-text">
+                <p>Home</p>
+                <p>About us</p>
+                <p>Contact us</p>
+                <p>Service</p>
+                <p>Products</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

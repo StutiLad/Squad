@@ -1,0 +1,195 @@
+<!DOCTYPE html> <!-- tell web page about the html  -->
+<html lang="en"> <!-- lang is used to define the language of web page  -->
+
+<head>
+    <title> Test Document</title>
+
+<!-- Internal CSS Tag -->
+<style>
+    .image {
+        background-image: url("https://images.unsplash.com/photo-1669238309841-992f3b67eeb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60 ");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: left;
+        color: white;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+</head>
+
+<body>
+    <div id="top">
+
+
+        <!-- ---------- Basic Tags of HTML ---------- -->
+        <!-- heading tags(h1 to h6), paragraph(p, pre), images(img), links(a) -->
+
+        <!-- Heading tags -->
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+        <hr>
+
+        <!-- Text tags -->
+        <p>This is P tag and it used to write the paragraph.</p>
+        <pre>This is pre tag and 
+        it used to write the preformatted text.
+    </pre>
+
+        <!-- Empty HTML elements -->
+        <hr> <!-- used to give horizontal line -->
+        <p>this is br tag. <br> use to break the line.</p>
+
+        <!-- Text Formatting -->
+        <hr>
+        <p>Formatting tags</p>
+        <p><b>Bold</b></p>
+        <p><strong>Strong</strong></p>
+        <p><i>Italic</i></p>
+        <p><em>Emphasized</em></p>
+        <p><small>small</small></p>
+        <p>Hey I'm a <mark>mark</mark> tag</p>
+        <p>Hey I'm <del>delete</del> tag, I'm<ins>insert</ins> tag</p>
+        <p>I'm <sub>Subscript text</sub> and I'm <sup> Superscript text</sup>.</p>
+
+        <!-- Quotation -->
+        <p>I'm <q>Quotation</q>.</p>
+
+        <!-- Abbreviations -->
+        <p>Abbreviation tag<abbr title="Hypertext markup language">HTML</abbr></p>
+
+        <!-- Address -->
+        <Address>
+            I'm Address tag
+            used to write <br>
+            contect info <br>
+            email id <br>
+            basically a contact info
+        </Address>
+        <hr>
+
+        <!-- Cite -->
+        <p>Cite use to write <cite>title</cite> of creative work.</p>
+
+        <!-- ---------- LINKS-HYPERLINKS ---------- -->
+
+        <!-- We can use link tags in image, normal text, title -->
+        <!-- Normal text link-->
+        <P> <a href="https://www.w3schools.com/html/html_links.asp">Link tag</a></P>
+
+        <!-- Image link -->
+        <p><a href="https://unsplash.com/images/stock/non-copyrighted"><img
+                    src="https://images.unsplash.com/photo-1669236132582-67d039f7fb7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="Image of leaf" width="150px" height="100px"></a></p>
+
+        <!-- Title link -->
+        <p><a href="https://www.javatpoint.com/html-tutorial" title="Hypertext Markup Language">HTML</a></p>
+
+        <!-- Mailto attribute of link tag (a)-->
+        <p>mail:<a href="mailto: example@gmail.com">example@gmail.com</a></p>
+
+        <!-- use as bookmark -->
+        <a href="#top">top</a>
+        <br>
+
+        <!-- ---------- Images ---------- -->
+        <br>
+        <img src="https://images.unsplash.com/photo-1669236132582-67d039f7fb7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="Image of leaf" width="200px" height="150px">
+        <br><br>
+        <div class="image">
+            <pre>
+            This is a div.
+            which has image as background.
+           </pre>
+        </div>
+
+        <!-- ---------- Iframe ---------- -->
+        <iframe src="https://www.google.com/" title="Youtube" width="30%" height="20%" frameborder="0"></iframe>
+        <br>
+
+        <!-- ---------- List ---------- -->
+        <p>Unordered list</p>
+        <ul style="list-style-type: circle;">
+            <li>Tea
+                <ul style="list-style-type: square;">
+                    <li>green</li>
+                    <li>black</li>
+                </ul>
+            </li>
+            <li>coffee</li>
+            <li>milk</li>
+        </ul>
+
+        <p>Ordered list</p>
+        <ol>
+            <li>Tea
+                <ol>
+                    <li>green</li>
+                    <li>black</li>
+                </ol>
+            </li>
+            <li>coffee</li>
+            <li>milk</li>
+        </ol>
+
+        <p>Description List</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>white cold drink</dd>
+        </dl>
+
+        <!-- ---------- Table ---------- -->
+        <table>
+            <caption>Table-1</caption>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <caption>Table-2</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

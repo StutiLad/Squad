@@ -1,0 +1,250 @@
+h1 {
+    text-align: center;
+}
+
+h1::before,
+h1::after {
+    content: ':';
+    padding: 0 10px;
+    vertical-align: text-bottom;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* =====TEXT===== */
+/* Text Alignment Propertie */
+.text_align_1 {
+    font-size: 1.2em;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.text_align_2 {
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.text_align_3 {
+    font-size: 1.2em;
+    text-align-last: right;
+}
+
+/* Text Vertical Alignment Properties */
+.ver-align p img {
+    height: 40px;
+    width: 40px;
+    padding: 0 10px;
+}
+
+.ver-align .v-align-1 img {
+    vertical-align: baseline;
+}
+
+.ver-align .v-align-2 img {
+    vertical-align: bottom;
+}
+
+.ver-align .v-align-3 img {
+    vertical-align: middle;
+}
+
+.ver-align .v-align-4 img {
+    vertical-align: sub;
+}
+
+.ver-align .v-align-5 img {
+    vertical-align: super;
+}
+
+.ver-align .v-align-6 img {
+    vertical-align: text-bottom;
+}
+
+.ver-align .v-align-7 img {
+    vertical-align: text-top;
+}
+
+.ver-align .v-align-8 img {
+    vertical-align: top;
+}
+
+/* Text Direction Properties */
+
+.direction {
+    direction: rtl;
+}
+
+/* Text Decoration Properties */
+
+.text-decor .line-decor-1 {
+    text-decoration-line: overline;
+}
+
+.text-decor .line-decor-2 {
+    text-decoration-line: line-through;
+}
+
+.text-decor .line-decor-3 {
+    text-decoration-line: underline;
+}
+
+.text-decor .line-decor-4 {
+    text-decoration-line: overline underline;
+}
+
+.text-decor .style-decor-1 {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.text-decor .style-decor-2 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.text-decor .style-decor-3 {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
+}
+
+.text-decor .style-decor-4 {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+
+.text-decor .style-decor-5 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+}
+
+.text-decor .decor {
+    text-decoration: underline blue dashed 2px;
+}
+
+/* Text Transformation, Text Spacing and Text Shadow Properties */
+
+.text-tss .text-shad {
+    color: black;
+    text-shadow: 1px 1px 2px peachpuff, 0 0 5px darkblue;
+}
+
+.text-tss .text-tss-1 {
+    text-indent: 20px;
+}
+
+.text-tss .text-tss-1 .upper-spacing {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.text-tss .text-tss-1 .capit-wordspac {
+    text-transform: capitalize;
+    word-spacing: 10px;
+}
+
+.text-tss .text-tss-2 {
+    white-space: nowrap;
+}
+
+/* =====FONT===== */
+
+/* Font Family */
+.font-fam .fam-1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-fam .fam-2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.font-fam .fam-3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Font Style Properties */
+.font-style h3::after {
+    content: ' >';
+    padding-left: 10px;
+}
+
+.font-style .normal {
+    font-style: normal;
+}
+
+.font-style .italic {
+    font-style: italic;
+}
+
+.font-style .oblique {
+    font-style: oblique;
+}
+
+/* Font Weight Properties */
+.font-style .normal {
+    font-weight: normal;
+}
+
+.font-style .light {
+    font-weight: lighter;
+}
+
+.font-style .thick {
+    font-weight: bold;
+}
+
+.font-style .thicker {
+    font-weight: 900;
+}
+
+/* Font Variant Properties */
+.font-style .normal {
+    font-variant: normal;
+}
+
+.font-style .small {
+    font-variant: small-caps;
+}
+
+/* Font Size */
+.font-style .px {
+    font-size: 20px;
+}
+
+.font-style .em {
+    font-size: 1.4em;
+}
+
+.font-style .per {
+    font-size: 100%;
+}
+
+/* Responsive Font Size */
+.font-style .res-font {
+    font-size: 5vw;
+}
+
+/* Goole Fonts */
+.google-font .a {
+    font-family: "Audiowide", sans-serif;
+}
+
+.google-font .b {
+    font-family: "Sofia", sans-serif;
+}
+
+.google-font .c {
+    font-family: "Trirong", serif;
+}
+
+/* Shorthand Font */
+.font .a {
+    font: 20px Arial, sans-serif;
+}
+
+.font .b {
+    font: italic bold 12px/30px Georgia, serif;
+}

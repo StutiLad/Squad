@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Day-3 (27-12)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <!-- ========== Gradient and Shadows ========== -->
+            <h1>Gradient and Shadows</h1>
+
+            <!-- ----------Gradient---------- -->
+            <div class="grad">
+                <h2>Gradient</h2>
+
+                <!-- -----linear Gradient----- -->
+                <div class="linear">
+                    <h3>-: Linear Gradient :-</h3>
+                    <table>
+                        <caption>Using Direction</caption>
+                        <tr>
+                            <td>
+                                <div class="dir1"></div>
+                                <div>
+                                    <figcaption>Direction: top to bottom(default)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dir2"></div>
+                                <div>
+                                    <figcaption>Direction: left to right</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dir3"></div>
+                                <div>
+                                    <figcaption>Direction: top right to bottom left</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Using Degree</caption>
+                        <tr>
+                            <td>
+                                <div class="deg1"></div>
+                                <div>
+                                    <figcaption>Degree: 0 deg</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="deg2"></div>
+                                <div>
+                                    <figcaption>Degree:270 deg</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="deg3"></div>
+                                <div>
+                                    <figcaption>Degree:10 deg</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Other properties</caption>
+                        <tr>
+                            <td>
+                                <div class="multi"></div>
+                                <div>
+                                    <figcaption>Using Multiple Color Stops</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="trans"></div>
+                                <div>
+                                    <figcaption>Using Transparency</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="repeat"></div>
+                                <div>
+                                    <figcaption>Repeating a linear-gradient</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- -----Radial Gradient----- -->
+                <div class="radial">
+                    <h3>-: Radial Gradient :-</h3>
+                    <table>
+                        <caption>Radial Gradient Types</caption>
+                        <tr>
+                            <td>
+                                <div class="shape1"></div>
+                                <div>
+                                    <figcaption>Evenly Spaced Color Stops(default)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shape2"></div>
+                                <div>
+                                    <figcaption>Differently Spaced Color Stops</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shape3"></div>
+                                <div>
+                                    <figcaption>Set Shape</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="repeat"></div>
+                                <div>
+                                    <figcaption>Repeating a radial-gradient</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Use of Different Size Keywords</caption>
+                        <tr>
+                            <td>
+                                <div class="size1"></div>
+                                <div>
+                                    <figcaption>closest-side</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="size2"></div>
+                                <div>
+                                    <figcaption>farthest-side</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="size3"></div>
+                                <div>
+                                    <figcaption>closest-corner</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="size4"></div>
+                                <div>
+                                    <figcaption>farthest-corner (default)</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Conic Gradient -->
+                <div class="conic">
+                    <h3>-: Conic Gradient :-</h3>
+                    <table>
+                        <caption>Conic Gradient Types</caption>
+                        <tr>
+                            <td>
+                                <div class="type1"></div>
+                                <div>
+                                    <figcaption>Three Colors</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type2"></div>
+                                <div>
+                                    <figcaption>Five Colors</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type3"></div>
+                                <div>
+                                    <figcaption>Three Colors and Degrees</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="type4"></div>
+                                <div>
+                                    <figcaption>Pie Charts</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type5"></div>
+                                <div>
+                                    <figcaption>Pie Charts</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type6"></div>
+                                <div>
+                                    <figcaption>Repeating a Conic Gradient</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="type7"></div>
+                                <div>
+                                    <figcaption>Specified From Angle</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type8"></div>
+                                <div>
+                                    <figcaption>With Specified Center Position</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="type9"></div>
+                                <div>
+                                    <figcaption>Repeating a Conic Gradient</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+
+                <!-- Some extra Properties of gradient -->
+                <!-- <div class="extra">
+                    <h3>-: Gradient on image:-</h3>
+
+                </div> -->
+            </div>
+            <div></div>
+
+            <!-- ----------Shadow---------- -->
+            <div class="shadow">
+                <h2>Shadows</h2>
+
+                <!-- Text Shadow Effect -->
+                <div class="text-shad">
+                    <h3>-: Text Shadow :-</h3>
+                    <table>
+                        <caption>single shadow, multiple shadow, plan border</caption>
+                        <tr>
+                            <td>
+                                <div class="shad1">
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <figcaption>horizonatal & vertical shadow</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shad2">
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <figcaption>with color</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shad3">
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <figcaption>with blur effect</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shad4">
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <figcaption>Multiple shadow</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shad5">
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <figcaption>red and blue neon glow shadow</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="shad6">
+                                    <p>Text</p>
+                                </div>
+                                <div>
+                                    <figcaption>plain border around</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Box Shadow Effect -->
+                <div class="box-shad">
+                    <h3>-: Box Shadow :-</h3>
+                    <table>
+                        <caption>Box shadow</caption>
+                        <tr>
+                            <td>
+                                <div class="box1">
+                                    <div> box </div>
+                                </div>
+                                <div>
+                                    <figcaption>Specify a Horizontal and a Vertical Shadow</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="box2">
+                                    <div> box </div>
+                                </div>
+                                <div>
+                                    <figcaption>Specify a Color for the Shadow</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="box3">
+                                    <div> box </div>
+                                </div>
+                                <div>
+                                    <figcaption>Blur Effect </figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="box4">
+                                    <div> box </div>
+                                </div>
+                                <div>
+                                    <figcaption>Set the Spread Radius</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="box5">
+                                    <div> box </div>
+                                </div>
+                                <div>
+                                    <figcaption>Set the inset Parameter</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="box6">
+                                    <div> box </div>
+                                </div>
+                                <div>
+                                    <figcaption>Add Multiple Shadows</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table>
+                        <caption>Card Layout</caption>
+                        <tr>
+                            <td>
+                                <div class="card1">
+                                    <div class="card">
+                                        <div class="header">
+                                            <pre>1</pre>
+                                        </div>
+                                        <div class="container">
+                                            <pre> January 1, 2022</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Text Card</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="card2">
+                                    <div class="card">
+                                        <div class="header">
+                                            <img src="./mic.jpg" alt="mic">
+                                        </div>
+                                        <div class="container">
+                                            <pre>Image of mic</pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Image Card</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div></div>
+
+        </div>
+
+        <div>
+            <!-- ========== Text Effects ========== -->
+            <h1>Text Effect</h1>
+
+            <div class="effect">
+                <!-- ----------Text Overflow & word wrap---------- -->
+                <h3>-: Text Overflow & word wrap :-</h3>
+                <div class="over-wrap">
+                    <table>
+                        <caption>Overflow & word wrap</caption>
+                        <tr>
+                            <td>
+                                <div class="text1">
+                                    <p class="test1">This is some long text that will not fit in the box</p>
+                                    <p class="test2">This is some long text that will not fit in the box</p>
+                                </div>
+                                <div>
+                                    <figcaption>Overflow</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text2">
+                                    <p class="test1">This is some long text that will not fit in the box</p>
+                                    <p class="test2">This is some long text that will not fit in the box</p>
+                                </div>
+                                <div>
+                                    <figcaption>Hover Visible Overflow</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text3">
+                                    <p class="test">Paragraph contains a very long words:
+                                        thisisaveveryryveryveryverylongword.</p>
+                                </div>
+                                <div>
+                                    <figcaption>Word Wrap</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- --------word break ---------- -->
+                <h3>-: Word Break :-</h3>
+                <div class="break">
+                    <table>
+                        <caption>Word Break</caption>
+                        <tr>
+                            <td>
+                                <div class="break1">
+                                    <p>This paragraph contains some text. This line will-break-at-hyphens.</p>
+                                </div>
+                                <div>
+                                    <figcaption>keep-all</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="break2">
+                                    <p>This paragraph contains some text. The lines will break at anyy character.</p>
+                                </div>
+                                <div>
+                                    <figcaption>break-all</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="break3">
+                                    <p>This paragraph contains some text. The lines will break at any word.</p>
+                                </div>
+                                <div>
+                                    <figcaption>break-word</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- ----------writing mode---------- -->
+                <h3>-: Writing Mode :-</h3>
+                <div class="mode">
+                    <table>
+                        <caption>Word Break</caption>
+                        <tr>
+                            <td>
+                                <div class="mode1">
+                                    <p>Some text with default writing-mode.</p>
+                                </div>
+                                <div>
+                                    <figcaption>Horizontal-tb</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="mode2">
+                                    <p>Some text with a span element with a <span class="mode-test">vertical-rl</span>
+                                        writing-mode.</p>
+                                </div>
+                                <div>
+                                    <figcaption>Vertical-rl</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div>
+            <!-- ========== Text Transformation ========== -->
+            <h1>Text Transformation</h1>
+
+            <div class="transform">
+                <!-- ---------- 2D-Transformation---------- -->
+                <div class="trans-2d">
+                    <h3>-: 2D-Transformation :-</h3>
+                    <!-- Translate & Rotate -->
+                    <table>
+                        <caption>Translate & Rotate</caption>
+                        <tr>
+                            <td>
+                                <div class="tr-1">
+                                    <div>
+                                        This div element is moved 10 pixels to the right, and 20 pixels down from its
+                                        current position.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Translate</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tr-2">
+                                    <div>This div element is rotated clockwise 20 degrees.</div>
+                                </div>
+                                <div>
+                                    <figcaption>Rotate(+ve)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tr-3">
+                                    <div>This div element is rotated counter-clockwise with 20 degrees.</div>
+                                </div>
+                                <div>
+                                    <figcaption>Rotate(-ve)</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <!-- Scale -->
+                    <table>
+                        <caption>Scale</caption>
+                        <tr>
+                            <td>
+                                <div class="s-1">
+                                    <div>
+                                        This div element is 1.5 times of its original width, and 1.5 times of its
+                                        original height.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Scale(1,1.5)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="s-2">
+                                    <div>
+                                        This div element is 1.5 times of its original width.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>ScaleX(1.5)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="s-3">
+                                    <div>
+                                        This div element is 1.5 times of its original height.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>ScaleY(1.5)</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="s-4">
+                                    <div>
+                                        This div element is decreased to be half of its original width and height.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Scale(0.5,0.5)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="s-5">
+                                    <div>
+                                        This div element is half of its original width.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>ScaleX(0.5)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="s-6">
+                                    <div>
+                                        This div element is half of its original width.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>ScaleY(0.5)</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <!-- Skew -->
+                    <table>
+                        <caption>Skew</caption>
+                        <tr>
+                            <td>
+                                <div class="sk-1">
+                                    <div>
+                                        This div element is skewed 20 degrees along the X-axis, and 10 degrees along the
+                                        Y-axis.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Skew(20,10)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sk-2">
+                                    <div>
+                                        This div element is skewed 30 degrees along the X-axis.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>skewX(30)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sk-3">
+                                    <div>
+                                        This div element is skewed 20 degrees along the Y-axis.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>skewY(20)</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+
+                    <!-- Matrix -->
+                    <table>
+                        <caption>Matrix</caption>
+                        <tr>
+                            <td>
+                                <div class="m-1">
+                                    <div>
+                                        This a normal div element.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Normal</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="m-2">
+                                    <div>
+                                        Using the matrix() method.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>matrix(1, -0.3, 0, 1, 0, 0)</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="m-3">
+                                    <div>
+                                        Another use of the matrix() method.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>matrix(1, 0, 0.5, 1, 150, 0)</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <!-- ---------- 3D-Transformation---------- -->
+                <div class="trans-3d">
+                    <h3>-: 3D-Transformation :-</h3>
+                    <table>
+                        <caption>Rotate</caption>
+                        <tr>
+                            <td>
+                                <div class="x">
+                                    <div id="id-x">
+                                        This div element is rotated 150 degrees.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Rotate-X</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="y">
+                                    <div id="id-y">
+                                        This div element is rotated 150 degrees.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Rotate-Y</figcaption>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="z">
+                                    <div id="id-z">
+                                        This div element is rotated 150 degrees.
+                                    </div>
+                                </div>
+                                <div>
+                                    <figcaption>Rotate-Z</figcaption>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+table{
+    text-align: center;
+    margin: auto;
+}
+
+.table table{
+    width: 50%;
+}
+
+.table table tr td {
+    width: 25%;
+}
+
+.table-1 table{
+    width: 50%;
+}
+
+.table-1 table tr td {
+    padding: 20px;
+    width: 25%;
+}
+
+table tr td {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+/* Color Change */
+.anim .color-change-1 {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    animation-name: color-change-1;
+    animation-duration: 5s;
+}
+
+@keyframes color-change-1 {
+    from {
+        background-color: darkblue;
+    }
+
+    to {
+        background-color: lightskyblue;
+    }
+}
+
+.anim .color-change-2 {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    animation-name: color-change-2;
+    animation-duration: 5s;
+}
+
+@keyframes color-change-2 {
+    0% {
+        background-color: darkblue;
+    }
+
+    25% {
+        background-color: blueviolet;
+    }
+
+    50% {
+        background-color: palevioletred;
+    }
+
+    75% {
+        background-color: pink;
+    }
+
+    100% {
+        background-color: lightpink;
+    }
+}
+
+/* Delay in animation */
+.anim .d-1 {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    animation-name: delay-1;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+@keyframes delay-1 {
+    from {
+        background-color: darkblue;
+    }
+
+    to {
+        background-color: lightskyblue;
+    }
+}
+
+.anim .d-2 {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    animation-name: delay-2;
+    animation-duration: 5s;
+    animation-delay: -2s;
+}
+
+@keyframes delay-2 {
+    0% {
+        background-color: darkblue;
+    }
+
+    25% {
+        background-color: blueviolet;
+    }
+
+    50% {
+        background-color: palevioletred;
+    }
+
+    75% {
+        background-color: pink;
+    }
+
+    100% {
+        background-color: lightpink;
+    }
+}
+
+/* Animation with specific count */
+.anim .count-1 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: darkgreen;
+    animation-name: count-1;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes count-1 {
+    from {
+        background-color: darkgreen;
+    }
+
+    to {
+        background-color: darkgoldenrod;
+    }
+}
+
+.anim .count-2 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: darkorchid;
+    animation-name: count-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes count-2 {
+    from {
+        background-color: darkorchid;
+    }
+
+    to {
+        background-color: darkred;
+    }
+}
+
+
+/* color-change & position-change of element */
+.anim .cp-1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 250px;
+    position: relative;
+    background-color: darkgreen;
+    animation-name: cp-1;
+    animation-duration: 5s;
+
+}
+
+@keyframes cp-1 {
+    0% {
+        background-color: darkgreen;
+        left: 0px;
+    }
+
+    25% {
+        background-color: darkcyan;
+        top: 0px;
+        left: 200px;
+    }
+
+    50% {
+        background-color: forestgreen;
+        top: 200px;
+        left: 200px;
+    }
+
+    75% {
+        background-color: darkorchid;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: lightgreen;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* Run animation in reverse direction */
+.anim .r-1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 250px;
+    position: relative;
+    background-color: darkgreen;
+    animation-name: reverse;
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+@keyframes reverse {
+    0% {
+        background-color: darkgreen;
+        left: 0px;
+    }
+
+    25% {
+        background-color: darkcyan;
+        top: 0px;
+        left: 200px;
+    }
+
+    50% {
+        background-color: forestgreen;
+        top: 200px;
+        left: 200px;
+    }
+
+    75% {
+        background-color: darkorchid;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: lightgreen;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* Run animation in alternate direction */
+.anim .a-1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 250px;
+    position: relative;
+    background-color: darkgreen;
+    animation-name: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes alternate {
+    0% {
+        background-color: darkgreen;
+        left: 0px;
+    }
+
+    25% {
+        background-color: darkcyan;
+        top: 0px;
+        left: 200px;
+    }
+
+    50% {
+        background-color: forestgreen;
+        top: 200px;
+        left: 200px;
+    }
+
+    75% {
+        background-color: darkorchid;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: lightgreen;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+/* Run animation in alternate-reverse direction */
+.anim .ar-1 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 250px;
+    position: relative;
+    background-color: darkgreen;
+    animation-name: alternate-reverse;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes alternate-reverse {
+    0% {
+        background-color: darkgreen;
+        left: 0px;
+    }
+
+    25% {
+        background-color: darkcyan;
+        top: 0px;
+        left: 200px;
+    }
+
+    50% {
+        background-color: forestgreen;
+        top: 200px;
+        left: 200px;
+    }
+
+    75% {
+        background-color: darkorchid;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: lightgreen;
+        left: 0px;
+        top: 0px;
+    }
+}

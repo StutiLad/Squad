@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test Day-2 Forms</title>
+</head>
+
+<body>
+
+    <!-- -----Form Tag----- -->
+    <div>
+        <form>
+            <!-- input-type: text -->
+            <label for="name">Enter name: </label>
+            <input type="text" name="name" id="name"> <br>
+            <br>
+            <!-- input-type: checkbox -->
+            <label for="check_box">Select multiple options: </label> <br>
+            <input type="checkbox" name="check_box" id="HTML">
+            <label for="HTML"> HTML </label><br>
+            <input type="checkbox" name="check_box" id="CSS">
+            <label for="CSS"> CSS </label><br>
+            <input type="checkbox" name="check_box" id="JS">
+            <label for="JS"> JavaScript </label><br>
+            <br>
+            <!-- input-type: radio -->
+            <label for="radio">Select option: </label> <br>
+            <input type="radio" name="radio_button" id="HTML">
+            <label for="HTML"> HTML </label><br>
+            <input type="radio" name="radio_button" id="CSS">
+            <label for="CSS"> CSS </label><br>
+            <input type="radio" name="radio_button" id="JS">
+            <label for="JS"> JavaScript </label><br>
+            <br>
+            <!-- Select tag -->
+            <label for="select">Choose any: </label>
+            <select name="value" id="select">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JavaScript</option>
+            </select>
+            <br><br>
+            <!-- textarea tag -->
+            <label for="add">Enter Address: </label>
+            <textarea name="address" id="add" cols="30" rows="5"></textarea>
+            <br><br>
+            <!-- Button tag -->
+            <button type="submit">submit</button>
+            <br><br>
+            <input type="button" value="Submit-input" />
+            <br><br>
+            <!-- fieldset-legend -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Enter name: </label>
+                <input type="text" name="name" id="name"> <br>
+                <br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <br><br>
+                <input type="button" value="Submit-input" />
+                <br>
+            </fieldset>
+            <br><br>
+            <!-- datalist -->
+            <!--   The <datalist> element is not supported in Internet Explorer 9 (and earlier versions), or Safari. -->
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit">
+            <br><br>
+            <!-- output -->
+            <!-- The <output> element is not supported in Internet Explorer / Edge. -->
+            <p>Calculate the Sum of the two Numbers</p>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="b" name="b" value="50" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">60</output>
+            </form>
+            <br><br>
+            <!-- optgroup -->
+            <label>Select your favourite brand</label><br>
+            <select>
+                <optgroup label="Laptop Maufacturur">
+                    <option value="dell">Dell</option>
+                    <option value="hp">HP</option>
+                    <option value="lenovo">Lenovo</option>
+                    <option value="acer">Acer</option>
+                </optgroup>
+                <optgroup label="Mobile Manufacturer">
+                    <option value="apple">Apple</option>
+                    <option value="nokia">Nokia</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="coolpad">Coolpad</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <!-- -----input tag other attributes---- -->
+            <!-- color -->
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <br><br>
+            <!-- email -->
+            <label for="email">Enter your e-mail: </label>
+            <input type="email" name="emalil-address" id="email">
+            <br><br>
+            <!-- image -->
+            <input type="image"
+                src="https://media.istockphoto.com/id/1443084117/photo/nail-art-colorful-flowers-manicure.jpg?b=1&s=170667a&w=0&k=20&c=BBd5Ji8U9HXUHzdeacc2kz9AeCiNYAoQLOffFEJkYSA="
+                alt="nail-art-colorful-flowers-manicure" width="100" height="60">
+            <br><br>
+            <!-- search -->
+            <input type="search" name="search" id="search" placeholder="search">
+            <br><br>
+            <!-- file -->
+            <input type="file" name="file" id="file">
+            <br><br>
+            <!-- hidden -->
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="submit" value="Submit">
+            <br><br>
+            <!-- number -->
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <br><br>
+            <!-- telephone -->
+            <label for="tel">Enter telephone: </label>
+            <input type="tel" name="telephone" id="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"">
+            <br><br>
+            <!-- date -->
+            <label for=" birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br><br>
+            <!-- time -->
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+            <br><br>
+            <!-- min and max date -->
+            <label for="datemax">Enter a date before 2003-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="2002-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+            <br><br>
+            <!-- date-time local -->
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <br><br>
+            <!-- month -->
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+            <br><br>
+            <!-- week -->
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+            <br><br>
+            <!-- keygen -->
+            <!-- used to specify key-pair genration feild in form 
+                secure way to authenticate the use 
+                generates two key public and private key
+            -->
+            Username: <input type="text" name="uname">
+            <br><br>
+            Encryption: <keygen name="secure">
+            <input type="submit">
+            <br><br>
+            <!-- audio -->
+            <audio controls>
+                <source src="horse.ogv" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br><br>
+            <!-- video -->
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <br><br>
+            <!--  -->
+    </div>
+</body>
+
+</html>

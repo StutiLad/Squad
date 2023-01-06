@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <!-- ---------- bootstarp css link ---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- ----------Custom CSS ---------- -->
+    <style>
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl,
+        .container-xxl {
+            border: 1px solid grey;
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+
+        .b-1 {
+            border: 1px solid lightseagreen;
+            background-color: rgba(135, 206, 250, 0.3);
+        }
+
+        .b-2 {
+            border: 1px solid lightgreen;
+            background-color: rgba(144, 238, 144, 0.349);
+        }
+
+        .b-3 {
+            border: 1px solid rgba(0, 0, 128, 0.479);
+            background-color: linen;
+        }
+
+        .callout-info {
+            border-left: 2px solid var(--bs-success);
+        }
+
+        h3,
+        h5 {
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .custom-col {
+            border: 1px solid pink;
+            background-color: rgba(255, 182, 193, 0.2);
+            padding: 10px 25px;
+            text-align: center;
+        }
+
+        .align .col {
+            border: 1px dotted navy;
+            padding: 5px;
+        }
+
+        .rowcol .col,
+        .rowcol .col-6 {
+            border: 1px solid grey;
+            background-color: lightcyan;
+        }
+
+        .sap {
+            border-bottom: 1px dashed olive;
+        }
+    </style>
+
+    <title>BootStrap-5</title>
+</head>
+
+<body>
+
+    <!-- ---------- Navbar ---------- -->
+
+    <nav class="navbar navbar-light m-auto" style="background-color: #e3f2fd;">
+        <div class="container-fluid flex-column">
+            <h2>Bootstrap-5</h2>
+            <h6>Day-1 : Container, Grid, Layout</h6>
+        </div>
+    </nav>
+
+    <!-- ---------- Containers ----------- -->
+
+    <div class="container-fluid my-3 justify-content-around">
+        <h3>Containers</h3>
+    </div>
+
+    <div class="container my-5">
+        <p>I'm container class</p>
+
+        <div class="callout-info p-2 mb-2">
+            This is a callout. We built it custom for our docs so our messages to you stand out.
+        </div>
+    </div>
+
+    <div class="container-sm my-5 py-3">100% wide until small breakpoint - less than 576px</div>
+    <div class="container-md my-5 py-3">100% wide until medium breakpoint - less than 768px</div>
+    <div class="container-lg my-5 py-3">100% wide until large breakpoint - less than 992px</div>
+    <div class="container-xl my-5 py-3">100% wide until extra large breakpoint - less than 1200px</div>
+    <div class="container-xxl my-5 py-3">100% wide until extra extra large breakpoint - less than 1400px</div>
+
+    <div class="sap"></div>
+
+    <!-- ---------- Container-fluid ----------- -->
+
+    <div class="container-fluid my-3 justify-content-around">
+        <h3>Conatiners-fluid</h3>
+    </div>
+
+    <div class="container-fluid b-1 my-5 py-3">
+        100% width at all the breakpoints.
+    </div>
+
+    <div class="sap"></div>
+
+    <!-- ---------- Grid System & Column ---------- -->
+
+    <div class="container-fluid my-3 justify-content-around ">
+        <h3>Grid System</h3>
+
+        <div class="container-fluid">
+            <div class="row my-3">
+                <div class="col-4 custom-col">col-4</div>
+                <div class="col-4 custom-col">col-4</div>
+                <div class="col-4 custom-col">col-4</div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-sm-4 custom-col">col-sm-4</div>
+                <div class="col-sm-4 custom-col">col-sm-4</div>
+                <div class="col-sm-4 custom-col">col-sm-4</div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-md-4 custom-col">col-md-4</div>
+                <div class="col-md-4 custom-col">col-md-4</div>
+                <div class="col-md-4 custom-col">col-md-4</div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-lg-4 custom-col">col-lg-4</div>
+                <div class="col-lg-4 custom-col">col-lg-4</div>
+                <div class="col-lg-4 custom-col">col-lg-4</div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-xl-4 custom-col">col-xl-4</div>
+                <div class="col-xl-4 custom-col">col-xl-4</div>
+                <div class="col-xl-4 custom-col">col-xl-4</div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-xxl-4 custom-col">col-xxl-4</div>
+                <div class="col-xxl-4 custom-col">col-xxl-4</div>
+                <div class="col-xxl-4 custom-col">col-xxl-4</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <h5>: Mix and match :</h5>
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="custom-col col-md-8">.col-md-8</div>
+            <div class="custom-col col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="custom-col col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="custom-col col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="custom-col col-6 col-md-4">.col-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+            <div class="custom-col col-6">.col-6</div>
+            <div class="custom-col col-6">.col-6</div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <h5>: Two columns with two nested columns :</h5>
+        <div class="row">
+            <div class="custom-col col-md-8">
+                col-md-8
+                <div class="row py-3">
+                    <div class="custom-col col-md-6">col-md-6</div>
+                    <div class="custom-col col-md-6">col-md-6</div>
+                </div>
+            </div>
+            <div class="custom-col col-md-4">col-md-4</div>
+        </div>
+    </div>
+
+    <div class="sap mt-5"></div>
+
+    <div class="container-fluid my-3 justify-content-around ">
+        <h3>Variable width content</h3>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2 b-1">
+                    1 of 3
+                </div>
+                <div class="col-md-auto b-2">
+                    Variable width content
+                </div>
+                <div class="col col-lg-2 b-3">
+                    3 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col b-1">
+                    1 of 3
+                </div>
+                <div class="col-md-auto b-2">
+                    Variable width content
+                </div>
+                <div class="col col-lg-2 b-3">
+                    3 of 3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sap mt-5"></div>
+
+    <div class="align container-fluid my-3 justify-content-around ">
+        <h3>Alignment of Columns</h3>
+
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+            </div>
+            <div class="row align-items-end">
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+                <div class="col">
+                    One of three columns
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row justify-content-start my-1">
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-center my-1">
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-end my-1">
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-around my-1">
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-between my-1">
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+            </div>
+            <div class="row justify-content-evenly my-1">
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+                <div class="col-4 b-1 p-2 m-1">
+                    One of two columns
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sap mt-5"></div>
+
+    <!-- ---------- Gutter ----------- -->
+
+    <div class="gutter container-fluid my-4 justify-content-around ">
+        <h3>Gutter</h3>
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mt-1 mb-3">
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Row column</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h5>: Vertical gutter :</h5>
+        <div class="container">
+            <div class="row gy-5 mt-2 mb-3">
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sap mt-5"></div>
+
+    <div class="rowcol container-fluid my-4 justify-content-around ">
+        <h3>Row columns</h3>
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row row-cols-3">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row row-cols-auto">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row row-cols-4">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col-6">Column-6</div>
+                <div class="col">Column</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">Column, sm-2 and md-4</div>
+                <div class="col">Column, sm-2 and md-4</div>
+                <div class="col">Column, sm-2 and md-4</div>
+                <div class="col">Column, sm-2 and md-4</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sap"></div>
+
+    <div class="container-fluid my-4 justify-content-around ">
+        <h3>Column breaks</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3 py-2 b-1">.col-6 .col-sm-3</div>
+                <div class="col-6 col-sm-3 py-2 b-1">.col-6 .col-sm-3</div>
+
+                <!-- Force next columns to break to new line -->
+                <div class="w-100"></div>
+
+                <div class="col-6 col-sm-3 py-2 b-1">.col-6 .col-sm-3</div>
+                <div class="col-6 col-sm-3 py-2 b-1">.col-6 .col-sm-3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sap"></div>
+
+    <div class="container-fluid my-4 justify-content-around ">
+        <h3>Order</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col b-1 py-2">
+                    First in DOM, no order applied
+                </div>
+                <div class="col order-5 b-1 py-2">
+                    Second in DOM, with a larger order
+                </div>
+                <div class="col order-1 b-1 py-2">
+                    Third in DOM, with an order of 1
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sap"></div>
+
+    <div class="container-fluid my-4 justify-content-around ">
+        <h3>Column wrapping</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-9 b-3">.col-9</div>
+                <div class="col-4 b-3">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a
+                    new
+                    line as one contiguous unit.</div>
+                <div class="col-6 b-3">.col-6<br>Subsequent columns continue along the new line.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sap"></div>
+
+    <div class="container-fluid my-4 justify-content-around ">
+        <h3>Offset classes</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 b-2 py-2">.col-md-4</div>
+                <div class="col-md-4 offset-md-4 b-2 py-2">.col-md-4 .offset-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-3 b-2 py-2">.col-md-3 .offset-md-3</div>
+                <div class="col-md-3 offset-md-3 b-2 py-2">.col-md-3 .offset-md-3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 b-2 py-2">.col-md-6 .offset-md-3</div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-6 b-1 py-2">.col-sm-5 .col-md-6</div>
+                <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 b-1 py-2">.col-sm-5 .offset-sm-2 .col-md-6
+                    .offset-md-0</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-5 col-lg-6 b-1 py-2">.col-sm-6 .col-md-5 .col-lg-6</div>
+                <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 b-1 py-2">.col-sm-6 .col-md-5
+                    .offset-md-2 .col-lg-6 .offset-lg-0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sap"></div>
+
+    <div class="container-fluid my-4 justify-content-around ">
+        <h3>Standalone column classes</h3>
+        <div class="col-3 bg-light p-3 border">
+            .col-3: width of 25%
+        </div>
+        <div class="col-sm-9 bg-light p-3 border">
+            .col-sm-9: width of 75% above sm breakpoint
+        </div>
+        <br><br>
+        <div class="clearfix">
+            <img src=".." class="col-md-6 float-md-end mb-3 ms-md-3" alt="Responsive image"
+                style="background-color: rgba(128, 128, 128, 0.432); width: 500px; height: 300px;">
+
+            <p>
+                A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding
+                quite a few meaningless phrases here to demonstrate how the columns interact here with the floated
+                image.
+            </p>
+
+            <p>
+                As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look
+                with some actual content in here, rather than just this boring placeholder text that goes on and on, but
+                actually conveys no tangible information at. It simply takes up space and should not really be read.
+            </p>
+
+            <p>
+                And yet, here you are, still persevering in reading this placeholder text, hoping for some more
+                insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that
+                here.
+            </p>
+
+            <p>
+                Laborum excepteur cillum ea ea pariatur deserunt pariatur anim est. Lorem aute id dolor aute et magna
+                veniam consequat enim veniam aute incididunt dolor labore. Dolor proident fugiat proident aute dolor ea
+                aute mollit quis esse labore cillum. Ad nisi proident voluptate cupidatat velit ullamco sit esse
+                consequat.
+
+                Nisi fugiat excepteur anim Lorem cillum. Deserunt et officia non id amet fugiat voluptate aute. Officia
+                nostrud adipisicing aliquip ipsum est proident dolor aliquip dolore veniam ipsum. Exercitation dolor
+                minim sunt esse est quis et incididunt minim eu. Occaecat velit amet sunt laborum quis reprehenderit
+                laborum ut exercitation.
+            </p>
+            <p>
+                Nostrud est ullamco deserunt id duis aliqua enim laborum dolor exercitation laboris. Ut ut laborum magna
+                quis eiusmod eu consectetur cillum dolor fugiat ex ullamco do ex. Id Lorem ut consequat sit tempor esse
+                occaecat. Quis dolor exercitation esse eu. Pariatur tempor sint nisi et velit non esse sit adipisicing
+                ad consequat incididunt nulla laboris.
+
+                Esse nostrud reprehenderit esse excepteur ad aliqua do velit veniam fugiat consectetur sint. Anim
+                reprehenderit duis deserunt et laborum et id Lorem commodo in pariatur eiusmod dolore. Occaecat
+                consectetur ullamco culpa sunt ad. Est consectetur aliqua id cillum fugiat id laborum quis tempor. Ipsum
+                excepteur fugiat sunt duis dolor consectetur nisi in nulla exercitation ex culpa in.
+            </p>
+        </div>
+    </div>
+
+    <!-- ----------Bootstrap Bundle with Popper---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

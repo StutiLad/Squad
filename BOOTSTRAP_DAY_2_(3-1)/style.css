@@ -1,0 +1,69 @@
+h2,
+table tr td,
+table tr th {
+    text-align: center;
+}
+
+.main .main-title {
+    font-size: 20px;
+    text-decoration: 1px dashed underline rebeccapurple;
+}
+
+.main .sub-title {
+    text-decoration: 1px double underline purple;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.sap {
+    border-bottom: 1px dashed olive;
+}
+
+.list .dla {
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+.images img {
+    width: 100px;
+    height: 100px;
+}
+
+.images img[alt="logo"] {
+    width: 200px;
+    height: 200px;
+}
+
+.images .fig img {
+    width: 250px;
+    height: 250px;
+}
+
+.images table tr td,
+.images table tr th {
+    border: 1px solid grey;
+}
+
+.title {
+    text-decoration: 1px dotted underline crimson;
+    font-size: 20px;
+}
+
+.list-grp .table-2 {
+    width: 50%;
+    margin: auto;
+}
+
+.list-grp .table-2 tr td {
+    text-align: left !important;
+}
+
+.list-grp .table-1 tr td,
+.list-grp .table-1 tr th {
+    width: 25%;
+}
+
+.forms .sub-title{
+    color:sienna;
+}

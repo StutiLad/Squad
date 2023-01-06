@@ -1,0 +1,216 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* root selector */
+:root{
+    --black-color: black;
+}
+
+/* target selector */
+.target a:link{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.target a:hover{
+    background-color: var(--black-color);
+    color: white;
+}
+
+.target a:visited{
+    color: purple;
+}
+
+.target a:active{
+    background-color: cornflowerblue;
+}
+
+/* -----Combinator selector----- */
+#combi-select h2 {
+    color: darkgoldenrod;
+}
+
+#combi-select h4 {
+    color: darkcyan;
+}
+
+/* Direct child */
+
+#combi-select ul>li {
+    color: red;
+}
+
+/* Adjacent Sibling */
+#combi-select ul+p {
+    color: purple;
+}
+
+/* general Sibling */
+#combi-select ul~pre {
+    color: darkblue;
+}
+
+/* -----Attribute selector----- */
+#attr table {
+    text-align: center;
+}
+
+#attr table td {
+    padding: 15px;
+}
+
+#attr img {
+    height: 200px;
+    width: 300px;
+}
+
+#attr input[name] {
+    border: solid 5px darkgreen;
+}
+
+#attr label[for="address"] {
+    color: red;
+}
+
+#attr img[alt^="image"] {
+    border: 5px solid darkblue;
+}
+
+#attr img[alt|="Image"] {
+    border: 5px solid darkgoldenrod;
+}
+
+#attr img[alt$="girl"] {
+    border: 5px solid purple;
+}
+
+#attr img[alt*="pic"] {
+    border: 5px solid darkcyan;
+}
+
+#attr img[alt~="image"] {
+    border: 5px solid saddlebrown;
+}
+
+/* -----Pseudo-element Selectors----- */
+#element p {
+    text-indent: 20px;
+}
+
+#element p::first-letter {
+    font-size: 30px;
+    color: purple;
+    font-weight: 700;
+}
+
+#element p::first-line {
+    color: darkgreen;
+}
+
+#element p::selection {
+    background-color: plum;
+}
+
+#element ::placeholder {
+    color: darkred;
+}
+
+#element label::before {
+    content: 'Information';
+    display: block;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#element pre::after,
+#element Pre::before {
+    content: '"';
+    font-weight: bold;
+}
+
+/* -----Pseudo-class Selectors----- */
+#pseudo-class{
+    font-size: 17px;
+}
+
+/* empty selector */
+div:empty{
+    border: 1px dashed black;
+}
+
+/* child selector */
+#pseudo-class .fl-child li:first-child,
+#pseudo-class .fl-child li:last-child {
+    color: red;
+}
+#pseudo-class .fl-child li:only-child{
+    color: darkorange;
+}
+
+
+#pseudo-class .nth-child li:nth-child(2n){
+    color: blue;
+}
+
+#pseudo-class .nth-child li:nth-last-child(2){
+    color: purple;
+}
+
+/* type of selectors */
+#pseudo-class .type-of p:nth-of-type(2n+1){
+    color: green;
+}
+
+#pseudo-class .type-of li:nth-last-of-type(2n){
+    color: blueviolet;
+}
+
+#pseudo-class .type-of li:only-of-type{
+    color: crimson;
+}
+
+#pseudo-class .fl-type-of p:first-of-type{
+    color: darkblue;
+}
+
+#pseudo-class .fl-type-of li:last-of-type{
+    color: red;
+}
+
+/* not selector */
+#pseudo-class .not p:not(.fr){
+    color:indigo
+}
+
+/* Language selector */
+#pseudo-class .lang p:lang(en){
+    color: red;
+}
+
+#pseudo-class .lang p:lang(fr){
+    color: darkblue;
+}
+
+#pseudo-class .lang p:lang(de){
+    color: darkorange;
+}
+
+/* Form related Selector */
+#pseudo-class .form form input:focus,
+#pseudo-class .form form textarea:focus{
+    border: 5px solid red;
+}
+
+#pseudo-class .form form input:in-range{
+    color: green;
+}
+
+#pseudo-class .form form input:out-of-rang{
+    color: red;
+    background-color: darksalmon;
+}
+
+#pseudo-class .form form input[type="radio"]:checked{
+    box-shadow: 0 0 0 2px green;
+}
