@@ -10,29 +10,31 @@ window.addEventListener('load', function () {
 
         responsive: [
             {
-                breakpoint: 200,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                 },
             },
             {
-                breakpoint: 550,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 },
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 3,
                 },
             },
         ],

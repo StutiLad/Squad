@@ -75,7 +75,7 @@
 }
 
 .rooms_areas .card .card-img-overlay:hover {
-   background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .rooms_areas .card:hover h5 {
@@ -169,16 +169,26 @@
     color: var(--white-color);
 }
 
-.offer_area  .col {
+.offer_area .col {
     background-size: cover;
 }
 
-.offer_area  .glider .col-4{
-    margin: 0;
+.offer_area .glider .col-4 div {
+    padding: 0 20px;
 }
 
-.offer_area .glider #dot{
-    color: var(--orange-color);
+.offer_area #dots {
+    margin-top: 15px;
+}
+
+.offer_area #dots .glider-dot {
+    background-color: var(--orange-color);
+}
+
+
+button.glider-dot.active {
+    border: 2px solid var(--orange-color) !important;
+    background-color: var(--blue-background) !important;
 }
 
 .offer_area .card {
@@ -188,10 +198,11 @@
     width: 100%;
 }
 
-.offer_area .card .section-content{
-    padding-bottom: 2rem;
-    padding-left: 2rem;
+.offer_area .card .section-content {
+    padding-bottom: 2rem !important;
+    padding-left: 2rem !important;
 }
+
 .offer_area .card div {
     display: flex;
     align-content: space-around;
@@ -215,24 +226,25 @@
     opacity: 0;
     overflow: hidden;
     transform: translateY(0rem);
-} 
+}
 
 .offer_area .card .card-img-overlay:hover {
-   background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .offer_area .card:hover h5 {
-    transition: transform  var(--e);
+    transition: transform var(--e);
     position: absolute;
     opacity: 1;
     transform: translateY(-9.5rem);
-} 
+}
 
 .offer_area .card:hover .card-content {
     transition: transform var(--d * 0.5) var(--e * 0.5);
     position: absolute;
     opacity: 1;
     transform: translateY(-1rem);
+    padding-left: 0px;
 }
 
 .offer-card-1 .card {
