@@ -34,7 +34,9 @@
 .bold {
     font-weight: bold;
 }
-
+.b-200{
+    font-weight: 200 !important;
+}
 .b-500 {
     font-weight: 500;
 }
@@ -52,6 +54,7 @@
 }
 
 .section-content .section-text p {
+    font-weight: lighter;
     text-align: center;
     line-height: 30px;
     font-size: 14px;
@@ -122,3 +125,10 @@
 }
 
 
+/* card */
+
+.card .card-content p {
+    line-height: 25px;
+    font-weight: 300;
+    margin-top: 0.2rem;
+}
