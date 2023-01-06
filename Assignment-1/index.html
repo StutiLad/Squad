@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ---------- Bootstrap CSS ---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- ---------- Font Awesome ---------- -->
+    <script src="https://kit.fontawesome.com/e80fe362c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ---------- Glider CSS ---------- -->
+    <!-- <link rel="stylesheet" href="./css/glider.min.css"> -->
+
+    <!-- ---------- Custom CSS ---------- -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>Hotels</title>
+</head>
+
+<body>
+
+    <!-- ========== Navigation Arae ========== -->
+    <header class="header_area my-1">
+        <div class="main_nav">
+            <nav class="navbar navbar-expand-xxl navbar-light" aria-label="Seventh navbar example">
+                <div class="container-fluid">
+                    <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand text-center m-auto " href="#">
+                        <h3 class="bold mb-0">Demo</h3>
+                        <h6 class="b-500 mb-0">Hotels</h6>
+                    </a>
+                    <button class="btn nav-btn bold">Book Now</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== Main Area ========== -->
+
+    <div class="main_area">
+
+        <!-- ---------- Banner Area ---------- -->
+        <section class="banner_area">
+            <div class="container-fluid p-0">
+                <div class="banner-img">
+                    <img src="./images/banner.jpg" alt="banner" class="img-fluid w-100">
+                </div>
+            </div>
+            <div class="container base-p banner-content">
+                <div class="row align-content-cente">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10 col-md-12 col-sm-12">
+                        <div class="section-content">
+                            <div class="section-text ">
+                                <p class="text-center mx-5 px-5 text-capitalize">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perferendis
+                                    tenetur
+                                    repellat, quaerat cupiditate quos reprehenderit. Veritatis obcaecati vero cumque
+                                    similique maxime, praesentium, alias pariatur, accusamus voluptas rem culpa ea.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row service base-1 ">
+                            <div class="col-lg-12 col-md-12 d-inline-flex justify-content-around align-items-center">
+                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                    <div class="w-100">
+                                        <div class="icon-section">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-wifi"></i>
+                                            </div>
+                                            <div class="icon-text">
+                                                <p>Fast WIFI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                    <div class="w-100">
+                                        <div class="icon-section">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-bath"></i>
+                                            </div>
+                                            <div class="icon-text">
+                                                <p>Bath</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                    <div class="w-100">
+                                        <div class="icon-section">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-bell-concierge"></i>
+                                            </div>
+                                            <div class="icon-text">
+                                                <p>24/7 Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                    <div class="w-100">
+                                        <div class="icon-section">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-mug-hot"></i>
+                                            </div>
+                                            <div class="icon-text">
+                                                <p>Breakfast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                    <div class="w-100">
+                                        <div class="icon-section">
+                                            <div class="icon">
+                                                <i class="fa-solid fa-shield"></i>
+                                            </div>
+                                            <div class="icon-text">
+                                                <p>Safety</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- Rooms Area ---------- -->
+        <section class="rooms_areas base">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2"></div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="section-content">
+                            <div class="section-title">
+                                <h3 class="bold mb-4">Rooms</h3>
+                            </div>
+                            <div class="section-text">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo explicabo qui minima
+                                    vel reprehenderit quis eveniet.
+                                    similique consequatur reprehenderit quaerat facere nesciunt quibusdam? Hic?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2"></div>
+                </div>
+
+                <div class="row mt-5 mx-2">
+
+                    <!-- ----- Room Card-1 ----- -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="room-card-1">
+                            <div class="card text-white rounded-0">
+                                <div class="card-img-overlay section-content">
+                                    <h5 class="card-title title">Cozy</h5>
+                                    <div class="card-content section-text text-center">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <button class="card-btn mt-3 btn rounded-0">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----- Room Crad-2 -----  -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="room-card-2">
+                            <div class="card text-white rounded-0">
+                                <div class="card-img-overlay section-content">
+                                    <h5 class="card-title">Comfy</h5>
+                                    <div class="card-content section-text text-center">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <button class="card-btn mt-3 btn card-text rounded-0">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----- Card-3 ----- -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="room-card-3">
+                            <div class="card text-white rounded-0">
+                                <div class="card-img-overlay section-content">
+                                    <h5 class="card-title">Roomy</h5>
+                                    <div class="card-content section-text text-center">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <button class="card-btn mt-3 btn rounded-0">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- Places ---------- -->
+        <section class="places base pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2"></div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="section-content">
+                            <div class="section-title">
+                                <h3 class="bold mb-4">Around Kensington</h3>
+                            </div>
+                        </div>
+                        <div class="place-filter">
+                            <span class="filter-item active" data-filter="all">Go</span>
+                            <span class="filter-item" data-filter="rooms">eat</span>
+                            <span class="filter-item" data-filter="amenities">drink</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2"></div>
+                </div>
+
+                <div class="places-card row row-cols-1 row-cols-md-2 g-5 mt-3">
+                    <!-- hyde park-1 -->
+                    <div class="col places-card-1">
+                        <div class="card rounded-0 me-4">
+                            <img src="./images/places/hyde park.jpg" class="card-img-top rounded-0" alt="hyde park">
+                            <div class="card-body section-content text-start ps-0 ">
+                                <h5 class="card-title section-title bolder text-start">Hyde park</h5>
+                                <div class="section-text text-start ">
+                                    <p class="card-text text-start ms-0">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eveniet corrupti harum iure nisi itaque, aspernatur fuga natus
+                                        perferendis repellendus nesciunt aliquid cumque sit sapiente tempora iste,
+                                        mollitia laborum reprehenderit? Voluptatem!</p>
+                                    <div class="card-icon mt-3">
+                                        <span class="me-2"><i class="fa-solid fa-location-dot me-2"></i>1.3 mile</span>
+                                        <a href="#" class="ms-2"><i class="fa-solid fa-location-arrow me-2"></i>Get
+                                            Direction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- harrods-1  -->
+                    <div class="col places-card-2">
+                        <div class="card rounded-0 ms-4">
+                            <img src="./images/places/harrods.jpg" class="card-img-top rounded-0" alt="harrods">
+                            <div class="card-body section-content text-start ps-0 ">
+                                <h5 class="card-title section-title bolder text-start">Harrods</h5>
+                                <div class="section-text text-start ">
+                                    <p class="card-text text-start ms-0">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eveniet corrupti harum iure nisi itaque, aspernatur fuga natus
+                                        perferendis repellendus nesciunt aliquid cumque sit sapiente tempora iste,
+                                        mollitia laborum reprehenderit? Voluptatem!</p>
+                                    <div class="card-icon mt-3">
+                                        <span class="me-2"><i class="fa-solid fa-location-dot me-2"></i>1.2 mile</span>
+                                        <a href="#" class="ms-2"><i class="fa-solid fa-location-arrow me-2"></i>Get
+                                            Direction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- harrods-2 -->
+                    <div class="col places-card-3">
+                        <div class="card rounded-0 me-4">
+                            <img src="./images/places/harrods.jpg" class="card-img-top rounded-0" alt="harrods">
+                            <div class="card-body section-content text-start ps-0 ">
+                                <h5 class="card-title section-title bolder text-start">Harrods</h5>
+                                <div class="section-text text-start ">
+                                    <p class="card-text text-start ms-0">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eveniet corrupti harum iure nisi itaque, aspernatur fuga natus
+                                        perferendis repellendus nesciunt aliquid cumque sit sapiente tempora iste,
+                                        mollitia laborum reprehenderit? Voluptatem!</p>
+                                    <div class="card-icon mt-3">
+                                        <span class="me-2"><i class="fa-solid fa-location-dot me-2"></i>1.2 mile</span>
+                                        <a href="#" class="ms-2"><i class="fa-solid fa-location-arrow me-2"></i>Get
+                                            Direction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- hyde park-2 -->
+                    <div class="col places-card-4">
+                        <div class="card rounded-0 ms-4">
+                            <img src="./images/places/hyde park.jpg" class="card-img-top rounded-0" alt="hyde park">
+                            <div class="card-body section-content text-start ps-0 ">
+                                <h5 class="card-title section-title bolder text-start">Hyde park</h5>
+                                <div class="section-text text-start ">
+                                    <p class="card-text text-start ms-0">Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Eveniet corrupti harum iure nisi itaque, aspernatur fuga natus
+                                        perferendis repellendus nesciunt aliquid cumque sit sapiente tempora iste,
+                                        mollitia laborum reprehenderit? Voluptatem!</p>
+                                    <div class="card-icon mt-3">
+                                        <span class="me-2"><i class="fa-solid fa-location-dot me-2"></i>1.3 mile</span>
+                                        <a href="#" class="ms-2"><i class="fa-solid fa-location-arrow me-2"></i>Get
+                                            Direction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ---------- Offers ---------- -->
+        <section class="offer_area base-p">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2"></div>
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <div class="section-content">
+                            <div class="section-title">
+                                <h3 class="bold mb-4">Offers</h3>
+                            </div>
+                            <div class="section-text">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo explicabo qui minima
+                                    vel reprehenderit quis eveniet.
+                                    similique consequatur reprehenderit quaerat facere nesciunt quibusdam? Hic?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2"></div>
+                </div>
+
+                <div class="row mt-5 mx-2">
+
+                    <!-- ----- Room Card-1 ----- -->
+                    <div class="col-4">
+                        <div class="room-card-1">
+                            <div class="card text-white rounded-0">
+                                <div class="card-img-overlay section-content">
+                                    <h5 class="card-title">Cozy</h5>
+                                    <div class="card-content section-text text-center">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <button class="card-btn mt-3 btn rounded-0">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----- Room Crad-2 -----  -->
+                    <div class="col-4">
+                        <div class="room-card-2">
+                            <div class="card text-white rounded-0">
+                                <div class="card-img-overlay section-content">
+                                    <h5 class="card-title">Comfy</h5>
+                                    <div class="card-content section-text text-center">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <button class="card-btn mt-3 btn card-text rounded-0">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----- Card-3 ----- -->
+                    <div class="col-4">
+                        <div class="room-card-3">
+                            <div class="card text-white rounded-0">
+                                <div class="card-img-overlay section-content">
+                                    <h5 class="card-title">Roomy</h5>
+                                    <div class="card-content section-text text-center">
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <button class="card-btn mt-3 btn rounded-0">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- About ---------- -->
+        <section class="about_area base">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- <div class="col-2"></div> -->
+                    <div class="col-12">
+                        <div class="section-content text-center">
+                            <div class="section-title">
+                                <h3 class="bold mb-4"><i class="fa fa-instagram  bold mx-1"></i> Demo Hotels</h3>
+                            </div>
+                        </div>
+                        <div class="about-carousel mt-3">
+                            <div class="row">
+
+                                <!-- ----- img-1 ----- -->
+                                <div class="col-2">
+                                    <div class="card text-white">
+                                        <img src="./images/about/img-1.jpg"
+                                            class="card-img img-thumbnail rounded-0 border-0 px-2  " alt="window">
+                                        <div class="card-img-overlay text-end">
+                                            <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ----- img-2 ----- -->
+                                <div class="col-2">
+                                    <div class="card text-white">
+                                        <img src="./images/about/img-2.jpg"
+                                            class="card-img img-thumbnail rounded-0 border-0 px-2  " alt="couple">
+                                        <div class="card-img-overlay text-end">
+                                            <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- ----- img-3 ----- -->
+                                <div class="col-2">
+                                    <div class="card text-white">
+                                        <img src="./images/about/img-3.jpg"
+                                            class="card-img img-thumbnail rounded-0 border-0 px-2  " alt="building">
+                                        <div class="card-img-overlay text-end">
+                                            <h5 class="card-title"><i class="fa fa-instagram mx-1"></i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ----- img-4 ----- -->
+                                <div class="col-2">
+                                    <div class="card text-white">
+                                        <img src="./images/about/img-4.jpg"
+                                            class="card-img img-thumbnail rounded-0 border-0 px-2  " alt="couple">
+                                        <div class="card-img-overlay text-end">
+                                            <h5 class="card-title"><i class="fa fa-instagram mx-1"></i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ----- img-5 ----- -->
+                                <div class="col-2">
+                                    <div class="card text-white">
+                                        <img src="./images/about/img-5.jpg"
+                                            class="card-img img-thumbnail rounded-0 border-0 px-2  " alt="house">
+                                        <div class="card-img-overlay text-end">
+                                            <h5 class="card-title"><i class="fa fa-instagram mx-1"></i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ----- img-6 ----- -->
+                                <div class="col-2">
+                                    <div class="card text-white">
+                                        <img src="./images/about/img-6.jpg"
+                                            class="card-img img-thumbnail rounded-0 border-0 px-2   px-2" alt="burger">
+                                        <div class="card-img-overlay text-end">
+                                            <h5 class="card-title"><i class="fa fa-instagram mx-1"></i>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div class="col-2"></div> -->
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn about-btn  rounded-0 mx-2">Follow Us</button>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <!-- ========== Footer Area ========== -->
+
+    <footer class="footer base-p">
+        <div class="container">
+            <div class="row mb-0">
+                <div class="col-lg-5 col-md-4 col-sm-12">
+                    <div class="footer-left me-4">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                <div class="section-content">
+                                    <div class="section-title text-start">
+                                        <h5 class="bolder">Your Stay</h5>
+                                    </div>
+                                    <div class="section-text text-start">
+                                        <ul class="ps-0">
+                                            <li>Rooms</li>
+                                            <li>Food & Bevereges</li>
+                                            <li>Offer</li>
+                                            <li>Booking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5  col-md-6 col-sm-6 ">
+                                <div class="section-content ms-5 ">
+                                    <div class="section-title text-start">
+                                        <h5 class="bolder">About</h5>
+                                    </div>
+                                    <div class="section-text text-start">
+                                        <ul class="ps-0">
+                                            <li>Home</li>
+                                            <li>About Us</li>
+                                            <li>Contact Us</li>
+                                            <li>Careers</li>
+                                            <li>FAQs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2"></div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-lg-5 col-md-12 col-sm-12 ps-0">
+                                <div class="section-content">
+                                    <div class="section-title text-start">
+                                        <h5 class="bolder">contact</h5>
+                                    </div>
+                                    <div class="section-text text-start">
+                                        <ul class="ps-0">
+                                            <li>Donec facilisis tortor ut augue.</li>
+                                            <li class="mt-3"><a href="tel:+012 345 67890">T: 012 345 67890</a></li>
+                                            <li class="mt-1"><a href="mailto: demo@hotel.com">E: demo@hotel.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-2"></div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <div class="col-lg-5 col-md-12 col-sm-12 ps-0">
+                                <div class="section-content">
+                                    <div class="section-title text-start">
+                                        <h5 class="bolder">Follow Us</h5>
+                                    </div>
+                                    <div class="section-text text-start">
+                                        <ul class="follow-icon ps-0 mt-2">
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5"></div>
+                            <div class="col-lg-2"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-8 col-sm-12">
+                    <div class="footer-right ms-4">
+                        <div class="search-bar footer-content">
+                            <div class="search-title footer-title">
+                                <h5 class="bold">Join our newsletter</h5>
+                            </div>
+                            <div class="footer-text footer-input">
+                                <input type="email" class="form-control bg-transparent border-0 rounded-0 w-75"
+                                    id="exampleFormControlInput1" placeholder="Enter your email address">
+                                <button type="button" class="btn footer-btn w-25 rounded-0">Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="footer-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.497351082705!2d12.565449514896398!3d44.07308703319639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cc384e67d4ef5%3A0x3999cb40b36d295e!2sDemo%20Hospitality!5e0!3m2!1sen!2sin!4v1672834844343!5m2!1sen!2sin"
+                                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <div class="direction mt-3 show-m">
+                                <a href="#"><i class="fa-solid fa-location-arrow me-2"></i>Get Direction</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"> <!-- mx-0 px-0 -->
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="copyrights">
+                        <p>&copy; 2022 Demo hotels. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="direction ms-4 show-l">
+                        <a href="#"><i class="fa-solid fa-location-arrow me-2"></i>Get Direction</a>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ---------- Bootstrap JS ---------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- ---------- Glider JS ---------- -->
+    <script src="./js/glider.min.js"></script>
+</body>
+
+</html>
