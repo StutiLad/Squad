@@ -42,9 +42,17 @@
         margin-top: 2rem;
     }
 
+    .footer-left .col-sm-6.ps-0 {
+        padding-left: 13px !important;
+    }
+
     .footer-abt,
     .card {
         margin-top: 1rem;
+    }
+
+    .fr {
+        margin-top: 2rem !important;
     }
 
     .card-icon {
@@ -55,7 +63,8 @@
         margin-right: 10px !important;
     }
 
-    .card-icon span i,.card-icon a i {
+    .card-icon span i,
+    .card-icon a i {
         margin-right: 8px !important;
     }
 
@@ -98,7 +107,7 @@
         margin-top: 0rem !important;
     }
 
-    .mt-5{
+    .mt-5 {
         margin-top: 1rem !important;
     }
 
@@ -106,8 +115,8 @@
         margin-left: 0rem !important;
     }
 
-    .ms-4{
+    .ms-4 {
         margin: 0 !important;
     }
-    
+
 }
