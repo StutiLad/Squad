@@ -30,7 +30,9 @@ img {
 .center h3,
 .autoplay h3,
 .add-remove h3,
-.filtering h3 {
+.filtering h3,
+.single-item-rtl h3,
+.extra h3 {
     background: rgba(2, 2, 49, 0.212);
     color: #080346;
     font-size: 36px;
@@ -56,13 +58,6 @@ img {
     width: 100%;
 }
 
-.single-item-rtl h3 {
-    background: rgba(2, 2, 49, 0.212);
-    color: #080346;
-    font-size: 36px;
-    line-height: 100px;
-    margin: 10px;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-}
+
+
+  
