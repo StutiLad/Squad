@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Custom Tooltip</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Toottip CSS -->
+    <link rel="stylesheet" href="./css/tooltipster.bundle.min.css">
+
+    <!-- Tooltip themes -->
+    <link rel="stylesheet" href="./css/themes/tooltipster-sideTip-borderless.min.css">
+    <link rel="stylesheet" href="./css/themes/tooltipster-sideTip-light.min.css">
+    <link rel="stylesheet" href="./css/themes/tooltipster-sideTip-noir.min.css">
+    <link rel="stylesheet" href="./css/themes/tooltipster-sideTip-punk.min.css">
+    <link rel="stylesheet" href="./css/themes/tooltipster-sideTip-shadow.min.css">
+
+
+    <script src="https://kit.fontawesome.com/e80fe362c8.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <div class="navbar navbar-light justify-content-center" style="background-color: #e3f2fd;">
+            <a class="navbar-brand text-center " href="#">
+                <h3 class="fw-500">PLUGINS: CUSTOM TOOLTIPS</h3>
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 mt-5">
+                    <!-- Default -->
+                    <div class="section">
+                        <div class="circle default" title="Hey..! This is default tooltip..! 	&#128516;">
+                            Hover
+                        </div>
+                        <div class="text">
+                            <span class="mx-2">-</span> This is default tooltip with default theme
+                        </div>
+                    </div>
+
+                    <!-- HTML tags inside tooltip -->
+                    <div class="section">
+                        <div class="circle tags-1">
+                            Hover
+                        </div>
+                        <div class="text">
+                            <span class="mx-2">-</span> HTML tags inside tooltip (jquery - content)
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="circle tags-2"
+                            title=" &lt;span&gt; Hey...! This is from &lt;strong&gt;title tag &lt;/strong&gt;...!  &#128516; &lt;/span&gt;">
+                            Hover
+                        </div>
+                        <div class="text">
+                            <span class="mx-2">-</span> HTML tags inside title tag <span>(jquery - contentAsHTML)</span>
+                        </div>
+                    </div>
+
+                    <!-- Customizing Tooltipster's Functionality -->
+                    <h4 class="my-5">Customizing Tooltipster's Functionality</h4>
+
+                    <div class="section">
+                        <div class="circle t-1">
+                            Hover
+                        </div>
+                        <div class="text">
+                            <span class="mx-2">-</span> Animation With position, theme
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="circle t-2">
+                            Hover
+                        </div>
+                        <div class="text">
+                            <span class="mx-2">-</span> Hide on click
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="circle t-3"
+                            title="Hey...! I'm a &lt;a href='http://google.com/' target='_blank'&gt;LINK&lt;/a&gt; ...!  &#128516;">
+                            Click
+                        </div>
+                        <div class="text">
+                            <span class="mx-2">-</span> click event & Interaction with tooltip
+                        </div>
+                    </div>
+
+                    <div class="section icon">
+                        <div class="circle">
+                            Hover
+                        </div>
+                        <i class="fa-regular fa-heart t-4 circle-2"></i>
+                        <div class="text">
+                            <span class="mx-2">-</span> Icons
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <!-- ================================================ -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <hr>
+                    <h5>Practice</h5>
+
+                    <img src="./img-3.jpg" height="200px" width="200px" class=" img-fluid tooltips mt-5"
+                        title="This is my image's tooltip message!" />
+
+                    <div id="my-tool" class="mt-5">
+                        This div has a tooltip with HTML when you hover over it!
+                    </div>
+
+                    <div class="tool mt-5"
+                        title="&lt;img src=&quot;img-3.jpg&quot;  height= &quot;200px&quot; width=&quot;200px&quot; /&gt; &lt;strong&gt; This text is in bold case !&lt;/strong&gt; ">
+                        This div has a tooltip with HTML when you hover over it!
+                    </div>
+
+                    <div class="mt-5">
+                        <span class="tooltipster-punk-preview" target="_blank" title="hey there">
+                            punk
+                        </span>
+                    </div>
+
+
+                    <div class="custom my-5">
+                        <span class="my-custom-theme" target="_blank" title="hey there I'm custom hover...!">
+                            Custom...! hover me..!
+                        </span>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- Jquery Librarie-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+
+
+    <!-- Tooltip JS -->
+    <!-- <script src="./js/tooltipster.main.min.js"></script> -->
+    <script src="./js/tooltipster.bundle.min.js"></script>
+
+</body>
+
+<script>
+
+    $(document).ready(function () {
+        $('.default').tooltipster({});
+
+        // inside HTML tags
+        $('.tags-1').tooltipster({
+            content: $('<span>Hey...! This content is from <strong>Jquery</strong> ..! &#128516;</span>')
+        });
+
+        $('.tags-2').tooltipster({
+            contentAsHTML: true
+        });
+
+        // Customizing Tooltipster's Functionality
+
+        // multiple
+        $('.t-1').tooltipster({
+            animation: 'swing',
+            multiple: true,
+            content: 'Swing-Top',
+            speed: 100,
+            position: 'top',
+            theme: 'tooltipster-punk'
+        });
+        $('.t-1').tooltipster({
+            multiple: true,
+            content: 'Grow-Bottom',
+            animation: 'grow',
+            delay: 500,
+            position: 'bottom',
+            theme: 'tooltipster-light'
+        });
+        $('.t-1').tooltipster({
+            multiple: true,
+            content: 'Slide-Right',
+            animation: 'slide',
+            delay: 1500,
+            position: 'right',
+            theme: 'tooltipster-noir'
+        });
+        $('.t-1').tooltipster({
+            multiple: true,
+            content: 'Fall-Left',
+            animation: 'fall',
+            delay: 1000,
+            position: 'left',
+            theme: 'tooltipster-shadow'
+        });
+
+        // hide on click
+        $('.t-2').tooltipster({
+            hideOnClick: true,
+            content: 'Hide On Click',
+            theme: 'tooltipster-punk'
+        });
+
+        // Interaction
+        $('.t-3').tooltipster({
+            contentAsHTML: true,
+            interactive: true,
+            trigger: 'click'
+        });
+
+        // Icon
+        $('.t-4').tooltipster({
+            content: $('<span><i class="fa-solid fa-heart"></i></span>'),
+            theme: 'tooltipster-noir',
+            position: 'right'
+        });
+    });
+
+    // ========== Practice ===========
+
+    $(document).ready(function () {
+        // Activation code of tooltip
+        $('.tooltips').tooltipster();
+
+
+        $('#my-tool').tooltipster({
+            content: $('<span><img src="./img-3.jpg" height="200px" width="200px" /> <strong>This text is in bold case !</strong></span>')
+        });
+
+
+        $('.tool').tooltipster({
+            contentAsHTML: true,
+            theme: 'tooltipster-noir'
+        });
+
+        $('.tooltipster-punk-preview').tooltipster({
+            theme: 'tooltipster-punk'
+        });
+
+        $('.my-custom-theme').tooltipster({
+            theme: 'my-custom-theme'
+        });
+    });
+</script>
+
+</html>

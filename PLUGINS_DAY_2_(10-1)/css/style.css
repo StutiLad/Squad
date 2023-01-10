@@ -1,0 +1,95 @@
+::selection {
+    background-color: #f7116962;
+    color: black;
+}
+
+.circle {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.circle:hover {
+    background-color: #f711698f;
+    border-color: #f71169;
+    color: black;
+}
+
+.text {
+    margin: 0 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.section {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+h4 {
+    color: #f71169;
+    text-decoration: 2px underline dashed #f711698f;
+}
+
+.circle-2 {
+    border: 1.8px solid black;
+    background-color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    top: 35px;
+    right: 35px;
+    z-index: 0;
+}
+
+i {
+    cursor: grab;
+    color: #990000;
+    font-size: 25px;
+
+}
+
+.icon i::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+
+.icon i:active {
+    cursor: grabbing;
+}
+
+
+span i {
+    border: none;
+}
+
+/* Use this next selector to style things like font-size and line-height: */
+.my-custom-theme .tooltipster-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+    color: gold;
+}
