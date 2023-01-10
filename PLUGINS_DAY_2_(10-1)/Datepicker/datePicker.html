@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date Picker</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <script src="./jquery-ui.theme.min.css"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
 </head>
+
 <body>
 
-    
-    
+    <div class="container">
+        <fieldset>
+            <legend>DATE-PICKER</legend>
+            <div class="row">
+                <h3>jquery UI</h3>
+
+                <div class="section">
+                    <div class="title">
+                        <p>Default Functionality :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="default"></p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="title">
+                        <p>Animations :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" id="animation"></p>
+
+                        <p>Animations:<br>
+                            <select id="anim">
+                                <option value="show">Show (default)</option>
+                                <option value="slideDown">Slide down</option>
+                                <option value="fadeIn">Fade in</option>
+                                <option value="blind">Blind (UI Effect)</option>
+                                <option value="bounce">Bounce (UI Effect)</option>
+                                <option value="clip">Clip (UI Effect)</option>
+                                <option value="drop">Drop (UI Effect)</option>
+                                <option value="fold">Fold (UI Effect)</option>
+                                <option value="slide">Slide (UI Effect)</option>
+                                <option value>None</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </fieldset>
+    </div>
+
+
 </body>
+
+<script>
+
+    // Default
+    $(document).ready(function () {
+        $(".default").datepicker();
+    });
+
+
+    // Animation
+    $(function () {
+        $("#animation").datepicker();
+        $("#anim").on("change", function () {
+            $("#datepicker").datepicker("option", "showAnim", $(this).val());
+        });
+    });
+</script>
+
 </html>
