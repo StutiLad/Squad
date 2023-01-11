@@ -13,6 +13,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- <script src="./i18n/datepicker-ar.js"></script>
+    <script src="./i18n/datepicker-fr.js"></script>
+    <script src="./i18n/datepicker-he.js"></script>
+    <script src="./i18n/datepicker-zh-TW.js"></script> -->
 
 </head>
 
@@ -24,6 +28,7 @@
             <div class="row">
                 <h3>jquery UI</h3>
 
+                <!-- Default -->
                 <div class="section">
                     <div class="title">
                         <p>Default Functionality :-</p>
@@ -33,6 +38,7 @@
                     </div>
                 </div>
 
+                <!-- Animation -->
                 <div class="section">
                     <div class="title">
                         <p>Animations :-</p>
@@ -57,6 +63,155 @@
                     </div>
                 </div>
 
+                <!-- Other months -->
+                <div class="section">
+                    <div class="title">
+                        <p>Dates in other months :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="month"></p>
+                    </div>
+                </div>
+
+
+                <!-- Display Button bar -->
+                <div class="section">
+                    <div class="title">
+                        <p>Calender with button bar :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="button"></p>
+                    </div>
+                </div>
+
+                <!-- Change month and year -->
+                <div class="section">
+                    <div class="title">
+                        <p>Display month and year menu :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="change"></p>
+                    </div>
+                </div>
+
+                <!-- Multiple months -->
+                <div class="section">
+                    <div class="title">
+                        <p>Display multiple month :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="multiple"></p>
+                    </div>
+                </div>
+
+
+                <!-- Date format -->
+                <div class="section">
+                    <div class="title">
+                        <p>Format Date :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="format"></p>
+                        <p>Format options:<br>
+                            <select id="format">
+                                <option value="mm/dd/yy">Default - mm/dd/yy</option>
+                                <option value="yy-mm-dd">ISO 8601 - yy-mm-dd</option>
+                                <option value="d M, y">Short - d M, y</option>
+                                <option value="d MM, y">Medium - d MM, y</option>
+                                <option value="DD, d MM, yy">Full - DD, d MM, yy</option>
+                                <option value="&apos;day&apos; d &apos;of&apos; MM &apos;in the year&apos; yy">With text
+                                    - &apos;day&apos; d &apos;of&apos; MM &apos;in the year&apos; yy</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Icon tirgger -->
+                <div class="section">
+                    <div class="title">
+                        <p>Icon trigger :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="trigger"></p>
+                    </div>
+                </div>
+
+                <!-- Localize Calender -->
+                <div class="section">
+                    <div class="title">
+                        <p>Localize Calender :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="local">&#xA0;
+                            <select id="locale">
+                                <option value="ar">Arabic (&#x202B;(&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;
+                                </option>
+                                <option value="zh-TW">Chinese Traditional (&#x7E41;&#x9AD4;&#x4E2D;&#x6587;)</option>
+                                <option value>English</option>
+                                <option value="fr" selected="selected">French (Fran&#xE7;ais)</option>
+                                <option value="he">Hebrew (&#x202B;(&#x5E2;&#x5D1;&#x5E8;&#x5D9;&#x5EA;</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Alternate Field -->
+                <div class="section">
+                    <div class="title">
+                        <p>Alternate Field :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="alternate-date"><input type="text" id="alternate-date"
+                                size="30">
+                        </p>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Restrict Date Range -->
+                <div class="section">
+                    <div class="title">
+                        <p>Restrict Date Range :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="range"></p>
+                    </div>
+                </div>
+
+                <!-- Select Date Range -->
+                <div class="section">
+                    <div class="title">
+                        <p>Select Date Range :-</p>
+                    </div>
+                    <div class="content">
+                        <label for="from">From</label>
+                        <input type="text" id="from" name="from">
+                        <label for="to">to</label>
+                        <input type="text" id="to" name="to">
+                    </div>
+                </div>
+
+                <!-- Show week of year -->
+                <div class="section">
+                    <div class="title">
+                        <p>Show week of the year :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <input type="text" class="week"></p>
+                    </div>
+                </div>
+
+                <!-- Display -->
+                <div class="section">
+                    <div class="title">
+                        <p>Inline calendar :-</p>
+                    </div>
+                    <div class="content">
+                        <p>Date: <div class="display"></div> </p>
+                    </div>
+                </div>
+
+
             </div>
         </fieldset>
     </div>
@@ -76,9 +231,98 @@
     $(function () {
         $("#animation").datepicker();
         $("#anim").on("change", function () {
-            $("#datepicker").datepicker("option", "showAnim", $(this).val());
+            $("#animation").datepicker("option", "showAnim", $(this).val());
         });
+
+        $('.month').datepicker({
+            showOtherMonths: true,
+            selectOtherMonths: true
+        });
+
+        $('.button').datepicker({
+            showButtonPanel: true
+        });
+
+        $('.change').datepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+
+        $('.multiple').datepicker({
+            numberOfMonths: 3,
+            showButtonPanel: true
+        });
+
+        $('.format').datepicker({});
+        $('#format').on("change", function () {
+            $(".format").datepicker("option", "dateFormat", $(this).val());
+        });
+
+        $(".trigger").datepicker({
+            showOn: "button",
+            buttonImage: "images/calendar.gif",
+            buttonImageOnly: true,
+            buttonText: "Select date"
+        });
+
+        $(".local").datepicker($.datepicker.regional["fr"]);
+        $("#locale").on("change", function () {
+            $(".local").datepicker("option",
+                $.datepicker.regional[$(this).val()]);
+        });
+
+        $(".alternate-date").datepicker({
+            altField: "#alternate-date",
+            altFormat: "DD, d MM, yy"
+        });
+
+        $(".range").datepicker({
+            minDate: -20,
+            maxDate: "+1M +10D"
+        });
+
+        $(".week").datepicker({
+            showWeek: true,
+            firstDay: 1
+        });
+
+        $( ".display" ).datepicker();
     });
+
+    // selecte range
+    $(function () {
+        var dateFormat = "mm/dd/yy",
+            from = $("#from")
+                .datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: true,
+                    numberOfMonths: 2
+                })
+                .on("change", function () {
+                    to.datepicker("option", "minDate", getDate(this));
+                }),
+            to = $("#to").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3
+            })
+                .on("change", function () {
+                    from.datepicker("option", "maxDate", getDate(this));
+                });
+
+        function getDate(element) {
+            var date;
+            try {
+                date = $.datepicker.parseDate(dateFormat, element.value);
+            } catch (error) {
+                date = null;
+            }
+
+            return date;
+        }
+    });
+
+
 </script>
 
 </html>

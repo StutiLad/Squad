@@ -29,6 +29,7 @@ h3{
 
 .section{
     margin-left: 1.7rem;
+    margin-top: 2rem;
 }
 .section .title p::before{
     content: '-';
@@ -45,4 +46,16 @@ h3{
 
 input{
     margin-left: 15px;
+}
+
+.format{
+    width: 20%;
+}
+
+.trigger{
+    margin-right: 5px;
+}
+
+label[for="to"]{
+    margin-left: 1rem;
 }
