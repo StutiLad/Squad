@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Select</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/sumoselect.min.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid justify-content-center">
+                <a class="navbar-brand text-center " href="#">
+                    <h3 class="fw-bold">Plugin: sumoselect</h3>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <div>
+                <h5>Single select</h5>
+                <select class="selectBox ">
+                    <option>pink</option>
+                    <option>purple</option>
+                    <option>blue</option>
+                    <option>red</option>
+                </select>
+            </div>
+            <div class="mt-5">
+                <h5>Multiple select</h5>
+                <select class="selectBox form-control" data-placeholder="choose" multiple>
+                    <option>pink</option>
+                    <option>purple</option>
+                    <option>blue</option>
+                    <option>red</option>
+                </select>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/jquery.sumoselect.jquery.json"></script>
+    <script src="./js/jquery.sumoselect.min.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.selectBox').SumoSelect({
+            placeholder: 'This is a placeholder'
+        });
+    });
+</script>
+
+</html>
