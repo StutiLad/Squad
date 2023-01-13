@@ -14,6 +14,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/sumoselect.min.css">
 
+    <style>
+        span {
+            background-color: white !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <div class="container mt-5">
+        <div class="container my-5">
             <div>
                 <h5>Single select</h5>
                 <select class="selectBox ">
@@ -40,12 +45,146 @@
                 </select>
             </div>
             <div class="mt-5">
-                <h5>Multiple select</h5>
-                <select class="selectBox form-control" data-placeholder="choose" multiple>
+                <h5>Multiple select with placeholder</h5>
+                <select class="sp form-control" title="choose" multiple>
                     <option>pink</option>
                     <option>purple</option>
                     <option>blue</option>
                     <option>red</option>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <h5>Multiple select nd option group</h5>
+                <select class="selectBox form-control" multiple>
+                    <optgroup label="colors">
+                        <option>pink</option>
+                        <option>purple</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option>rice</option>
+                        <option>daal</option>
+                        <option>roti</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <h5>Search</h5>
+                <select class="search form-control" multiple>
+                    <optgroup label="colors">
+                        <option>pink</option>
+                        <option>purple</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option>rice</option>
+                        <option>daal</option>
+                        <option>roti</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <h5>Pre-selected & disabled</h5>
+                <select class="psd form-control" multiple>
+                    <optgroup label="colors">
+                        <option selected>pink</option>
+                        <option>purple</option>
+                        <option disabled>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option selected>rice</option>
+                        <option>daal</option>
+                        <option disabled>roti</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <h5>Show ok cancel in multiselect</h5>
+                <select class="button form-control" multiple>
+                    <optgroup label="colors">
+                        <option>pink</option>
+                        <option>purple</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option>rice</option>
+                        <option>daal</option>
+                        <option>roti</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <h5>Clear select option in multiselect</h5>
+                <select class="opt form-control" multiple>
+                    <optgroup label="colors">
+                        <option>pink</option>
+                        <option>purple</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option>rice</option>
+                        <option>daal</option>
+                        <option>roti</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <h5>Clear selected options in multiselect and close dropdown</h5>
+                <select class="multi-clean-close form-control" multiple>
+                    <optgroup label="colors">
+                        <option>pink</option>
+                        <option>purple</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option>rice</option>
+                        <option>daal</option>
+                        <option>roti</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="mt-5">
+                <h5> Select All</h5>
+                <select class="select1 " multiple>
+                    <optgroup label="colors">
+                        <option>pink</option>
+                        <option selected>purple</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option>rice</option>
+                        <option>daal</option>
+                        <option>roti</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="mt-5">
+                <h5> other example</h5>
+                <select class="test" onchange="alert('item change')" multiple>
+                    <optgroup label="colors">
+                        <option>pink</option>
+                        <option selected>purple</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </optgroup>
+                    <optgroup label="food">
+                        <option selected>rice</option>
+                        <option>daal</option>
+                        <option>roti</option>
+                    </optgroup>
                 </select>
             </div>
 
@@ -68,10 +207,47 @@
     <script src="./js/jquery.sumoselect.jquery.json"></script>
     <script src="./js/jquery.sumoselect.min.js"></script>
 </body>
+
 <script>
     $(document).ready(function () {
         $('.selectBox').SumoSelect({
             placeholder: 'This is a placeholder'
+        });
+
+        $('.sp').SumoSelect({
+            placeholder: 'This is a placeholder'
+        });
+        $('.search').SumoSelect({
+            placeholder: 'This is a placeholder',
+            search: true,
+            searchText: 'Enter here.'
+        });
+
+        $('.psd').SumoSelect();
+
+        $('.button').SumoSelect({
+            placeholder: 'This is a placeholder',
+            okCancelInMulti: true
+        });
+        $('.opt').SumoSelect({
+            placeholder: 'This is a placeholder',
+            clearAll: true
+        });
+
+        $('.multi-clean-close').SumoSelect({
+            closeAfterClearAll: true,
+            clearAll: true
+        });
+
+        $('.select1').SumoSelect({
+            okCancelInMulti: true,
+            selectAll: true
+        });
+
+        $('.test').SumoSelect({
+            okCancelInMulti: true,
+            triggerChangeCombined: true,
+            forceCustomRendering: true
         });
     });
 </script>
