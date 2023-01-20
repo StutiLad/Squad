@@ -78,32 +78,32 @@ function ModalForm(props) {
   return (
     <div>
       <form className="needs-validation" onSubmit={handleSubmit} novalidate>
-      <div
-        className="modal fade modal-xl"
-        id="staticBackdrop"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabIndex="-1"
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-scrollable">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="staticBackdropLabel">
-                Details
-              </h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            {/* ----- Model Body ----- */}
-            <div className="modal-body">
-              <div className="col-md-12">
-                {/* <form className="needs-validation" onSubmit={handleSubmit} novalidate> */}
+        <div
+          className="modal fade modal-xl"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabIndex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-scrollable">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="staticBackdropLabel">
+                  Details
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              {/* ----- Model Body ----- */}
+              <div className="modal-body">
+                <div className="col-md-12">
+                  {/* <form className="needs-validation" onSubmit={handleSubmit} novalidate> */}
                   <div className="col-md-12">
 
                     <div className="form-group">
@@ -114,7 +114,8 @@ function ModalForm(props) {
                             <label htmlFor="fname" className="form-label">First Name</label>
                             <input type="text"
                               className="form-control" placeholder="Enter Your Name" value={employee.fname}
-                              onChange={handleInputFname} required />
+                              onChange={handleInputFname} required
+                            />
                           </div>
                         </div>
 
@@ -123,7 +124,7 @@ function ModalForm(props) {
                           <div className="mb-3">
                             <label htmlFor="lname" className="form-label">Last Name</label>
                             <input type="text"
-                              className="form-control" name="last-name" id="lname" placeholder="Enter Your Surname" value={employee.lname} onChange={handleInputLname} required={true} />
+                              className="form-control" name="last-name" id="lname" placeholder="Enter Your Surname" value={employee.lname} onChange={handleInputLname} required />
                           </div>
                         </div>
                       </div>
@@ -283,21 +284,21 @@ function ModalForm(props) {
                     </div>
 
                   </div>
-                {/* </form> */}
+                  {/* </form> */}
+                </div>
+              </div>
+
+              <div className="modal-footer">
+                {(employee.fname === '' && employee.lname === '' && employee.email === '') ? (<button type="submit" className="btn btn-primary float-end">
+                  Submit
+                </button>) : (
+                  <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit}>
+                    Submit
+                  </button>)}
               </div>
             </div>
-
-            <div className="modal-footer">
-              {(employee.fname === '' && employee.lname === '') ? (<button type="submit" className="btn btn-primary float-end">
-                Submit
-              </button>) : (
-                <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit}>
-                  Submit
-                </button>)}
-            </div>
           </div>
-        </div>
-      </div >
+        </div >
       </form>
     </div>
   );
