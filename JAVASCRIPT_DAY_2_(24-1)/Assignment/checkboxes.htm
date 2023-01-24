@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Assignment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container my-3 text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="my-3">
+                        <h5>7) checkboxes.htm</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="form-check mb-3">
+                        <label for="tech">Select options :</label>
+                    </div>
+                    <form name="form_1" class="w-50 m-auto" onchange="return valid()">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="chk" value="USA" id="USA">
+                            <label class="form-check-label" for="USA">
+                                USA
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="chk" value="UK" id="UK">
+                            <label class="form-check-label" for="UK">
+                                UK
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="chk" value="India" id="India">
+                            <label class="form-check-label" for="India">
+                                India
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="chk" value="Asia Pacific"
+                                id="Asia Pacific">
+                            <label class="form-check-label" for="Asia Pacific">
+                                Asia Pacific
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="chk" value="Australia" id="Australia">
+                            <label class="form-check-label" for="Australia">
+                                Australia
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="chk" value="Middle East"
+                                id="Middle East">
+                            <label class="form-check-label" for="Middle East">
+                                Middle East
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="all" id="all"
+                                onchange="checkAll(this)">
+                            <label class="form-check-label" for="all">
+                                <b>Check All</b>
+                            </label>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- scripts -->
+    <script>
+
+        function valid() {
+
+            let checkboxes = document.getElementsByName('chk');
+            let all = document.querySelector('input[value="all"]');
+
+            for (let i = 0, n = checkboxes.length; i < n; i++) {
+                if (checkboxes[i].checked == false)
+                    all.checked = false;
+            }
+
+        }
+
+        function checkAll(source) {
+
+            let checkboxes = document.getElementsByName('chk');
+
+            for (let i = 0, n = checkboxes.length; i < n; i++) {
+                checkboxes[i].checked = source.checked;
+            }
+        }
+    </script>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
