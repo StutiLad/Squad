@@ -77,7 +77,8 @@
                         <div class="mt-3">
                             <button type="button" class="btn btn-outline-success"
                                 onclick="calculate()">Calculate</button>
-                            <button type="button" class="btn btn-outline-danger" onclick="return clickReset()">Reset</button>
+                            <button type="button" class="btn btn-outline-danger"
+                                onclick="return clickReset()">Reset</button>
                         </div>
 
                         <div class="mt-3">
@@ -103,7 +104,19 @@
             let result = 0;
             // console.log("First Value : " + firstValue + "\nSecond Value : " + secondValue + "\nOperation : " + operation);
 
-            if (firstValue !== '' && secondValue !== '' && operation !== '') {
+            if (firstValue == '') {
+                document.getElementById('result').innerHTML = "<b>" + "Please enter first value" + "</b>"
+            }
+
+            if (secondValue == '') {
+                document.getElementById('result').innerHTML = "<b>" + "Please enter first value" + "</b>"
+            } 
+
+            if (operation == '') {
+                document.getElementById('result').innerHTML = "<b>" + "Please enter first value" + "</b>"
+            }
+
+            if ( (firstValue !== '') && (secondValue !== '') && (operation !== '')) {
                 switch (operation) {
                     case 'add':
                         result = Number(firstValue) + Number(secondValue);
@@ -128,7 +141,7 @@
                         document.getElementById('result').innerHTML = "<b>" + "Please enter any value to show the Result" + "</b>"
                         break;
                 }
-            } else{
+            } else {
                 document.getElementById('result').innerHTML = "<b>" + "Please fulfill all the requirment" + "</b>"
             }
 

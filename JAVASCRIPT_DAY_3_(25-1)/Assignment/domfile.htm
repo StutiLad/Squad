@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Assignment</title>
+    <title>JAVASCRIPT</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,47 +20,45 @@
             <div class="row">
                 <div class="col">
                     <div class="my-3">
-                        <h5>6) multiplebutton.htm</h5>
+                        <h5>12) domfile.html</h5>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-4"></div>
                 <div class="col-4">
-
-                    <input class="btn btn-outline-dark" type="button" value="submit1" onclick="submit1()" />
-
-                    <button class="btn btn-outline-dark " type="button" onclick="submit2()">Submit2</button>
-                    </form>
-                    
-                   
+                    <a class="btn btn-outline-dark" onclick="contact()">Add a Contact</a>
+                    <div id="contact" class="mt-3"></div>
                 </div>
                 <div class="col-4"></div>
             </div>
         </div>
-
     </main>
 
-
-
-    <!-- scripts -->
     <script>
 
-        
-        function submit1() {
-            console.log("hey there... \nFrom Submit-1")
-            window.open('./numeric1.html','_blank')
+        function contact() {
+            let textBox = document.getElementById('contact')
+            let newtxtbox = document.createElement("input")
+            let newbtn = document.createElement("button")
+            let newbtntxt = document.createTextNode("x")
+            newbtn.appendChild(newbtntxt)
+            textBox.appendChild(newtxtbox)
+            textBox.appendChild(newbtn)
+            newbtn.onclick = deleteEle
+
+            newtxtbox.setAttribute("style", 'margin-top: 4%;');
+
+            newbtn.setAttribute("style", 'border: 1px solid black; border-radius: 10%; margin-left: 2%; background-color: white;');
         }
 
-        function submit2() {
-            console.log("hey there... \nFrom Submit-2")
-           window.open('./numeric2.html','_self')
+        function deleteEle() {
+            this.previousElementSibling.remove()
+            this.remove()
         }
 
 
     </script>
-
-
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

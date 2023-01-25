@@ -16,6 +16,7 @@
 <body>
 
     <main>
+
         <div class="container my-3 text-center">
             <div class="row">
                 <div class="col">
@@ -24,11 +25,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <form name="form_1" class="w-50 m-auto" onchange="return valid()">
-                        <input type="text" name="date" id="date" placeholder="Enter Date"/>
+                    <form name="form">
+                        <label class="mx-2">Date :</label>
+                        <input type="text" class="form-check-inline form-control w-50" name="date" id="date">
+                        <button type="button" class="btn btn-sm btn-outline-dark"
+                            onclick="valid(document.form.date)">Submit</button>
+                        <p id="valid" class="mt-5"></p>
                     </form>
                 </div>
                 <div class="col-4"></div>
@@ -42,9 +47,55 @@
     <!-- scripts -->
     <script>
 
-        function valid() {
-
+        function valid(inputText) {
+            let dateformat = /^(0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])[\/\-]\d{4}$/;
+            if (inputText.value.match(dateformat)) {
+                document.form.date.focus();
+                let textDate1 = inputText.value.split('/');
+                let textDate2 = inputText.value.split('-');
+                ltextDate1 = textDate1.length;
+                ltextDate2 = textDate2.length;
+                if (ltextDate1 > 1) {
+                    let pdate = inputText.value.split('/');
+                }
+                else if (ltextDate2 > 1) {
+                    let pdate = inputText.value.split('-');
+                }
+                let mm = parseInt(pdate[0]);
+                let dd = parseInt(pdate[1]);
+                let yy = parseInt(pdate[2]);
+                let ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                if (mm == 1 || mm > 2) {
+                    if (dd > ListofDays[mm - 1]) {
+                        document.getElementById('valid').innerHTML = ('Invalid day. Day should be within the range 1 to 31');
+                        return false;
+                    }
+                }
+                if (mm == 2) {
+                    let lyear = false;
+                    if ((!(yy % 4) && yy % 100) || !(yy % 400)) {
+                        lyear = true;
+                    }
+                    if ((lyear == false) && (dd >= 29)) {
+                        document.getElementById('valid').innerHTML = ('Invalid month.');
+                        return false;
+                    }
+                    if ((lyear == true) && (dd > 29)) {
+                        document.getElementById('valid').innerHTML = ('Invalid month.');
+                        return false;
+                    }
+                }
+                else {
+                    document.getElementById('valid').innerHTML = (`You have entered valid date. "${dd}-${mm}-${yy}" .Thank you.`);
+                }
+            }
+            else {
+                document.getElementById('valid').innerHTML = ("Please enter date in MM-DD-YYYY format");
+                document.form.date.focus();
+                return false;
+            }
         }
+
     </script>
 
 
