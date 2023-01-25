@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Assignment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container my-3 text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="my-3">
+                        <h5>9) math.htm</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-1">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <form id="myForm" class="m-auto mt-3">
+                        <div>
+                            <div
+                                class="mb-3 w-100 form-check-inline d-flex align-items-center  justify-content-between">
+                                <label for="first" class="form-label me-4 m-0">Please enter first number : </label>
+                                <input type="number" class="form-control w-50" id="first" required>
+                            </div>
+                            <div class="mb-3 w-100 form-check-inline d-flex align-items-center justify-content-between">
+                                <label for="second" class="form-label me-3 m-0">Please enter second number : </label>
+                                <input type="number" class="form-control w-50" id="second" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-check form-check-inline mb-3">
+                                <label class="form-check-label">
+                                    Please select operation you want to perform :
+                                </label>
+                            </div>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="math" value="add" id="add" />
+                                <label class="form-check-label" for="add">
+                                    Addition
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="math" value="substract"
+                                    id="substract" />
+                                <label class="form-check-label" for="substract">
+                                    Subtraction
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="math" value="multiple"
+                                    id="multiple" />
+                                <label class="form-check-label" for="multiple">
+                                    Multiplication
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="math" value="division"
+                                    id="division" />
+                                <label class="form-check-label" for="division">
+                                    Division
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <button type="button" class="btn btn-outline-success"
+                                onclick="calculate()">Calculate</button>
+                            <button type="button" class="btn btn-outline-danger" onclick="return clickReset()">Reset</button>
+                        </div>
+
+                        <div class="mt-3">
+                            <label id="result"></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- scripts -->
+    <script>
+
+        function calculate() {
+            let firstValue = document.getElementById('first').value;
+            let secondValue = document.getElementById('second').value;
+            let operation = document.querySelector("input:checked").value;
+            let result = 0;
+            // console.log("First Value : " + firstValue + "\nSecond Value : " + secondValue + "\nOperation : " + operation);
+
+            if (firstValue !== '' && secondValue !== '' && operation !== '') {
+                switch (operation) {
+                    case 'add':
+                        result = Number(firstValue) + Number(secondValue);
+                        document.getElementById('result').innerHTML = "<b>" + "Result : " + result + "</b>"
+                        break;
+
+                    case 'substract':
+                        result = Number(firstValue) - Number(secondValue);
+                        document.getElementById('result').innerHTML = "<b>" + "Result : " + result + "</b>"
+                        break;
+                    case 'multiple':
+                        result = +firstValue * +secondValue;  // plus (+) unary operator will change the type of variable  current type string to number
+                        document.getElementById('result').innerHTML = "<b>" + "Result : " + result + "</b>"
+                        break;
+
+                    case 'division':
+                        result = Number(firstValue) / Number(secondValue);
+                        document.getElementById('result').innerHTML = "<b>" + "Result : " + result + "</b>"
+                        break;
+
+                    default:
+                        document.getElementById('result').innerHTML = "<b>" + "Please enter any value to show the Result" + "</b>"
+                        break;
+                }
+            } else{
+                document.getElementById('result').innerHTML = "<b>" + "Please fulfill all the requirment" + "</b>"
+            }
+
+        }
+
+        function clickReset() {
+            document.getElementById("result").innerHTML = " ";
+            document.getElementById("myForm").reset();
+        }
+
+    </script>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
