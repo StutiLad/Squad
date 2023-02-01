@@ -1,10 +1,21 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 
 function ModalForm(props) {
 
   const Data = ({ id: null, fname: '', lname: '', email: '', phone: '', gender: '', department: '', skills: '', about: '' })
 
   const [employee, setEmployee] = useState(Data)
+
+  const buttonDisable = <input type="submit" className="btn btn-primary float-end" value='submit' />
+
+  // const buttonEnable = <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit(onSubmit)}>Submit</button>
+
+
+  // const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  // const onSubmit = data => console.log(data);
+
+  // console.log(watch("example"));
 
   const handleInputFname = (event) => {
     event.persist();
@@ -77,7 +88,7 @@ function ModalForm(props) {
 
   return (
     <div>
-      <form className="needs-validation" onSubmit={handleSubmit} novalidate>
+      <form className="needs-validation" onSubmit={handleSubmit}>
         <div
           className="modal fade modal-xl"
           id="staticBackdrop"
@@ -136,6 +147,7 @@ function ModalForm(props) {
                         <div div className="col-md-6">
                           <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
+
                             <input type="email"
                               className="form-control" name="email" id="email" placeholder="Enter Your Email Address" value={employee.email} onChange={handleInputEmail} required />
                           </div>
@@ -289,18 +301,19 @@ function ModalForm(props) {
               </div>
 
               <div className="modal-footer">
-                {(employee.fname === '' && employee.lname === '' && employee.email === '') ? (<button type="submit" className="btn btn-primary float-end">
-                  Submit
-                </button>) : (
-                  <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit}>
-                    Submit
-                  </button>)}
+                {
+                  { buttonDisable }
+                }
+
+
+                {/* {((employee.fname === '') && (employee.lname === '') && (employee.email === '')) ?
+                ({buttonDisable}): ({buttonEnable})} */}
               </div>
             </div>
           </div>
         </div >
-      </form>
-    </div>
+      </form >
+    </div >
   );
 }
 

@@ -26,7 +26,7 @@ export default function Navigation() {
           <div className="container">
             <p className="navbar-brand fs-30 fw-bolder">
               CRUD
-            </p>
+            </p> 
             <button
               className="navbar-toggler"
               type="button"
