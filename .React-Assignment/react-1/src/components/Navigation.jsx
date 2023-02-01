@@ -10,10 +10,12 @@ const navBackground = {
 export default function Navigation() {
 
   const handleSearch = (e) => {
-    // console.log($("#Datatbl tr").children().text());        
-    var value = (e).toLowerCase();
-    $("#Datatbl tr").filter(function () {
-      $(this).toggle($(this).find("td").text().toLowerCase().indexOf(value) > -1)
+    $('#data').on("keyup", function () {
+      var value = (e).toLowerCase();
+      $("#Datatbl tr").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      })
+      
     })
   };
 
@@ -22,9 +24,9 @@ export default function Navigation() {
       <header>
         <nav className="navbar navbar-expand-lg" style={navBackground}>
           <div className="container">
-            <a className="navbar-brand fs-30">
-              <b>CRUD</b>
-            </a>
+            <p className="navbar-brand fs-30 fw-bolder">
+              CRUD
+            </p>
             <button
               className="navbar-toggler"
               type="button"
@@ -41,11 +43,10 @@ export default function Navigation() {
               id="navbarSupportedContent"
             >
               <form className="d-flex po" role="search">
-                <input
-                  className="form-control me-2"
+                <input id="data"
+                  className="form-control  me-2"
                   type="search"
                   placeholder="Search"
-                  aria-label="Search"
                   onChange={(e) => handleSearch(e.target.value)}
                 />
               </form>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import ModalForm from "./ModalForm";
 // import newEmployee from './AddEntry'
 // import $ from 'jquery';
@@ -21,13 +21,6 @@ function DisplayTable(props) {
     visibility: 'hidden',
   }
 
-  // const handleSearch = (e) => {
-  //   console.log($("#Datatbl tr").children().text());
-  //   var value = (e).toLowerCase();
-  //   $("#Datatbl tr").filter(function () {
-  //     $(this).toggle($(this).find("td").text().toLowerCase().indexOf(value) > -1)
-  //   })
-  // };
   return (
     <>
 
@@ -35,14 +28,12 @@ function DisplayTable(props) {
         <div className="row">
           <div className="col-md-1"></div>
           <div className="col-md-10">
-            {/* <form >
-              <input id="txtSearch" type="text" placeholder="Search.." onChange={(e) => handleSearch(e.target.value)} /></form> */}
 
             <table className="table text-center"
               style={(props.newEmployee.length > 0 ? visible : hidden)}
             >
               <thead>
-                <tr>
+                <tr> 
                   <th scope="col">#</th>
                   <th scope="col">First Name</th>
                   <th scope="col">Last Name</th>
@@ -53,7 +44,7 @@ function DisplayTable(props) {
                   <th scope="col">Actions</th>
                 </tr>
               </thead>
-              <tbody id="#Datatbl">
+              <tbody id="Datatbl">
                 {
                   props.newEmployee.length > 0 ?
                     (props.newEmployee.map((item) => (
