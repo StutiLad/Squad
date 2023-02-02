@@ -62,7 +62,7 @@ function ModalForm(props) {
 
   const handleInputSkiills = (event) => {
     const { value, checked } = event.target;
-    const { skills } = employee.skills;
+    const { skills } = [...employee.skills];
     // console.log(`${value} is ${checked}`);
     // Case 1 : The user checks the box
     if (checked) {
