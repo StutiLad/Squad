@@ -49,6 +49,7 @@
 
         function valid(inputText) {
             let dateformat = /^(0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])[\/\-]\d{4}$/;
+            let pdate;
             if (inputText.value.match(dateformat)) {
                 document.form.date.focus();
                 let textDate1 = inputText.value.split('/');
@@ -56,10 +57,10 @@
                 ltextDate1 = textDate1.length;
                 ltextDate2 = textDate2.length;
                 if (ltextDate1 > 1) {
-                    let pdate = inputText.value.split('/');
+                    pdate = inputText.value.split('/');
                 }
                 else if (ltextDate2 > 1) {
-                    let pdate = inputText.value.split('-');
+                    pdate = inputText.value.split('-');
                 }
                 let mm = parseInt(pdate[0]);
                 let dd = parseInt(pdate[1]);
