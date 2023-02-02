@@ -83,40 +83,6 @@ function App() {
     }
   ]
 
-  // const newEmployeeData = [{
-  //   id: 1,
-  //   fname: 'Stuti',
-  //   lname: 'Lad',
-  //   email: 'Stuti@gmail.com',
-  //   phone: '1234098567',
-  //   gender: 'Female',
-  //   department: 'PHP',
-  //   skills: 'Frontend Technology',
-  //   about: 'avababjkbjkbfceb'
-
-  // }, {
-  //   id: 2,
-  //   fname: 'x',
-  //   lname: 'y',
-  //   email: 'xy@gmail.com',
-  //   phone: '1234098567',
-  //   gender: 'Male',
-  //   department: '.NET',
-  //   skills: 'back-end Technology',
-  //   about: 'avababjkbjkbfceb'
-  // }, {
-  //   id: 3,
-  //   fname: 'x',
-  //   lname: 'y',
-  //   email: 'xy@gmail.com',
-  //   phone: '1234098567',
-  //   gender: 'Male',
-  //   department: '.NET',
-  //   skills: 'back-end Technology',
-  //   about: 'avababjkbjkbfceb'
-  // }
-  // ]
-
   const [newEmployee, setNewEmployee] = useState(newEmployeeData)
 
   const addEmployee = (Data) => {
