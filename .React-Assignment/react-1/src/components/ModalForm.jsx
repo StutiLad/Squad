@@ -7,6 +7,7 @@ function ModalForm(props) {
 
   const [employee, setEmployee] = useState(Data)
 
+  // const [employee, setEmployee] = useState(props.enteredData)
 
 
   // const { register, handleSubmit, watch, formState: { errors } } = useForm();
