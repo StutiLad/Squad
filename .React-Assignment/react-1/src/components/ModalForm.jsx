@@ -61,11 +61,25 @@ function ModalForm(props) {
   };
 
   const handleInputSkiills = (event) => {
-    event.persist();
-    setEmployee((value) => ({
-      ...value,
-      skills: (event.target.value)
-    }));
+    const { value, checked } = event.target;
+    const { skills } = employee;
+    // console.log(`${value} is ${checked}`);
+    // Case 1 : The user checks the box
+    if (checked) {
+      setEmployee({
+        skills: [...skills, value],
+      });
+    }
+    else {
+      setEmployee({
+        skills: skills.filter((event) => event !== value),
+      });
+    }
+    // event.persist();
+    // setEmployee((value) => ({
+    //   ...value,
+    //   skills: (event.target.value)
+    // }));
   };
 
   const handleInputAbout = (event) => {
@@ -79,6 +93,8 @@ function ModalForm(props) {
   const handleSubmit = () => {
     props.addEmployee(employee)
     setEmployee(Data)
+    // props.addEmployee(...[employee.response])
+    
     // alert("Successfully entered")
   }
 
@@ -299,7 +315,7 @@ function ModalForm(props) {
 
               <div className="modal-footer">
 
-                <input type="button" className="btn btn-primary 'float-end" data-bs-dismiss="modal" value='submit' onClick={handleSubmit}/>
+                <input type="button" className="btn btn-primary 'float-end" data-bs-dismiss="modal" value='submit' onClick={handleSubmit} />
 
                 {/* <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit}>Submit</button> */}
 

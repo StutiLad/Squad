@@ -4,7 +4,7 @@ import React, { useState } from "react";
 function AddEntry(props) {
 
   const count = props.newEmployee.length
-  console.log(props.newEmployee.length)
+  // console.log(props.newEmployee.length)
   const visible = {
     visiblity: 'visible'
   }
