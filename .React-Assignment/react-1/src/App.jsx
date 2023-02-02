@@ -113,6 +113,7 @@ function App() {
   const [editData, setEditData] = useState(false)
   const data = ({ id: null, fname: '', lname: '', email: '', phone: '', gender: '', department: '', skills: '', about: '' })
   const [enteredData, setEnteredData] = useState(data)
+
   const editEntry = (newEmployee) => {
     setEditData(true)
     setEnteredData({ id: newEmployee.id, fname: newEmployee.fname, lname: newEmployee.lname, email: newEmployee.email, phone: newEmployee.phone, gender: newEmployee.gender, department: newEmployee.department, skills: newEmployee.skills, about: newEmployee.about })
@@ -137,7 +138,7 @@ function App() {
       <ModalForm addEmployee={addEmployee} />
       <DisplayTable newEmployee={newEmployee} editEntry={editEntry} deleteEntry={deleteEntry} entry={entry} currentRecords={currentRecords} />
 
-      {editData ? <EditEntry newEmployee={newEmployee} editData={editData} enteredData={enteredData} updateEntry={updateEntry} /> : <ModalForm addEmployee={addEmployee} />}
+      {editData ? <EditEntry  editData={editData} enteredData={enteredData} updateEntry={updateEntry} /> : <ModalForm addEmployee={addEmployee} />}
 
       {/* {editData ? <EditEntry editData={editData} enteredData={enteredData} updateEntry={updateEntry} /> : <ModalForm addEmployee={addEmployee} />} */}
 

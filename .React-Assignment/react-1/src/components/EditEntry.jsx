@@ -46,10 +46,24 @@ function EditEntry(props) {
     };
 
     const handleInputSkiills = (event) => {
-        setEmployee((value) => ({
-            ...value,
-            skills: (event.target.value)
-        }));
+        const { value, checked } = event.target;
+        const { skills } = [...employee.skills];
+        // console.log(`${value} is ${checked}`);
+        // Case 1 : The user checks the box
+        if (checked) {
+            setEmployee({
+                skills: [...skills, value],
+            });
+        }
+        else {
+            setEmployee({
+                skills: skills.filter((event) => event !== value),
+            });
+        }
+        // setEmployee((value) => ({
+        //     ...value,
+        //     skills: (event.target.value)
+        // }));
     };
 
     const handleInputAbout = (event) => {

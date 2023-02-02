@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 
 function ModalForm(props) {
 
@@ -91,7 +90,8 @@ function ModalForm(props) {
     }));
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
     props.addEmployee(employee)
     setEmployee(Data)
     // props.addEmployee(...[employee.response])
