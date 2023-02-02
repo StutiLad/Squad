@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 function ModalForm(props) {
 
-  const Data = ({ id: null, fname: '', lname: '', email: '', phone: '', gender: '', department: '', skills: '', about: '' })
+  const Data = ({ id: null, fname: '', lname: '', email: '', phone: '', gender: '', department: '', skills: [], about: '' })
 
   const [employee, setEmployee] = useState(Data)
 
@@ -62,7 +62,7 @@ function ModalForm(props) {
 
   const handleInputSkiills = (event) => {
     const { value, checked } = event.target;
-    const { skills } = employee;
+    const { skills } = employee.skills;
     // console.log(`${value} is ${checked}`);
     // Case 1 : The user checks the box
     if (checked) {
@@ -94,7 +94,7 @@ function ModalForm(props) {
     props.addEmployee(employee)
     setEmployee(Data)
     // props.addEmployee(...[employee.response])
-    
+
     // alert("Successfully entered")
   }
 
@@ -314,13 +314,13 @@ function ModalForm(props) {
               </div>
 
               <div className="modal-footer">
-
-                <input type="button" className="btn btn-primary 'float-end" data-bs-dismiss="modal" value='submit' onClick={handleSubmit} />
+                {/* 
+                <button type="button" className="btn btn-primary 'float-end" data-bs-dismiss="modal" >Submit</button> */}
 
                 {/* <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit}>Submit</button> */}
 
-                {/* {((employee.fname === '') && (employee.lname === '') && (employee.email === '')) ?
-                ({buttonDisable}): ({buttonEnable})} */}
+                {((employee.fname === '') && (employee.lname === '') && (employee.email === '')) ?
+                  (<button type="button" className="btn btn-primary 'float-end" >Submit</button>) : (<button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit}>Submit</button>)}
               </div>
             </div>
           </div>

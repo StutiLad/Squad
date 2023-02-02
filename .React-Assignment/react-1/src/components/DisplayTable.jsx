@@ -37,13 +37,14 @@ function DisplayTable(props) {
 
   console.log('props.currentRecords', props.currentRecords, 'props.newemployee', props.newEmployee)
 
+
+
   return (
     <>
 
       <div className="container display-table base">
         <div className="row">
-          <div className="col-md-1"></div>
-          <div className="col-md-10">
+          <div className="col-md-12">
 
             <table className="table text-center"
               style={(props.newEmployee.length > 0 ? visible : hidden)}
@@ -153,7 +154,7 @@ function DisplayTable(props) {
                           {item.department}
                         </td>
                         <td>
-                          {" "+item.skills}
+                          {" " + item.skills}
                         </td>
                         <td>
                           <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit" onClick={() => props.editEntry(item)}>{editSVG}</button>
@@ -168,16 +169,17 @@ function DisplayTable(props) {
                     )
                 }
 
-                {console.log("item.skills" + props.currentRecords.skills)}
+                {/* {console.log("item.skills" + props.currentRecords.skills)} */}
+
+                
               </tbody>
 
             </table>
 
             <div>
-              <p className="text-center fs-20" style={(props.newEmployee.length > 0 ? hidden : visible)}>Nothing to display. Make entry to view</p>
+              <p className="text-center fs-20" style={(props.newEmployee.length > 0 ? hidden : visible)}>Nothing to display. Make an entry to view</p>
             </div>
           </div>
-          <div className="col-md-1"></div>
         </div>
       </div>
       {/* <Pagination entry={entry} handleChoose={handleChoose} newEmployee={props.newEmployee} /> */}

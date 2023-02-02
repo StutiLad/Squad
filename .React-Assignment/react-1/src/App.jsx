@@ -13,6 +13,20 @@ import Pagination from './components/Pagination';
 
 function App() {
 
+  // const newEmployeeData = [
+  //   {
+  //     id: 1,
+  //     fname: 'Stuti',
+  //     lname: 'Lad',
+  //     email: 'Stuti@gmail.com',
+  //     phone: '1234098567',
+  //     gender: 'Female',
+  //     department: 'PHP',
+  //     skills: ['Frontend Technology','App development'],
+  //     about: 'avababjkbjkbfceb'
+  //   }
+  // ]
+
   const newEmployeeData = [
     {
       id: 1,
@@ -24,67 +38,53 @@ function App() {
       department: '.NET',
       skills: 'back-end Technology',
       about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 2,
+      fname: 'Stuti',
+      lname: 'Lad',
+      email: 'Stuti@gmail.com',
+      phone: '1234098567',
+      gender: 'Female',
+      department: 'PHP',
+      skills: 'Frontend Technology',
+      about: 'avababjkbjkbfceb'
+
+    },
+    {
+      id: 3,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 4,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: ['back-end Technology', ' ,xyz'],
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 5,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
     }
   ]
-
-  // const newEmployeeData = [
-  //   {
-  //     id: 1,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: 'back-end Technology',
-  //     about: 'avababjkbjkbfceb'
-  //   },
-  //   {
-  //     id: 2,
-  //     fname: 'Stuti',
-  //     lname: 'Lad',
-  //     email: 'Stuti@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Female',
-  //     department: 'PHP',
-  //     skills: 'Frontend Technology',
-  //     about: 'avababjkbjkbfceb'
-
-  //   },
-  //   {
-  //     id: 3,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: 'back-end Technology',
-  //     about: 'avababjkbjkbfceb'
-  //   },
-  //   {
-  //     id: 4,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: ['back-end Technology', ' ,xyz'],
-  //     about: 'avababjkbjkbfceb'
-  //   },
-  //   {
-  //     id: 5,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: 'back-end Technology',
-  //     about: 'avababjkbjkbfceb'
-  //   }
-  // ]
 
   const [newEmployee, setNewEmployee] = useState(newEmployeeData)
 
@@ -129,19 +129,6 @@ function App() {
       setCurrentPage(currentPage - 1)
   }
 
-
-  // console.log("ADD JSX newEmployee.length : ",newEmployee.length)
-
-
-  // const [empData, setempData] = useState([])
-
-  // console.log('current records', currentRecords, 'entry', entry, 'current records.length',  currentRecords.length , 'recordsPerPage ', recordsPerPage )
-
-  // const addEmployee = (Data) => {
-  //   Data.id = newEmployee.length + 1
-  //   setNewEmployee([...newEmployee, Data])
-  //   setCurrentRecords[[...newEmployee, Data]]
-  // }
 
   return (
     <div className="App">
