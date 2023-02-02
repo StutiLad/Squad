@@ -145,7 +145,7 @@ function App() {
       <ModalForm addEmployee={addEmployee} />
       <DisplayTable newEmployee={newEmployee} editEntry={editEntry} deleteEntry={deleteEntry} entry={entry} currentRecords={currentRecords} />
       {editData ? <EditEntry editData={editData} enteredData={enteredData} updateEntry={updateEntry} /> : <ModalForm addEmployee={addEmployee} />}
-      {entry > 1 ? <Pagination entry={entry} handleChoose={handleChoose} newEmployee={newEmployee} nPages={nPages} currentPage={currentPage} setCurrentPage={setCurrentPage} currentRecords={currentRecords} /> : ''}
+      {entry > 2 ? <Pagination entry={entry} handleChoose={handleChoose} newEmployee={newEmployee} nPages={nPages} currentPage={currentPage} setCurrentPage={setCurrentPage} currentRecords={currentRecords} /> : ''}
     </div >
   );
 }
