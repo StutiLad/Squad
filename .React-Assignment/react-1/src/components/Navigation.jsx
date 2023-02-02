@@ -24,9 +24,9 @@ export default function Navigation() {
       <header>
         <nav className="navbar navbar-expand-lg" style={navBackground}>
           <div className="container">
-            <p className="navbar-brand fs-30 fw-bolder">
+            <a className="navbar-brand fs-30 fw-bolder">
               CRUD
-            </p> 
+            </a> 
             <button
               className="navbar-toggler"
               type="button"
@@ -42,7 +42,7 @@ export default function Navigation() {
               className="collapse navbar-collapse justify-content-end"
               id="navbarSupportedContent"
             >
-              <form className="d-flex po" role="search">
+              <form className="d-flex " role="search">
                 <input id="data"
                   className="form-control  me-2"
                   type="search"

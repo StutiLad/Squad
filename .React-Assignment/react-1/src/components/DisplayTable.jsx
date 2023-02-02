@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 // import ModalForm from "./ModalForm";
 // import newEmployee from './AddEntry'
 // import $ from 'jquery';
+// import Pagination from './Pagination';
 
 
 function DisplayTable(props) {
@@ -21,6 +22,21 @@ function DisplayTable(props) {
     visibility: 'hidden',
   }
 
+  // const [entry, setEntry] = useState(2)
+  // const handleChoose = (event) => {
+  //   setEntry(
+  //     event.target.value
+  //   )
+  // }
+
+  // function currentData() {
+  //      const begin = (currentPage - 1) * itemsPerPage;
+  //      const end = begin + itemsPerPage;
+  //      return data.slice(begin, end);
+  //    }
+
+  console.log('props.currentRecords', props.currentRecords, 'props.newemployee', props.newEmployee)
+
   return (
     <>
 
@@ -33,7 +49,7 @@ function DisplayTable(props) {
               style={(props.newEmployee.length > 0 ? visible : hidden)}
             >
               <thead>
-                <tr> 
+                <tr>
                   <th scope="col">#</th>
                   <th scope="col">First Name</th>
                   <th scope="col">Last Name</th>
@@ -45,9 +61,80 @@ function DisplayTable(props) {
                 </tr>
               </thead>
               <tbody id="Datatbl">
-                {
-                  props.newEmployee.length > 0 ?
+
+                {/* {
+                  ( props.entry == 2 ) ?
                     (props.newEmployee.map((item) => (
+                      <tr key={item.id}>
+                        <td>{item.id}</td>
+                        <td>
+                          {item.fname}
+                        </td>
+                        <td>
+                          {item.lname}
+                        </td>
+                        <td>
+                          {item.email}
+                        </td>
+                        <td>
+                          {item.gender}
+                        </td>
+                        <td>
+                          {item.department}
+                        </td>
+                        <td>
+                          {item.skills}
+                        </td>
+                        <td>
+                          <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit" onClick={() => props.editEntry(item)}>{editSVG}</button>
+
+                          <button type="button" className="btn btn-outline-danger mx-1" onClick={() => props.deleteEntry(item.id)}>{deleteSVG}</button>
+
+                        </td>
+                      </tr>
+                    ))) :
+                    (
+                      props.currentRecords.length < props.newEmployee.length ?
+                    (props.currentRecords.map((item) => (
+                      <tr key={item.id}>
+                        <td>{item.id}</td>
+                        <td>
+                          {item.fname}
+                        </td>
+                        <td>
+                          {item.lname}
+                        </td>
+                        <td>
+                          {item.email}
+                        </td>
+                        <td>
+                          {item.gender}
+                        </td>
+                        <td>
+                          {item.department}
+                        </td>
+                        <td>
+                          {item.skills}
+                        </td>
+                        <td>
+                          <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit" onClick={() => props.editEntry(item)}>{editSVG}</button>
+
+                          <button type="button" className="btn btn-outline-danger mx-1" onClick={() => props.deleteEntry(item.id)}>{deleteSVG}</button>
+
+                        </td>
+                      </tr>
+                    )) ) :
+                    (
+                      <tr></tr>
+                    )
+                    )
+
+                } */}
+
+
+                {
+                  props.currentRecords.length > 0 ?
+                    (props.currentRecords.map((item) => (
                       <tr key={item.id}>
                         <td>{item.id}</td>
                         <td>
@@ -79,8 +166,9 @@ function DisplayTable(props) {
                     (
                       <tr></tr>
                     )
-
                 }
+
+                {/* {console.log("props.entry diaplay table", props.entry)} */}
               </tbody>
 
             </table>
@@ -92,7 +180,7 @@ function DisplayTable(props) {
           <div className="col-md-1"></div>
         </div>
       </div>
-
+      {/* <Pagination entry={entry} handleChoose={handleChoose} newEmployee={props.newEmployee} /> */}
     </>
   );
 }

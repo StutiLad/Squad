@@ -13,30 +13,109 @@ import Pagination from './components/Pagination';
 
 function App() {
 
+  const newEmployeeData = [
+    {
+      id: 1,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 2,
+      fname: 'Stuti',
+      lname: 'Lad',
+      email: 'Stuti@gmail.com',
+      phone: '1234098567',
+      gender: 'Female',
+      department: 'PHP',
+      skills: 'Frontend Technology',
+      about: 'avababjkbjkbfceb'
 
-  const newEmployeeData = [{
-    id: 1,
-    fname: 'Stuti',
-    lname: 'Lad', 
-    email: 'Stuti@gmail.com', 
-    phone: '1234098567', 
-    gender: 'Female', 
-    department: 'PHP', 
-    skills: 'Frontend Technology', 
-    about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 3,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 4,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 5,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 6,
+      fname: 'x',
+      lname: 'y',
+      email: 'xy@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
+    }
+  ]
 
-  },{
-    id: 2,
-    fname: 'x',
-    lname: 'y', 
-    email: 'xy@gmail.com', 
-    phone: '1234098567', 
-    gender: 'Male', 
-    department: '.NET', 
-    skills: 'back-end Technology', 
-    about: 'avababjkbjkbfceb'
-  }
-]
+  // const newEmployeeData = [{
+  //   id: 1,
+  //   fname: 'Stuti',
+  //   lname: 'Lad',
+  //   email: 'Stuti@gmail.com',
+  //   phone: '1234098567',
+  //   gender: 'Female',
+  //   department: 'PHP',
+  //   skills: 'Frontend Technology',
+  //   about: 'avababjkbjkbfceb'
+
+  // }, {
+  //   id: 2,
+  //   fname: 'x',
+  //   lname: 'y',
+  //   email: 'xy@gmail.com',
+  //   phone: '1234098567',
+  //   gender: 'Male',
+  //   department: '.NET',
+  //   skills: 'back-end Technology',
+  //   about: 'avababjkbjkbfceb'
+  // }, {
+  //   id: 3,
+  //   fname: 'x',
+  //   lname: 'y',
+  //   email: 'xy@gmail.com',
+  //   phone: '1234098567',
+  //   gender: 'Male',
+  //   department: '.NET',
+  //   skills: 'back-end Technology',
+  //   about: 'avababjkbjkbfceb'
+  // }
+  // ]
 
   const [newEmployee, setNewEmployee] = useState(newEmployeeData)
 
@@ -63,29 +142,44 @@ function App() {
     setNewEmployee(newEmployee.filter((user) => user.id !== id))
   }
 
+  // console.log("ADD JSX newEmployee.length : ",newEmployee.length)
+
+  const [entry, setEntry] = useState('2')
+
+  const handleChoose = (event) => {
+    setEntry(
+      event.target.value
+    )
+  }
+
   const [currentPage, setCurrentPage] = useState(1);
-  const [recordsPerPage] = useState(10);
+  const recordsPerPage = entry;
 
-  // // const indexOfLastRecord = currentPage * recordsPerPage;
-  // // const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
-  // // const currentRecords = data.slice(indexOfFirstRecord, indexOfLastRecord);
-  // const nPages = Math.ceil(newEmployeeData.length / recordsPerPage)
-  const nPages = 1
+  const indexOfLastRecord = currentPage * recordsPerPage;
+  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+  // const [currentRecords, setCurrentRecords] = useState(newEmployee.slice(indexOfFirstRecord, indexOfLastRecord))
 
+  const currentRecords = newEmployee.slice(indexOfFirstRecord, indexOfLastRecord);
+  const nPages = Math.ceil(newEmployee.length / recordsPerPage)
+
+  // const [empData, setempData] = useState([])
+
+  // console.log('current records', currentRecords, 'entry', entry, 'current records.length',  currentRecords.length , 'recordsPerPage ', recordsPerPage )
+
+  // const addEmployee = (Data) => {
+  //   Data.id = newEmployee.length + 1
+  //   setNewEmployee([...newEmployee, Data])
+  //   // setCurrentRecords[[...newEmployee, Data]]
+  // }
 
   return (
     <div className="App">
       <Navigation />
-      <AddEntry newEmployee={newEmployee} />
+      <AddEntry newEmployee={newEmployee} entry={entry} handleChoose={handleChoose} />
       <ModalForm addEmployee={addEmployee} />
-      <DisplayTable newEmployee={newEmployee} editEntry={editEntry} deleteEntry={deleteEntry} />
+      <DisplayTable newEmployee={newEmployee} editEntry={editEntry} deleteEntry={deleteEntry} entry={entry} currentRecords={currentRecords} />
       {editData ? <EditEntry editData={editData} enteredData={enteredData} updateEntry={updateEntry} /> : <ModalForm addEmployee={addEmployee} />}
-      <Pagination
-        nPages={nPages}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        newEmployee={newEmployee}
-      />
+      {entry > 1 ? <Pagination entry={entry} handleChoose={handleChoose} newEmployee={newEmployee} nPages={nPages} currentPage={currentPage} setCurrentPage={setCurrentPage} currentRecords={currentRecords} /> : ''}
     </div >
   );
 }

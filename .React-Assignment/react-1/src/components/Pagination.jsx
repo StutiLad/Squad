@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Pagination = (props) => {
 
-    // const pageNumbers = [...Array(nPages + 1).keys()].slice(1)
-    const pageNumbers = 10;
+    let pageNumbers = 1;
+    if (props.nPages >= 2) {
+        pageNumbers = Array.from(Array(props.nPages + 1).keys()).slice(1)
+    } else {
+        pageNumbers = 1;
+    }
 
     const nextPage = () => {
-        if (props.currentPage !== props.nPages) props.setCurrentPage(props.currentPage + 1)
+        if (props.currentPage !== props.nPages)
+            props.setCurrentPage(props.currentPage + 1)
     }
     const prevPage = () => {
-        if (props.currentPage !== 1) props.setCurrentPage(props.currentPage - 1)
+        if (props.currentPage !== 1)
+            props.setCurrentPage(props.currentPage - 1)
     }
 
     const visible = {
@@ -21,40 +27,37 @@ const Pagination = (props) => {
 
 
     return (
-        <div className='d-flex justify-content-center' style={(props.newEmployee.length > 0 ? visible : hidden)}>
+        <div className='d-flex justify-content-center' style={(props.newEmployee.length > 2 ? visible : hidden)}>
             <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <p class="page-link" onClick={prevPage} aria-label="Previous">
+                <ul className="pagination">
+                    <li className="page-item">
+                        <a className="page-link" onClick={prevPage} aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
-                        </p>
+                        </a>
                     </li>
 
-                    {/* {pageNumbers(pgNumber => (
+                    { props.newEmployee.length > 2 &&
+                     (pageNumbers.map(pgNumber => (
                         <li key={pgNumber}
-                            className={`page-item ${currentPage == pgNumber ? 'active' : ''} `} >
+                            className={`page-item ${props.currentPage == pgNumber ? 'active' : ''} `} >
 
-                            <p onClick={() => setCurrentPage(pgNumber)}
+                            <a onClick={() => props.setCurrentPage(pgNumber)}
                                 className='page-link' >
                                 {pgNumber}
-                            </p>
+                            </a>
                         </li>
-                    ))} */}
+                    )))}
 
-                    <li class="page-item">
-                        <p class="page-link" >
-                            1
-                        </p>
-                    </li>
-                    <li class="page-item">
-                        <p class="page-link" onClick={nextPage} aria-label="Next">
+                    <li className="page-item">
+                        <a className="page-link" onClick={nextPage} aria-label="Next"  >
                             <span aria-hidden="true">&raquo;</span>
-                        </p>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </div>
     )
+    
 }
 
 export default Pagination

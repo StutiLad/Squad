@@ -7,9 +7,6 @@ function ModalForm(props) {
 
   const [employee, setEmployee] = useState(Data)
 
-  const buttonDisable = <input type="submit" className="btn btn-primary float-end" value='submit' />
-
-  // const buttonEnable = <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit(onSubmit)}>Submit</button>
 
 
   // const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -157,7 +154,7 @@ function ModalForm(props) {
                         <div className="col-md-6">
                           <div className="mb-3">
                             <label htmlFor="phn" className="form-label">Phone number</label>
-                            <input type="tel"
+                            <input type="number"
                               className="form-control" name="phn" id="phn" placeholder="Enter Your Phone number" value={employee.phone} onChange={handleInputPhone} required />
                           </div>
                         </div>
@@ -301,10 +298,10 @@ function ModalForm(props) {
               </div>
 
               <div className="modal-footer">
-                {
-                  { buttonDisable }
-                }
 
+                <input type="button" className="btn btn-primary 'float-end" data-bs-dismiss="modal" value='submit' onClick={handleSubmit}/>
+
+                {/* <button type="submit" className="btn btn-primary float-end" data-bs-dismiss="modal" onClick={handleSubmit}>Submit</button> */}
 
                 {/* {((employee.fname === '') && (employee.lname === '') && (employee.email === '')) ?
                 ({buttonDisable}): ({buttonEnable})} */}
