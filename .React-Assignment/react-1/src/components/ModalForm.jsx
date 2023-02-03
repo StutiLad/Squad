@@ -61,25 +61,25 @@ function ModalForm(props) {
   };
 
   const handleInputSkiills = (event) => {
-    const { value, checked } = event.target;
-    const { skills } = [...employee.skills];
-    // console.log(`${value} is ${checked}`);
-    // Case 1 : The user checks the box
-    if (checked) {
-      setEmployee({
-        skills: [...skills, value],
-      });
-    }
-    else {
-      setEmployee({
-        skills: skills.filter((event) => event !== value),
-      });
-    }
-    // event.persist();
-    // setEmployee((value) => ({
-    //   ...value,
-    //   skills: (event.target.value)
-    // }));
+    // const { value, checked } = event.target;
+    // const { skills } = [employee];
+    // // console.log(`${value} is ${checked}`);
+    // // Case 1 : The user checks the box
+    // if (checked) {
+    //   setEmployee({
+    //     skills: [...skills, value],
+    //   });
+    // }
+    // else {
+    //   setEmployee({
+    //     skills: skills.filter((event) => event !== value),
+    //   });
+    // }
+    event.persist();
+    setEmployee((value) => ({
+      ...value,
+      skills: (event.target.value)
+    }));
   };
 
   const handleInputAbout = (event) => {
@@ -91,12 +91,12 @@ function ModalForm(props) {
   }
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     props.addEmployee(employee)
     setEmployee(Data)
     // props.addEmployee(...[employee.response])
 
-    // alert("Successfully entered")
+    // alert("Successfully Added")
   }
 
 

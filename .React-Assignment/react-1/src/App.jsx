@@ -13,78 +13,88 @@ import Pagination from './components/Pagination';
 
 function App() {
 
-  const newEmployeeData = [
-    {
-      id: 1,
-      fname: 'Stuti',
-      lname: 'Lad',
-      email: 'Stuti@gmail.com',
-      phone: '1234098567',
-      gender: 'Female',
-      department: 'PHP',
-      skills: ['Frontend Technology', 'App development'],
-      about: 'avababjkbjkbfceb'
-    }
-  ]
-
   // const newEmployeeData = [
   //   {
   //     id: 1,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: 'back-end Technology',
-  //     about: 'avababjkbjkbfceb'
-  //   },
-  //   {
-  //     id: 2,
   //     fname: 'Stuti',
   //     lname: 'Lad',
   //     email: 'Stuti@gmail.com',
   //     phone: '1234098567',
   //     gender: 'Female',
   //     department: 'PHP',
-  //     skills: 'Frontend Technology',
-  //     about: 'avababjkbjkbfceb'
-
-  //   },
-  //   {
-  //     id: 3,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: 'back-end Technology',
-  //     about: 'avababjkbjkbfceb'
-  //   },
-  //   {
-  //     id: 4,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: ['back-end Technology', ' ,xyz'],
-  //     about: 'avababjkbjkbfceb'
-  //   },
-  //   {
-  //     id: 5,
-  //     fname: 'x',
-  //     lname: 'y',
-  //     email: 'xy@gmail.com',
-  //     phone: '1234098567',
-  //     gender: 'Male',
-  //     department: '.NET',
-  //     skills: 'back-end Technology',
+  //     skills: ['Frontend Technology', 'App development'],
   //     about: 'avababjkbjkbfceb'
   //   }
   // ]
+
+  const newEmployeeData = [
+    {
+      id: 1,
+      fname: 'Jewel',
+      lname: 'Lad',
+      email: 'jewel@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: 'Mobile',
+      skills: 'App development',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 2,
+      fname: 'Stuti',
+      lname: 'Lad',
+      email: 'Stuti@gmail.com',
+      phone: '1234098567',
+      gender: 'Female',
+      department: 'PHP',
+      skills: 'Frontend Technology',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 3,
+      fname: 'krish',
+      lname: 'mehta',
+      email: 'krish@gmail.com',
+      phone: '83218650385',
+      gender: 'Male',
+      department: '.NET',
+      skills: 'back-end Technology',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 4,
+      fname: 'Rekha',
+      lname: 'Patel',
+      email: 'rp@gmail.com',
+      phone: '1234098567',
+      gender: 'Female',
+      department: 'SEO',
+      skills: 'Optimization',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 5,
+      fname: 'Kavya',
+      lname: 'Shah',
+      email: 'xy@gmail.com',
+      phone: '9998345627',
+      gender: 'Female',
+      department: 'Admin/HR',
+      skills: 'Communication',
+      about: 'avababjkbjkbfceb'
+    },
+    {
+      id: 6,
+      fname: 'Keyur',
+      lname: 'Patel',
+      email: 'patelkeyur@gmail.com',
+      phone: '1234098567',
+      gender: 'Male',
+      department: 'Account',
+      skills: 'Finance',
+      about: 'avababjkbjkbfceb'
+    }
+  ] 
 
   const [newEmployee, setNewEmployee] = useState(newEmployeeData)
 
@@ -128,6 +138,7 @@ function App() {
     setNewEmployee(newEmployee.filter((user) => user.id !== id));
     if (currentRecords.length == 1)
       setCurrentPage(currentPage - 1)
+    // alert('Entry Deleted successfully')
   }
 
 

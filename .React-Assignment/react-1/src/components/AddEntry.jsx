@@ -32,6 +32,8 @@ function AddEntry(props) {
                   <select className="form-select form-select-sm w-25 me-4 h-25" name="entryList" id="entryList" value={props.entry} onChange={props.handleChoose}>
                     {/* <option >choose</option> */}
                     <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
                     <option value='5'>5</option>
                   </select>
                   {/* {console.log(props.entry)} */}

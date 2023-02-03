@@ -154,7 +154,7 @@ function DisplayTable(props) {
                           {item.department}
                         </td>
                         <td>
-                          {" " + item.skills}
+                          {item.skills}
                         </td>
                         <td>
                           <button type="button" className="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#staticBackdropEdit" onClick={() => props.editEntry(item)}>{editSVG}</button>
