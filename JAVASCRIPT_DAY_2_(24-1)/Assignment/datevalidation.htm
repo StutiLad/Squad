@@ -30,9 +30,10 @@
                 <div class="col-4">
                     <form name="form">
                         <label class="mx-2">Date :</label>
-                        <input type="text" class="form-check-inline form-control w-50" name="date" id="date">
+                        <input type="text" class="form-check-inline form-control w-50" name="date" id="date"
+                            placeholder="MM/DD/YYYY">
                         <button type="button" class="btn btn-sm btn-outline-dark"
-                            onclick="valid(document.form.date)">Submit</button>
+                            onclick="validatedate(document.form.date)">Submit</button>
                         <p id="valid" class="mt-5"></p>
                     </form>
                 </div>
@@ -47,51 +48,50 @@
     <!-- scripts -->
     <script>
 
-        function valid(inputText) {
-            let dateformat = /^(0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])[\/\-]\d{4}$/;
-            let pdate;
+        function validatedate(inputText) {
+            var dateformat = /^(0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])[\/\-]\d{4}$/;
             if (inputText.value.match(dateformat)) {
                 document.form.date.focus();
-                let textDate1 = inputText.value.split('/');
-                let textDate2 = inputText.value.split('-');
-                ltextDate1 = textDate1.length;
-                ltextDate2 = textDate2.length;
-                if (ltextDate1 > 1) {
-                    pdate = inputText.value.split('/');
+                var opera1 = inputText.value.split('/');
+                var opera2 = inputText.value.split('-');
+                lopera1 = opera1.length;
+                lopera2 = opera2.length;
+                if (lopera1 > 1) {
+                    var pdate = inputText.value.split('/');
                 }
-                else if (ltextDate2 > 1) {
-                    pdate = inputText.value.split('-');
+                else if (lopera2 > 1) {
+                    var pdate = inputText.value.split('-');
                 }
-                let mm = parseInt(pdate[0]);
-                let dd = parseInt(pdate[1]);
-                let yy = parseInt(pdate[2]);
-                let ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                var mm = parseInt(pdate[0]);
+                var dd = parseInt(pdate[1]);
+                var yy = parseInt(pdate[2]);
+                var ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
                 if (mm == 1 || mm > 2) {
                     if (dd > ListofDays[mm - 1]) {
-                        document.getElementById('valid').innerHTML = ('Invalid day. Day should be within the range 1 to 31');
+                        alert('Invalid day. Day should be within the range 1 to 31');
                         return false;
                     }
                 }
                 if (mm == 2) {
-                    let lyear = false;
+                    var lyear = false;
                     if ((!(yy % 4) && yy % 100) || !(yy % 400)) {
                         lyear = true;
                     }
                     if ((lyear == false) && (dd >= 29)) {
-                        document.getElementById('valid').innerHTML = ('Invalid month.');
+                        alert('Invalid month.');
                         return false;
                     }
                     if ((lyear == true) && (dd > 29)) {
-                        document.getElementById('valid').innerHTML = ('Invalid month.');
+                        alert('Invalid month.');
                         return false;
                     }
                 }
                 else {
-                    document.getElementById('valid').innerHTML = (`You have entered valid date. "${dd}-${mm}-${yy}" .Thank you.`);
+                    alert(`You have entered valid date. "${dd}-${mm}-${yy}" .Thank you.`);
                 }
             }
             else {
-                document.getElementById('valid').innerHTML = ("Please enter date in MM-DD-YYYY format");
+                alert("Please enter date in MM-DD-YYYY format");
                 document.form.date.focus();
                 return false;
             }
