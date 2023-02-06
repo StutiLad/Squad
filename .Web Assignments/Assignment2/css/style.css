@@ -1,0 +1,306 @@
+@import url(./_global.css);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============
+Navigation bar 
+=============== */
+
+header {
+    /* padding: 10px 0; */
+    text-transform: uppercase;
+}
+
+header .navbar .navbar-brand {
+    letter-spacing: 0px;
+    word-spacing: -1px;
+    font-weight: bold;
+    color: white;
+}
+
+header ul>li {
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+header nav ul a {
+    color: white !important;
+}
+
+header ul>.nav-item:hover {
+    font-weight: 600;
+}
+
+header ul>.nav-item a:hover::after {
+    display: block;
+    content: '';
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    border-bottom: 2px solid white;
+    width: 50%;
+    color: white;
+}
+
+header ul>.nav-item .active {
+    font-weight: 600;
+    color: white;
+}
+
+header ul>.nav-item .active::after {
+    display: block;
+    content: '';
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    border-bottom: 2px solid white;
+    width: 50%;
+    color: white;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    top: -3px;
+    right: -3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* ============
+Contact Icon
+=============== */
+
+.follow-icon {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.follow-icon li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.follow-icon .facebook {
+    background-color: #395B98;
+}
+
+.follow-icon .twitter {
+    background-color: #54ACF0;
+}
+
+.follow-icon .pinterest {
+    background-color: #CB2227;
+}
+
+.follow-icon .instagram {
+    background: linear-gradient(56deg, rgba(228, 92, 84, 1) 26%, rgba(211, 50, 129, 1) 47%, rgba(161, 67, 161, 1) 80%);
+}
+
+/* ============
+Image Slider
+=============== */
+
+.image-slider div {
+    height: 95vh;
+    width: 100%;
+}
+
+.image-slider .img1,
+.image-slider .img3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/header-bg.jpg);
+    background-size: cover;
+}
+
+.image-slider .img2,
+.image-slider .img4 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/testimonials-bg.jpg);
+    background-size: cover;
+}
+
+.image-slider .slick-arrow {
+    display: none !important;
+}
+
+.slick-dots li button {
+    color: black;
+    size: 20px;
+}
+
+.header-content {
+    height: 100% !important;
+    width: 100%;
+    color: white !important;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-content .header-title {
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: 'Apple Chancery', cursive;
+    color: var(--text-color);
+    font-style: italic;
+    margin: 0;
+}
+
+.header-content .header-text {
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header-button span {
+    writing-mode: vertical-rl;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-button .h-btn {
+    background-color: var(--icon-color);
+    border-radius: 0;
+    height: 25%;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+}
+
+/* ============
+Section Content
+=============== */
+.section-content {
+    text-align: center;
+}
+
+.section-content .section-text{
+    margin: 20px 0;
+}
+
+.section-content .section-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* ============
+Section Icon
+=============== */
+
+.section-icon {
+    text-align: center;
+    margin: auto;
+}
+
+/* ============
+Card
+=============== */
+
+.card{
+    border: 0;
+    border-radius: 0;
+    margin: 0 30px;
+    padding: 20px;
+}
+
+.card .card-title{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card .card-text{
+    font-weight: 400;
+}
+
+.card .card-footer{
+    background-color: white;
+    border-top: 0;
+}
+
+.card hr{
+    margin: 0;
+}
+
+.card .text-muted{
+    color: rgb(17, 202, 168) !important;
+}
+
+/* ============
+Section Button
+=============== */
+.section-button{
+    text-align: center;
+}
+
+.section-button button {
+    margin: 25px 0;
+    background-color: var(--button-color);
+    width: 15%;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+}
+
+.section-button button:hover{
+    background-color: var(--icon-color);
+    color: white;
+}
+
+/* ============
+Banner Area
+=============== */
+.banner {
+    color: black;
+    background-color: var(--second-background);
+}
+
+.banner .section-content .section-icon .icon {
+    font-size: 80px;
+    line-height: 20px;
+}
+
+.banner .section-icon .icon-content .icon-heading {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.holiday-card .section-heading{
+    margin: 40px 0;
+}
+

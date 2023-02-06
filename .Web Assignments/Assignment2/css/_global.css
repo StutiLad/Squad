@@ -1,0 +1,15 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+:root{
+    --button-color: rgb(7, 40, 59);
+    --footer-color: rgb(7, 40, 59);
+    --icon-color:rgb(202, 85, 67);
+    --text-color:rgb(44, 249, 212);
+    --second-background : rgb(245, 245, 243);
+}
+
+.base{
+    padding: 5rem 0;
+}
