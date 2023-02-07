@@ -139,7 +139,7 @@ Image Slider
     background-size: cover;
 }
 
-.image-slider .slick-arrow {
+.slick-arrow {
     display: none !important;
 }
 
@@ -203,10 +203,11 @@ Image Slider
 Section Content
 =============== */
 .section-content {
+    color: black;
     text-align: center;
 }
 
-.section-content .section-text{
+.section-content .section-text {
     margin: 20px 0;
 }
 
@@ -214,6 +215,7 @@ Section Content
     text-transform: uppercase;
     font-weight: 600;
     font-size: 28px;
+    margin: 20px;
 }
 
 /* ============
@@ -225,44 +227,67 @@ Section Icon
     margin: auto;
 }
 
+.icon-content {
+    text-align: center;
+}
+
+.icon-content .icon-heading {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
 /* ============
 Card
 =============== */
 
-.card{
+.card {
     border: 0;
     border-radius: 0;
-    margin: 0 30px;
-    padding: 20px;
+    /* margin: 10px; */
+    padding: 15px;
+    width: 100%;
 }
 
-.card .card-title{
+.card img {
+    height: 230px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card .card-title {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
 }
 
-.card .card-text{
+.card .card-text {
     font-weight: 400;
+    text-transform: capitalize;
 }
 
-.card .card-footer{
+.card .card-footer {
     background-color: white;
     border-top: 0;
 }
 
-.card hr{
+.card hr {
     margin: 0;
 }
 
-.card .text-muted{
+.card .text-muted {
     color: rgb(17, 202, 168) !important;
 }
 
 /* ============
 Section Button
 =============== */
-.section-button{
+
+
+.section-button {
     text-align: center;
 }
 
@@ -276,7 +301,7 @@ Section Button
     font-size: 15px;
 }
 
-.section-button button:hover{
+.section-button button:hover {
     background-color: var(--icon-color);
     color: white;
 }
@@ -284,6 +309,7 @@ Section Button
 /* ============
 Banner Area
 =============== */
+
 .banner {
     color: black;
     background-color: var(--second-background);
@@ -300,7 +326,219 @@ Banner Area
     font-weight: 600;
 }
 
-.holiday-card .section-heading{
-    margin: 40px 0;
+
+
+/* ============
+Service Area
+=============== */
+
+
+/* ============
+Tours Area
+=============== */
+
+.tour {
+    color: black;
+    background-color: var(--second-background);
 }
 
+.wheel {
+    position: relative;
+    width: fit-content;
+}
+
+.wheel .img-top {
+    opacity: 0.5;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    left: -30px;
+}
+
+.wheel .img-bottom {
+    opacity: 0.5;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    bottom: -300px;
+    right: -200px;
+}
+
+.tour .row:first-child {
+    margin: 20px 0;
+}
+
+.tour .section-content .section-icon .icon {
+    font-size: 40px;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100px;
+    width: 100px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.tour .section-content .section-icon .icon-heading {
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.tour .section-content .section-icon .section-text {
+    margin: 0 2px;
+}
+
+.tri {
+    padding: 0;
+    border: 2px solid var(--icon-color);
+    background-color: var(--icon-color);
+    border-radius: 62% 38% 37% 63% / 40% 39% 61% 60%;
+    height: 100px;
+    width: 50%;
+    margin: auto;
+}
+
+/* ============
+Testimonial Area
+=============== */
+
+.testimonial-card .card {
+    background-color: var(--third-background);
+    width: 550px !important;
+    padding: 20px 0;
+}
+
+.testimonial-card .card .card-body {
+    padding-right: 50px;
+}
+
+.testimonial-card .card.slick-active.slick-center {
+    background-color: var(--center-slide-background);
+    transform: scale(1.09);
+    padding: 20px 50px;
+    margin: 0 35px;
+    z-index: 1;
+}
+
+.testimonial-card .card .card-text i {
+    margin: 0 1px;
+    color: var(--star-icon-color);
+}
+
+.testimonial-card .card .card-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.slick-dots {
+    margin-top: 15px;
+    bottom: -40px !important;
+}
+
+.slick-dots li {
+    background-color: var(--icon-color);
+    opacity: 0.5;
+    height: 20px;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.slick-dots .slick-active {
+    background-color: var(--icon-color);
+    opacity: 1;
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+/* ============
+Blog Area
+=============== */
+.blog-card .card {
+    padding: 0 5px;
+}
+
+.blog-card .card .card-title {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.blog-card .card .card-text{
+    font-size: 15px;
+    text-overflow: ellipsis;
+}
+
+.blog-card .card-footer a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--footer-color);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ============
+Follow Area
+=============== */
+
+.follow-slider img {
+    height: 215px;
+    object-fit: cover;
+}
+
+.follow-slider  .card {
+    height: fit-content;
+    border: 0;
+    padding: 0;
+}
+
+/* ============
+Footer Area
+=============== */
+
+footer{
+    color: white;
+}
+
+/* ===== First footer ===== */
+
+.footer-1{
+    background-image: url(../images/travel-2.webp);
+}
+
+.footer-1 .section-content .section-heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-1 .section-button .btn{
+    width: 250px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+/* ===== Sedcond footer ===== */
+
+.footer-2{
+    background-color: var(--footer-color);
+}
+
+.footer-2 .section-heading,
+.footer-2 .section-text{
+    text-align: start !important;
+    margin-left: 0;
+    color: white;
+}
+
+.footer-2 .section-text{
+    font-size: 14px;
+}
+.footer-2 .copyright-text p{
+    text-transform: capitalize;
+}

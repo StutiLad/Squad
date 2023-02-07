@@ -8,8 +8,15 @@
     --icon-color:rgb(202, 85, 67);
     --text-color:rgb(44, 249, 212);
     --second-background : rgb(245, 245, 243);
+    --star-icon-color: rgb(248, 100, 0);
+    --third-background: rgb(249, 249, 249);
+    --center-slide-background:rgb(249, 241, 222);
 }
 
 .base{
-    padding: 5rem 0;
+    padding: 3rem 0;
+}
+
+.m-20{
+    padding: 20px;
 }
