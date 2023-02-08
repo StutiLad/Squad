@@ -99,3 +99,9 @@
         letter-spacing: 0;
     }
 }
+
+@media (max-width: 499px){
+    .testimonial-card .card.slick-active.slick-center{
+        transform: scale(1);
+    }
+}

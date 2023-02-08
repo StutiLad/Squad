@@ -635,7 +635,11 @@ footer {
 }
 
 .footer-1 .footer-center .section-content .section-text {
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.footer-1 .footer-center .section-content .section-text p{
+    padding-right: 30px;
 }
 
 .footer-1 .footer-list {
