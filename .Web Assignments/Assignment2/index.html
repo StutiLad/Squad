@@ -33,14 +33,15 @@
     <header>
         <!-- ----- Navigation bar -----  -->
         <nav class="navbar fixed-top navbar-expand-lg " id="nav">
-            <div class="container">
-                <a class="navbar-brand" href="#">DEMO TOURS</a>
+            <div class="container-fluid">
+                <a class="navbar-brand brand-max" href="#">DEMO TOURS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse m-auto justify-content-evenly" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse m-auto justify-content-around" id="navbarSupportedContent">
+                    <a class="navbar-brand brand-min" href="#">DEMO TOURS</a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href=#">Home</a>
@@ -76,65 +77,35 @@
                         </li>
 
                     </ul>
+                    <div class="nav-icon">
+                        <ul class="list-unstyled follow-icon ps-0 mt-2 ">
+                            <a href="/">
+                                <li class="facebook"><i class="fa fa-facebook"></i></li>
+                            </a>
+                            <a href="/">
+                                <li class="twitter"><i class="fa fa-twitter"></i></li>
+                            </a>
+                            <a href="/">
+                                <li class="pinterest"><i class="fa fa-pinterest-p"></i></li>
+                            </a>
+                            <a href="/">
+                                <li class="instagram"><i class="fa fa-instagram"></i></li>
+                            </a>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="list-unstyled follow-icon ps-0 mt-2 ">
-                        <li class="facebook"><i class="fa fa-facebook"></i></li>
-                        <li class="twitter"><i class="fa fa-twitter"></i></li>
-                        <li class="pinterest"><i class="fa fa-pinterest-p"></i></li>
-                        <li class="instagram"><i class="fa fa-instagram"></i></li>
-                    </ul>
-                </div>
+
             </div>
         </nav>
 
         <!-- ----- Slider ----- -->
         <div class="image-slider">
-            <!-- <div class="img1 row g-0">
-                <div class="header-content">
-                    <p class="header-title">
-                        Explore
-                    </p>
-                    <p class="header-text">
-                        The Adventure
-                    </p>
-                </div>
-            </div>
-            <div class="img2 row g-0">
-                <div class="header-content">
-                    <p class="header-title">
-                        Explore
-                    </p>
-                    <p class="header-text">
-                        The Adventure
-                    </p>
-                </div>
-            </div>
-            <div class="img3 row g-0">
-                <div class="header-content">
-                    <p class="header-title">
-                        Explore
-                    </p>
-                    <p class="header-text">
-                        The Adventure
-                    </p>
-                </div>
-            </div>
-            <div class="img4 row g-0">
-                <div class="header-content">
-                    <p class="header-title">
-                        Explore
-                    </p>
-                    <p class="header-text">
-                        The Adventure
-                    </p>
-                </div>
-            </div> -->
             <div class="img1"></div>
             <div class="img2"></div>
             <div class="img3"></div>
             <div class="img4"></div>
         </div>
+
         <div class="header-content">
             <p class="header-title">
                 Explore
@@ -143,6 +114,7 @@
                 The Adventure
             </p>
         </div>
+
         <div class="header-button" dir="rtl">
             <button class="btn h-btn">
                 <span> Get a quote</span> </button>
@@ -156,8 +128,8 @@
         <section class="banner base">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <div class="col-lg-2 col-md-1"></div>
+                    <div class="col-lg-8 col-md-10 col-sm-12">
                         <div class="section-content">
                             <div class="section-icon">
                                 <div class="icon">
@@ -184,79 +156,76 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-lg-2 col-md-1"></div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="holiday-card">
-                            <div class="section-content">
-                                <div class="section-heading">
-                                    Holiday Inspiration
-                                </div>
-                            </div>
-                            <div class="cards">
-                                <div class="card-group ">
-
-                                    <!-- card-1 -->
-                                    <div class="col m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">Urugay palace</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>Urugay</span></p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- card-2 -->
-                                    <div class="col m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-2.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">ST. basil cathedral in moscow</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>Russia</span></p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- card-3 -->
-                                    <div class="col m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">national old city square</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>Rzym</span></p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="section-button">
-                                <button class="btn">View All</button>
+                    <div class="col-lg-2 col-md-1"></div>
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <div class="section-content">
+                            <div class="section-heading">
+                                cards Inspiration
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-1"></div>
+
+                    <div class="col-lg-2 col-md-1"></div>
+                </div>
+                <div class="row cards">
+
+                    <!-- card-1 -->
+                    <div class="col-lg-3 col-md-6 m-1 justify-content-center">
+                        <div class="card">
+                            <img src="./images/holiday card/card-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">Urugay palace</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>Urugay</span>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="col-lg-3 col-md-6 m-1 justify-content-center">
+                        <div class="card">
+                            <img src="./images/holiday card/card-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">ST. basil cathedral in moscow</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>Russia</span>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-3 -->
+                    <div class="col-lg-3 col-md-6 m-1 justify-content-center">
+                        <div class="card">
+                            <img src="./images/holiday card/card-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">national old city square</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>Rzym</span></p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="section-button">
+                    <button class="btn">View All</button>
                 </div>
             </div>
         </section>
@@ -278,10 +247,10 @@
 
                 <div class="row">
                     <div class="col-md-1"></div>
-                    <div class="col-md-10 m-20">
+                    <div class="col-lg-10 col-md-12 m-20 pt-0">
                         <div class="row">
                             <div class="col-md-4 col-lg-3 mt-3">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-1.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         road cycling
@@ -289,7 +258,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 mt-3">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-2.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         lesisure cycling
@@ -297,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 mt-3 ">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-3.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         mountain biking
@@ -305,7 +274,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 mt-3 ">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-4.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         family cycling
@@ -313,7 +282,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 mt-3 ">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-5.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         cycling Adventures
@@ -321,7 +290,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 mt-3 ">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-6.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         mountain biking
@@ -329,7 +298,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 mt-3 ">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-7.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         wildlife tours
@@ -337,7 +306,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-lg-3 mt-3 ">
-                                <img src="./images/camping.jpg" class="img-fluid" alt="image">
+                                <img src="./images/service/cycle-8.jpg" class="img-thumbnail" alt="image">
                                 <div class="icon-content">
                                     <div class="icon-heading">
                                         group tours
@@ -357,12 +326,12 @@
 
         <!-- ---------- Tours Area ---------- -->
         <section class="tour base overflow-hidden">
-            <div class="container  ">
+            <div class="container ">
                 <div class="row ">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="row">
-                            <div class="col-md-4 col-lg-3">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="section-content">
                                     <div class="section-icon">
                                         <div class="icon tri">
@@ -382,7 +351,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="section-content">
                                     <div class="section-icon">
                                         <div class="icon tri">
@@ -402,7 +371,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="section-content">
                                     <div class="section-icon">
                                         <div class="icon tri">
@@ -422,7 +391,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3">
+                            <div class="col-md-6 col-lg-3">
                                 <div class="section-content">
                                     <div class="section-icon">
                                         <div class="icon tri">
@@ -452,142 +421,139 @@
                 </div>
 
                 <div class="row ">
-                    <!-- <div class="col-lg-1"></div> -->
-                    <div class="col-md-12">
+                    <div class="col-lg-2 col-md-1"></div>
+                    <div class="col-lg-8 col-md-10">
                         <div class="tour-card">
                             <div class="section-content">
                                 <div class="section-heading">
                                     our popular tours
                                 </div>
                             </div>
-                            <div class=" row cards">
-                                <div class="card-group justify-content-center ">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-1"></div>
+                </div>
 
-                                    <!-- card-1 -->
-                                    <div class=" col-md-3 col-sm-1 m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">Balochistan road trip</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>Iraq</span>
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class=" row cards">
 
-                                    <!-- card-2 -->
-                                    <div class=" col-md-3 col-sm-1 m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-2.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">varkal beach road</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>india</span>
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- card-3 -->
-                                    <div class=" col-md-3 col-sm-1 m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">tour japonais de bruxells</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>japan</span>
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- card-4 -->
-                                    <div class=" col-md-3 col-sm-1  m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">cherry blossom valley</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>new
-                                                        caledona</span></p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- card-5 -->
-                                    <div class=" col-md-3 col-sm-1  m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">Theater square in dresden</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>perv</span>
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- card-6 -->
-                                    <div class=" col-md-3 col-sm-1 m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">mount maunganui</h5>
-                                                <p class="card-text"><span><i
-                                                            class="fa-solid fa-location-dot me-2"></i>new
-                                                        zealand</span></p>
-                                            </div>
-                                            <hr>
-                                            <div class="card-footer p-0 pt-2">
-                                                <small class="text-muted">&#8356;8857.00/PP</small> <small
-                                                    class="float-end">&rarr;</small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
+                    <!-- card-1 -->
+                    <div class="col-lg-3 col-md-5 m-2">
+                        <div class="card">
+                            <img src="./images/tours/tour-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">Balochistan road trip</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>Iraq</span>
+                                </p>
                             </div>
-                            <div class="section-button">
-                                <button class="btn">View All</button>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
                             </div>
                         </div>
                     </div>
-                    <div class="wheel">
-                        <img src="./images/wheel background.png" class="img-bottom">
+
+                    <!-- card-2 -->
+                    <div class="col-lg-3 col-md-5 m-2 ">
+                        <div class="card">
+                            <img src="./images/tours/tour-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">varkal beach road</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>india</span>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- card-3 -->
+                    <div class=" col-lg-3 col-md-5 m-2">
+                        <div class="card">
+                            <img src="./images/tours/tour-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">tour japonais de bruxells</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>japan</span>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- card-4 -->
+                    <div class=" col-lg-3 col-md-5 m-2">
+                        <div class="card">
+                            <img src="./images/tours/tour-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">cherry blossom valley</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>new
+                                        caledona</span></p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-5 -->
+                    <div class=" col-lg-3 col-md-5 m-2">
+                        <div class="card">
+                            <img src="./images/tours/tour-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">Theater square in dresden</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>perv</span>
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-6 -->
+                    <div class=" col-lg-3 col-md-5 m-2 ">
+                        <div class="card">
+                            <img src="./images/tours/tour-6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">mount maunganui</h5>
+                                <p class="card-text"><span><i class="fa-solid fa-location-dot me-2"></i>new
+                                        zealand</span></p>
+                            </div>
+                            <hr>
+                            <div class="card-footer p-0 pt-2">
+                                <small class="text-muted">&#8356;8857.00/PP</small> <small
+                                    class="float-end">&rarr;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-button">
+                    <button class="btn">View All</button>
                 </div>
             </div>
+
+            <div class="wheel">
+                <img src="./images/wheel background.png" class="img-bottom">
+            </div>
+
         </section>
 
         <!-- ---------- Testimonial Area ---------- -->
-        <section class="testimonial base overflow-hidden">
+        <section class="testimonial base pb-0 overflow-hidden">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-1"></div>
@@ -629,7 +595,7 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-full"></i>
                                 </p>
                                 <p class="card-text">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sed sapiente cum hic
@@ -665,8 +631,8 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                    <i class="fa fa-star-o"></i>
                                 </p>
                                 <p class="card-text">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sed sapiente cum hic
@@ -682,90 +648,86 @@
         </section>
 
         <!-- ---------- Blogs & Articles Area ---------- -->
-        <section class="blog">
+        <section class="blog base">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
+                    <div class="col-lg-2 col-md-1"></div>
+                    <div class="col-lg-8 col-md-10">
                         <div class="blog-card">
                             <div class="section-content">
                                 <div class="section-heading">
                                     Blogs and Articles
                                 </div>
                             </div>
-                            <div class="cards">
-                                <div class="card-group ">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-1"></div>
+                </div>
 
-                                    <!-- card-1 -->
-                                    <div class="col m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">Escape to wellness retreat 2019 sri lanka</h5>
-                                                <p class="card-text">
-                                                    Escape to wellness retreat 2019. 14th-24th feb 2019.
-                                                </p>
-                                                <div class="card-footer p-0 pt-2">
-                                                    <a href="/">Read more</a>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                    <!-- card-2 -->
-                                    <div class="col m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-2.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">28 photos that show you should be travelling to
-                                                    south america!!</h5>
-                                                <p class="card-text">
-                                                    28 phoptos that shows you should be traveling to south..
-                                                </p>
-                                                <div class="card-footer p-0 pt-2">
-                                                    <a href="/">Read more</a>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                    <!-- card-3 -->
-                                    <div class="col m-2 justify-content-center">
-                                        <div class="card">
-                                            <img src="./images/holiday card/card-3.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body px-0">
-                                                <h5 class="card-title">life begins at 18 meters... don't you just want
-                                                    to DIVE!!!</h5>
-                                                <p class="card-text">life begins at 18 meters... don't you just want to
-                                                    DIVE!!!</p>
-                                                <div class="card-footer p-0 pt-2">
-                                                    <a href="/">Read more</a>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
+                <div class="row cards blog-card">
+                    <!-- card-1 -->
+                    <div class="col-lg-3 col-md-6 m-2">
+                        <div class="card">
+                            <img src="./images/blog/blog-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">Escape to wellness retreat 2019 sri lanka</h5>
+                                <p class="card-text">
+                                    Escape to wellness retreat 2019. 14th-24th feb 2019.
+                                </p>
+                                <div class="card-footer p-0 pt-2">
+                                    <a href="/">Read more</a>
                                 </div>
                             </div>
-                            <div class="section-button">
-                                <button class="btn">View All</button>
+
+
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="col-lg-3 col-md-6 m-2">
+                        <div class="card">
+                            <img src="./images/blog/blog-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">28 photos that show you should be travelling to
+                                    south america!!</h5>
+                                <p class="card-text">
+                                    28 phoptos that shows you should be traveling to south..
+                                </p>
+                                <div class="card-footer p-0 pt-2">
+                                    <a href="/">Read more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-1"></div>
+
+                    <!-- card-3 -->
+                    <div class="col-lg-3 col-md-6 m-2">
+                        <div class="card">
+                            <img src="./images/blog/blog-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-0">
+                                <h5 class="card-title">life begins at 18 meters... don't you just want
+                                    to DIVE!!!</h5>
+                                <p class="card-text">life begins at 18 meters... don't you just want to
+                                    DIVE!!!</p>
+                                <div class="card-footer p-0 pt-2">
+                                    <a href="/">Read more</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
                 </div>
 
+                <div class="section-button">
+                    <button class="btn">View All</button>
+                </div>
             </div>
         </section>
 
         <!-- ---------- Follow Area ---------- -->
-        <section class="follow base">
+        <section class="follow ">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -779,7 +741,7 @@
                                 <!-- img - 1 -->
                                 <div class="col-md-2">
                                     <div class="card text-white">
-                                        <img src="./images/travel-4.webp"
+                                        <img src="./images/follow/follow-1.jpeg"
                                             class="card-img img-thumbnail rounded-0 border-0 px-1" alt="window">
                                         <div class="card-img-overlay text-end">
                                             <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
@@ -789,7 +751,7 @@
                                 <!-- img - 2 -->
                                 <div class="col-md-2">
                                     <div class="card text-white">
-                                        <img src="./images/travel-2.webp"
+                                        <img src="./images/follow/follow-2.jpg"
                                             class="card-img img-thumbnail rounded-0 border-0 px-1" alt="window">
                                         <div class="card-img-overlay text-end">
                                             <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
@@ -799,7 +761,7 @@
                                 <!-- img - 3 -->
                                 <div class="col-md-2">
                                     <div class="card text-white">
-                                        <img src="./images/travel-5.jpg"
+                                        <img src="./images/follow/follow-3.jpg"
                                             class="card-img img-thumbnail rounded-0 border-0 px-1" alt="window">
                                         <div class="card-img-overlay text-end">
                                             <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
@@ -809,7 +771,7 @@
                                 <!-- img - 4 -->
                                 <div class="col-md-2">
                                     <div class="card text-white">
-                                        <img src="./images/travel-2.webp"
+                                        <img src="./images/follow/follow-4.jpg"
                                             class="card-img img-thumbnail rounded-0 border-0 px-1" alt="window">
                                         <div class="card-img-overlay text-end">
                                             <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
@@ -819,7 +781,7 @@
                                 <!-- img - 5 -->
                                 <div class="col-md-2">
                                     <div class="card text-white">
-                                        <img src="./images/travel-4.webp"
+                                        <img src="./images/follow/follow-5.jpg"
                                             class="card-img img-thumbnail rounded-0 border-0 px-1" alt="window">
                                         <div class="card-img-overlay text-end">
                                             <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
@@ -829,7 +791,7 @@
                                 <!-- img - 6 -->
                                 <div class="col-md-2">
                                     <div class="card text-white">
-                                        <img src="./images/travel-5.jpg"
+                                        <img src="./images/follow/follow-6.jpg"
                                             class="card-img img-thumbnail rounded-0 border-0 px-1" alt="window">
                                         <div class="card-img-overlay text-end">
                                             <h5 class="card-title"><i class="fa fa-instagram mx-1"></i></h5>
@@ -841,12 +803,9 @@
                     </div>
                 </div>
         </section>
-    </main>
 
-
-    <!-- ==========Footer Area ========== -->
-    <footer>
-        <div class="footer-1 base">
+        <!-- ---------- Discover Area ---------- -->
+        <section class="discover base">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-2"></div>
@@ -864,40 +823,130 @@
                     <div class="col-md-2"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="footer-2 base">
+    </main>
+
+    <!-- ==========Footer Area ========== -->
+    <footer>
+        <div class="footer-1 base">
             <div class="container">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
-                        <div class="col-md-4">
-                            <div class="section-content">
-                                <div class="section-heading">
-                                    Newsletter
-                                </div>
-                                <div class="section-text">
-                                    <p>Mailing list and social media to keep up to date with our exclusive offers</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="section-content">
-                                <div class="section-heading">
-                                    Newsletter
-                                </div>
-                                <div class="section-text">
-                                    <p>Mailing list and social media to keep up to date with our exclusive offers</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 pe-lg-5">
+                                <div class="section-content">
+                                    <div class="section-heading">
+                                        Newsletter
+                                    </div>
+                                    <div class="section-text">
+                                        <p>Mailing list and social media to keep up to date with our exclusive offers
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6 col-md-12 d-inline-flex align-items-center px-lg-3">
+                                <form class="d-inline-flex w-100">
+                                    <input type="text" class="form-control w-75 rounded-0 bg-light"
+                                        placeholder="Enter Your Email Address">
+                                    <button class="btn rounded-0 w-25">Subscribe</button>
+                                </form>
+
+
+
+                            </div>
                         </div>
+
                     </div>
                     <div class="col-md-1"></div>
                 </div>
 
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-1"></div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 footer-center">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="section-content">
+                                    <div class="section-heading">
+                                        About us
+                                    </div>
+                                    <div class="section-text">
+                                        <p>Caras ac purus leo. Vivamus nec nunc porta justo gravida tempor consequat
+                                            quis quam.</p>
+                                    </div>
+                                    <div class="section-icon text-start">
+                                        <div>
+                                            <ul class="list-unstyled follow-icon ps-0 mt-2 ">
+                                                <a href="/">
+                                                    <li class="facebook"><i class="fa fa-facebook"></i></li>
+                                                </a>
+                                                <a href="/">
+                                                    <li class="twitter"><i class="fa fa-twitter"></i></li>
+                                                </a>
+                                                <a href="/">
+                                                    <li class="pinterest"><i class="fa fa-pinterest-p"></i></li>
+                                                </a>
+                                                <a href="/">
+                                                    <li class="instagram"><i class="fa fa-instagram"></i></li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-sm-6">
+                                <div class="section-content">
+                                    <div class="section-heading">
+                                        Quick links
+                                    </div>
+                                    <div class="section-text">
+                                        <ul class="list-unstyled footer-list">
+                                            <li>Home</li>
+                                            <li>Origin</li>
+                                            <li>Destination</li>
+                                            <li>Our Story</li>
+                                            <li>Collections</li>
+                                            <li>Gallery</li>
+                                            <li>Expeditions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-sm-6">
+                                <div class="section-content">
+                                    <div class="section-heading">
+                                        Explore us
+                                    </div>
+                                    <div class="section-text">
+                                        <ul class="list-unstyled footer-list">
+                                            <li>Wlidlife Tours</li>
+                                            <li>Leasure trips</li>
+                                            <li>Group Tours</li>
+                                            <li>Group Walk</li>
+                                            <li>Family Trips</li>
+                                            <li></li>
+                                            <li>Adventure Sport</li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="section-content">
+                                    <div class="section-heading">
+                                        Contact us
+                                    </div>
+                                    <div class="section-text">
+                                        <p><i class="fa fa-envelope-o"></i><a
+                                                href="mailto:info@samplemail.com">info@samplemail.com</a>
+                                        </p>
+                                        <p><i class="fa fa-phone"></i><a href="tel:+0123456789">0123 456789</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -915,7 +964,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Jquery JS -->
     <script src="./js/jquery-3.6.3.min.js"></script>

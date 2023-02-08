@@ -1,19 +1,16 @@
 @import url(./_global.css);
 
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 /* ============
 Navigation bar 
 =============== */
 
 header {
-    /* padding: 10px 0; */
     text-transform: uppercase;
 }
 
@@ -27,6 +24,7 @@ header .navbar .navbar-brand {
 header ul>li {
     font-size: 15px;
     margin: 0 10px;
+    width: fit-content;
 }
 
 header nav ul a {
@@ -102,6 +100,14 @@ Contact Icon
     color: white;
 }
 
+.follow-icon a {
+    text-decoration: none;
+}
+
+.follow-icon a:hover i {
+    transform: scale(1.2);
+}
+
 .follow-icon .facebook {
     background-color: #395B98;
 }
@@ -129,28 +135,43 @@ Image Slider
 
 .image-slider .img1,
 .image-slider .img3 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/header-bg.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.33657212885154064) 100%, rgba(0,0,0,0) 100%), url(../images/header-bg.jpg);
     background-size: cover;
 }
 
 .image-slider .img2,
 .image-slider .img4 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/testimonials-bg.jpg);
+    background: linear-gradient(0deg, rgba(0,0,0,0.33657212885154064) 100%, rgba(0,0,0,0) 100%), url(../images/testimonials-bg.jpg);
     background-size: cover;
 }
 
 .slick-arrow {
     display: none !important;
 }
-
+.slick-dotted.slick-slider{
+    margin-bottom: 0 !important;
+}
 .slick-dots li button {
-    color: black;
     size: 20px;
 }
 
+header .slick-dots{
+    margin-top: 0;
+    bottom: 10px !important;
+}
+
+header .slick-dots li{
+    top: -1px;
+    background-color: white;
+}
+
+header .slick-dots .slick-active{
+    background-color: transparent;
+    border: 1px solid white;
+}
 .header-content {
-    height: 100% !important;
-    width: 100%;
+    height: 70% !important;
+    width: 50%;
     color: white !important;
     display: inline-flex;
     flex-direction: column;
@@ -158,14 +179,15 @@ Image Slider
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 11%;
+    left: 25%;
 }
 
 .header-content .header-title {
-    font-size: 50px;
+    font-size: 5vw;
     text-transform: capitalize;
     font-family: 'Apple Chancery', cursive;
     color: var(--text-color);
@@ -174,7 +196,7 @@ Image Slider
 }
 
 .header-content .header-text {
-    font-size: 70px;
+    font-size: 5.5vw;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -238,16 +260,21 @@ Section Icon
     font-weight: 600;
 }
 
-
-
 /* ============
 Card
 =============== */
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     border: 0;
     border-radius: 0;
-    /* margin: 10px; */
     padding: 15px;
     width: 100%;
 }
@@ -280,6 +307,7 @@ Card
 
 .card .text-muted {
     color: rgb(17, 202, 168) !important;
+    font-size: 15px;
 }
 
 /* ============
@@ -294,11 +322,12 @@ Section Button
 .section-button button {
     margin: 25px 0;
     background-color: var(--button-color);
-    width: 15%;
+    padding: 1% 5% ;
     border-radius: 0;
     text-transform: uppercase;
     color: white;
     font-size: 15px;
+    font-weight: 600;
 }
 
 .section-button button:hover {
@@ -327,11 +356,17 @@ Banner Area
 }
 
 
-
 /* ============
 Service Area
 =============== */
 
+.service img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border: 0;
+    border-radius: 0;
+}
 
 /* ============
 Tours Area
@@ -401,6 +436,10 @@ Tours Area
     margin: auto;
 }
 
+.tour .section-content .section-icon .icon:hover i{
+    transform: scale(1.2);
+}
+
 /* ============
 Testimonial Area
 =============== */
@@ -408,7 +447,7 @@ Testimonial Area
 .testimonial-card .card {
     background-color: var(--third-background);
     width: 550px !important;
-    padding: 20px 0;
+    padding: 20px 50px;
 }
 
 .testimonial-card .card .card-body {
@@ -435,8 +474,9 @@ Testimonial Area
 }
 
 .slick-dots {
-    margin-top: 15px;
-    bottom: -40px !important;
+    position: relative;
+    margin: 10px 0;
+    bottom: 0 !important;
 }
 
 .slick-dots li {
@@ -461,22 +501,22 @@ Testimonial Area
 Blog Area
 =============== */
 .blog-card .card {
-    padding: 0 5px;
+    padding: 0 ;
 }
 
 .blog-card .card .card-title {
     text-transform: capitalize;
     font-size: 16px;
-}
+} 
 
-.blog-card .card .card-text{
+.blog-card .card .card-text {
     font-size: 15px;
     text-overflow: ellipsis;
-}
+    margin-bottom: 1px; 
+} 
 
 .blog-card .card-footer a {
     text-transform: uppercase;
-    letter-spacing: 1px;
     text-decoration: none;
     color: var(--footer-color);
     font-weight: 600;
@@ -492,53 +532,126 @@ Follow Area
     object-fit: cover;
 }
 
-.follow-slider  .card {
+.follow-slider .card {
     height: fit-content;
     border: 0;
     padding: 0;
 }
 
 /* ============
-Footer Area
+Discover Area
 =============== */
 
-footer{
-    color: white;
+.discover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3925945378151261) 64%, rgba(0, 0, 0, 0) 100%), url(../images/discover.jpg);
+    background-position: right;
+    background-size: 150%;
+    mix-blend-mode: hard-light;
+    padding: 5rem 0;
 }
 
-/* ===== First footer ===== */
-
-.footer-1{
-    background-image: url(../images/travel-2.webp);
-}
-
-.footer-1 .section-content .section-heading{
+.discover .section-content .section-heading {
     display: flex;
     flex-direction: column;
 }
 
-.footer-1 .section-button .btn{
+.discover .section-button .btn {
     width: 250px;
     height: 50px;
     text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
-/* ===== Sedcond footer ===== */
+/* ============
+Footer Area
+=============== */
 
-.footer-2{
+footer {
+    color: white;
+}
+
+.footer-1 {
     background-color: var(--footer-color);
 }
 
-.footer-2 .section-heading,
-.footer-2 .section-text{
+.footer-1 .row:first-child .section-heading {
+    text-transform: capitalize;
+}
+
+.footer-1 .section-heading,
+.footer-1 .section-text {
     text-align: start !important;
     margin-left: 0;
     color: white;
 }
 
-.footer-2 .section-text{
+.footer-1 .section-text {
     font-size: 14px;
+    margin-top: 0;
 }
-.footer-2 .copyright-text p{
+
+.footer-1 form button {
+    width: 15%;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--icon-color);
+}
+
+.footer-1 form button:hover {
+    border: 1px solid var(--icon-color);
+    background-color: transparent;
+}
+
+.footer-1 .copyright-text p {
     text-transform: capitalize;
+}
+
+.footer-1 .footer-center {
+    margin: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.footer-1 .follow-icon {
+    justify-content: flex-start;
+}
+
+.footer-1 .follow-icon li:first-child {
+    margin-left: 0;
+}
+
+.footer-1 .footer-center>.col-md-3 {
+    padding-right: 20px;
+}
+
+.footer-1 .footer-center .section-content .section-heading {
+    font-size: 18px;
+}
+
+.footer-1 .footer-center .section-content .section-text {
+    font-size: 15px;
+}
+
+.footer-1 .footer-list {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-1 .footer-list li {
+    width: 50%;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+
+.footer-1 .section-text a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
 }

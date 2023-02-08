@@ -1,0 +1,101 @@
+@media (min-width:1200px) {
+    .brand-max {
+        display: none !important;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .brand-max {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    nav {
+        display: flex !important;
+        background-color: rgba(0, 0, 0, 0.329) !important;
+    }
+
+    nav .brand-min {
+        display: none;
+    }
+
+    nav .navbar-toggler {
+        border: 1px solid white;
+        background-color: #ffffff54;
+    }
+
+    .base {
+        padding: 2rem 0;
+    }
+
+    .discover .section-button .btn{
+        width: 160px;
+        font-size: 12px;
+        padding: 0 4px;
+        font-weight: 300 !important;
+        letter-spacing: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .base {
+        padding: 1rem 0;
+    }
+
+    header .navbar .navbar-brand,
+    .discover .section-content .section-heading {
+        font-size: 20px;
+    }
+
+    .follow {
+        padding-bottom: 1rem;
+    }
+
+    .banner .section-content .section-icon .icon {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+    .section-content .section-heading {
+        font-size: 25px;
+    }
+
+    .section-content .section-text {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .base {
+        padding: 0;
+    }
+
+    header .navbar .navbar-brand {
+        font-size: 18px;
+    }
+
+    .follow {
+        padding-bottom: 1rem;
+    }
+
+    .header-content .header-text,
+    .header-content .header-title {
+        font-size: 50px;
+    }
+
+    .section-content .section-text {
+        font-size: 14px;
+    }
+
+    .discover .section-button .btn{
+        width: 100px;
+        font-size: 9px;
+        padding: 0 4px;
+        font-weight: 300 !important;
+        letter-spacing: 0;
+    }
+}
