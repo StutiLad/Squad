@@ -1,0 +1,29 @@
+@media (max-width: 991px) {
+
+    .w-65,
+    .w-45 {
+        width: 100% !important;
+    }
+
+    .info-bar .w-75 {
+        width: 60% !important;
+    }
+
+    header .info-bar .right-info .info-contact {
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .w-65,
+    .w-45 {
+        width: 100% !important;
+    }
+
+    .info-bar .w-75 {
+        width: 75% !important;
+    }
+
+}
