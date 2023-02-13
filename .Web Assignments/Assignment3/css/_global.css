@@ -2,6 +2,7 @@
     --orange-color: rgb(233, 105, 6);
     --green-color: rgb(100, 187, 83);
     --glass-background: rgba(249, 244, 238, 0.541);
+    --footer-background: rgb(29, 29, 29);
 }
 
 * {
@@ -26,6 +27,8 @@ Width Property
     width: 45%;
 }
 
+
+
 /* ============
 color Property
 =============== */
@@ -33,6 +36,38 @@ color Property
 .text-orange {
     color: var(--orange-color);
 }
+
+
+/* ============
+Buttons
+=============== */
+
+.page-btn {
+    background-color: var(--orange-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 0px;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    padding: 15px 0;
+    width: 40%;
+    background: linear-gradient(to right, var(--green-color) 50%, var(--orange-color) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.page-btn:hover,
+.page-btn:active,
+.page-btn:focus {
+    background-color: var(--green-color);
+    color: white;
+    background-position: left bottom;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
 
 /* ============
 Text Property
@@ -124,5 +159,24 @@ Text Property
 
 .section-content .sub-section-content .sub-text a:hover {
     font-weight: 700;
-    transform: scale(1.4);
+    color: var(--orange-color);
 }
+
+
+/* path {
+    fill: transparent;
+}
+
+svg:first-child {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+svg:first-child text {
+    font-size: 28px;
+    font-weight: bold;
+} */

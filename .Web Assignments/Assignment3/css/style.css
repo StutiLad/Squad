@@ -1,5 +1,4 @@
 @import url(../css/_global.css);
-/* @import url(../css/font.css); */
 
 /* ========== Header Area ==========*/
 
@@ -54,11 +53,11 @@ header nav ul li a {
     font-weight: 400 !important;
 }
 
-header nav ul li a:hover {
-    transform: scale(1.1);
+header nav ul li:hover a {
+    /* transform: scale(1.1); */
     font-weight: 600 !important;
     border-bottom: 1.5px solid white;
-    margin: 0 3px;
+    /* margin: 0 3px; */
 }
 
 header nav ul li .nav-link.active {
@@ -112,7 +111,7 @@ Image Slider
     z-index: 1;
 }
 
-/* ========== Main Area ==========*/
+/* ========== Main Area ========== */
 
 /* ============
 Banner Area
@@ -127,7 +126,6 @@ Banner Area
     height: 100%;
     object-fit: cover;
 }
-
 
 .banner .section-content .section-heading img {
     width: 35px;
@@ -228,17 +226,6 @@ Menu Area
     color: var(--orange-color);
 }
 
-.menu .menu-card .left-menu button {
-    width: 100%;
-    text-align: left;
-    color: black;
-    border-radius: 0;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-}
-
 .menu .menu-card .nav-pills .nav-link.active,
 .menu .menu-card .nav-pills .show>.nav-link {
     background-color: var(--orange-color);
@@ -255,6 +242,42 @@ Menu Area
     color: white !important;
 }
 
+/* traingle  */
+
+.menu .menu-card .left-menu button {
+    width: 100%;
+    text-align: left;
+    color: black;
+    border-radius: 0;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    margin: 1px 0;
+}
+.menu .menu-card .left-menu button.nav-link{
+    transition: none;
+}
+.menu .menu-card .left-menu button.nav-link:hover{
+    background-color: var(--orange-color);
+    color: white;
+}
+
+.menu .menu-card .left-menu button.nav-link.active::after,
+.menu .menu-card .left-menu button.nav-link:hover::after{
+    content: '';
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid var(--orange-color);
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+/* 
 .right {
     width: 0;
     height: 13%;
@@ -269,12 +292,12 @@ Menu Area
 
 .menu .menu-card .nav-pills .nav-link:hover {
     background-color: var(--orange-color);
-    color: white;
+    
 }
 
 .menu .menu-card .nav-pills .nav-link:hover .right {
     border-left-color: var(--orange-color);
-}
+} */
 
 /* Menu area right side */
 
@@ -309,16 +332,227 @@ Gallery Area
     letter-spacing: 1px;
 }
 
-.gallery .section-content .section-footer{
+.gallery .section-content .section-footer {
     justify-content: center;
 }
 
-.gallery .section-content .section-footer img{
+.gallery .section-content .section-footer img {
     width: 10%;
 }
 
-.banner .banner-image{
-    width: 100%;
-    height: 100%;
+.gallery .gallery-image {
+    /* width: 100%;
+    height: 100%; */
     object-fit: cover;
+}
+
+/* ============
+Offer Area
+=============== */
+
+.offer {
+    background: url(../images/offer.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* ============
+Contact Area
+=============== */
+
+.contact img {
+    object-fit: cover;
+}
+
+.contact input {
+    color: white;
+}
+
+.contact input:focus,
+.contact input:active,
+.contact textarea:focus,
+.contact textarea:active {
+    border-color: var(--orange-color);
+    box-shadow: none;
+    color: white;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+/* ============
+Social Media Area
+=============== */
+
+/* ============
+Inquiry Area
+=============== */
+
+.inquiry .section-heading {
+    padding-right: 7rem;
+    padding-top: 2rem;
+}
+
+.inquiry-img img {
+    top: 0;
+    bottom: 0;
+}
+
+/* ========== Footer Area ==========*/
+
+footer {
+    background-color: var(--footer-background) !important;
+    background: url(../images/logo.png) repeat-x;
+    background-position: bottom;
+    background-size: 30px;
+}
+
+/* ============
+Footer location Area
+=============== */
+
+footer .footer-location ul li {
+    border-right: 1px solid rgba(128, 128, 128, 0.356);
+    margin: 10px 0;
+}
+
+footer .footer-location ul li:last-child {
+    border: 0;
+}
+
+footer .section-content .section-heading img {
+    width: 35px;
+    height: 35px;
+}
+
+footer .section-content .sub-section-content .sub-text a {
+    color: var(--orange-color) !important;
+}
+
+footer .section-content .sub-section-content .sub-text a:hover {
+    font-weight: 700;
+    color: var(--green-color) !important;
+}
+
+
+/* ============
+Link area
+=============== */
+
+
+footer .footer-border {
+    border-top: 1px solid rgba(128, 128, 128, 0.356);
+    margin: 20px 0;
+}
+
+footer .footer-content .footer-heading {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+footer .footer-content .footer-text {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+footer .footer-content .footer-text .copy-right p:last-child a {
+    border-left: 1px solid rgba(128, 128, 128, 0.9);
+}
+
+footer .footer-content .footer-text p:first-child {
+    padding-right: 5rem;
+}
+
+footer .footer-content .footer-text ul li {
+    padding-bottom: 10px;
+}
+
+footer .footer-content .footer-text a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+footer .footer-content .footer-text .copy-right a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--orange-color);
+}
+
+footer .footer-content .footer-text ul li:nth-child(2n) a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--orange-color);
+}
+
+footer .footer-content .footer-text ul li:nth-child(2n+1) a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--green-color);
+}
+
+/* ============
+Footer Icon
+=============== */
+
+footer .footer-content .footer-icon i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+footer .footer-content .footer-icon a {
+    text-decoration: none;
+}
+
+footer .footer-content .footer-icon a:hover .uil-facebook-f {
+    color: #3b5998;
+}
+
+footer .footer-content .footer-icon a:hover .uil-twitter {
+    color: #00acee;
+}
+
+footer .footer-content .footer-icon a:hover .uil-instagram {
+    background: linear-gradient(200deg, rgba(76, 104, 215, 1) 35%, rgba(138, 58, 185, 1) 45%, rgba(188, 42, 141, 1) 55%, rgba(233, 89, 80, 1) 65%, rgba(251, 173, 80, 1) 75%, rgba(252, 204, 99, 1) 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer .footer-content .footer-icon a:hover .uil-linkedin {
+    color: #0A66C2;
+}
+
+/* ============
+Go to top button
+=============== */
+
+footer .top {
+    width: -webkit-fill-available;
+    text-align: right;
+}
+
+footer .top .top-icon {
+    margin-left: auto;
+    border: 1px solid var(--green-color);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: var(--green-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .top .top-icon i::before {
+    font-size: 33px;
+}
+
+footer .top .top-icon:hover {
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
 }
