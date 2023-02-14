@@ -1,5 +1,21 @@
-@media (max-width: 991px) {
+/* max-width: less than or equal to the width */
+/* min-width: greater than or equal to the width */
 
+/* less than or equal to 991px */
+@media (max-width: 991px) {
+    .menu .menu-card .right-menu .tab-pane.active .section-content .section-text ul li::after {
+        content:
+        ". . . . . . . ."
+        " . . . . . . . ."
+        " . . . . . . . ."
+        " . . . . . . . ."
+    }
+}
+
+
+
+/*  less than or equal to the width 991px */
+@media (max-width: 991px) and (min-width: 769px){
     .base{
         padding: 2rem 0;
     }
@@ -37,7 +53,12 @@
 
 }
 
+/*  less than or equal to the width 768px */
 @media (max-width: 768px) {
+
+    .base{
+        padding: 2rem 0;
+    }
 
     .w-65,
     .w-45 {
@@ -48,4 +69,10 @@
         width: 75% !important;
     }
 
+    .service .bg-layer{
+        padding: 0;
+    }
+    .service .bg-upper-layer {
+        padding-bottom: 2rem;
+    }
 }

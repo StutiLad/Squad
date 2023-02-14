@@ -6,6 +6,12 @@
 Navigation Bar
 =============== */
 
+/* marquee */
+marquee {
+    background-color: var(--orange-color);
+    border-bottom: 1px solid var(--orange-color);
+}
+
 header .info-bar {
     font-size: 14px;
     background-color: var(--orange-color);
@@ -22,6 +28,8 @@ header .info-bar .right-info .info-contact {
     border-right: 1px solid white;
     padding: 0 10px;
 }
+
+/* Navbar */
 
 header .navbar .navbar-brand {
     font-size: 28px;
@@ -40,7 +48,7 @@ header nav {
 
 header nav ul.navbar-nav.px-5 {
     border-left: 1px solid white;
-    padding: 15px;
+    padding: 15px 10px;
 }
 
 header nav a {
@@ -48,21 +56,41 @@ header nav a {
 }
 
 header nav ul li a {
-    font-size: 18px;
+    font-size: 13.5px !important;
     letter-spacing: 1px;
     font-weight: 400 !important;
 }
 
 header nav ul li:hover a {
     /* transform: scale(1.1); */
-    font-weight: 600 !important;
-    border-bottom: 1.5px solid white;
+    /* font-weight: 600 !important;  */
+    /* border-bottom: 1.5px solid white; */
     /* margin: 0 3px; */
+    text-decoration: underline white;
 }
 
 header nav ul li .nav-link.active {
     font-weight: 600 !important;
-    transform: scale(1.1);
+    /* transform: scale(1); */
+    font-size: 14px;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus
+{
+    outline-offset: 0;
+    border: 0;
+    box-shadow: none;
+}
+.navbar-toggler{
+    color: white;
+    border: 0;
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-image: none;
+    font-size: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center ;
 }
 
 /* ============
@@ -102,6 +130,11 @@ Image Slider
     transform: scale(3);
 }
 
+.slick-prev:hover,
+.slick-next:hover {
+    transform: scale(3.2);
+}
+
 .slick-next {
     right: 10%;
 }
@@ -118,13 +151,14 @@ Banner Area
 =============== */
 
 .banner .banner-spacing {
-    padding: 10% 0;
+    padding: 5% 0;
 }
 
 .banner .banner-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.6;
 }
 
 .banner .section-content .section-heading img {
@@ -215,9 +249,13 @@ Menu Area
     letter-spacing: 1px;
 }
 
-/* Menu area left side */
-.menu .menu-card .left-menu {
+.menu .menu-card {
     background-color: var(--glass-background);
+}
+
+/* Menu area left side */
+.menu .menu-card .left-menu .menu-list {
+    /* background-color: var(--glass-background); */
     padding: 5% 4%;
 }
 
@@ -256,16 +294,18 @@ Menu Area
     height: 50px;
     margin: 1px 0;
 }
-.menu .menu-card .left-menu button.nav-link{
+
+.menu .menu-card .left-menu button.nav-link {
     transition: none;
 }
-.menu .menu-card .left-menu button.nav-link:hover{
+
+.menu .menu-card .left-menu button.nav-link:hover {
     background-color: var(--orange-color);
     color: white;
 }
 
 .menu .menu-card .left-menu button.nav-link.active::after,
-.menu .menu-card .left-menu button.nav-link:hover::after{
+.menu .menu-card .left-menu button.nav-link:hover::after {
     content: '';
     position: absolute;
     right: -25px;
@@ -301,22 +341,73 @@ Menu Area
 
 /* Menu area right side */
 
+.menu .menu-card .right-menu .menu-item .items {
+    display: flow-root;
+    padding: 60px 45px;
+}
+
 .menu .menu-card .right-menu {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46262254901960786) 25%, rgba(0, 0, 0, 0.3981967787114846) 100%), url(../images/menu2.jpeg) no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0.7) 100%), url(../images/menu2.jpg) no-repeat;
     background-size: cover;
-    padding: 27% 10%;
+    background-position: right;
 }
 
-.menu .menu-card .right-menu img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.menu .menu-card .right-menu .tab-content .section-content .section-heading,
+.menu .menu-card .right-menu .tab-content .section-content .section-text {
+    color: white !important;
 }
 
-.menu .menu-card .right-menu .tab-content>.active {
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 2px;
+.menu .menu-card .right-menu .section-content .section-heading {
+    font-size: 22px;
+}
+
+.menu .menu-card .right-menu .section-content .section-heading span {
+    display: block;
+    width: 15%;
+    border-bottom: 2px solid var(--green-color);
+    margin: 5px 0;
+}
+
+.menu .menu-card .right-menu .section-content .section-text ul li:first-child{
+    padding-top: 20px;
+}
+
+.menu .menu-card .right-menu .section-content .section-text ul li span {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 3px 0;
+    overflow-x: hidden;
+}
+.menu .menu-card .right-menu .section-content .section-text ul li{
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+}
+.menu .menu-card .right-menu .tab-pane.active .section-content .section-text ul li::after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+    ". . . . "
+    " . . . . . "
+    " . . . ."
+    " . . . "
+}
+
+.menu .menu-card .right-menu .section-content .section-text ul.dots span:first-child {
+    padding-right: 0.7em;
+    background: inherit;
+    float: left;
+}
+
+.menu .menu-card .right-menu .section-content .section-text ul.dots span:last-child {
+    float: right;
+}
+.menu .menu-card .right-menu .section-content .section-text ul.dots span+span {
+    background: inherit;
+    position: relative;
+    z-index: 1;
 }
 
 /* ============
@@ -340,10 +431,14 @@ Gallery Area
     width: 10%;
 }
 
-.gallery .gallery-image {
-    /* width: 100%;
-    height: 100%; */
+.gallery .gallery-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.gallery .gallery-image img:hover {
+    opacity: 0.6;
 }
 
 /* ============
@@ -383,6 +478,79 @@ Contact Area
 /* ============
 Social Media Area
 =============== */
+.social img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social img:hover {
+    opacity: 0.7;
+    background-color: black;
+}
+
+.social .follow-content .follow-icon a i,
+.follow-content .section-content .section-heading,
+.follow-content .section-content .section-text p {
+    color: black;
+}
+
+.social .follow-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.social .follow-content>div {
+    width: 100%;
+    margin: auto;
+}
+
+.follow-content .section-content .section-text p {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.social .follow-content .follow-icon {
+    width: fit-content;
+}
+
+.social .follow-content .follow-icon a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--green-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.social .follow-content .follow-icon a i {
+    font-size: 23px;
+}
+
+.social .follow-content .follow-icon:hover a {
+    background-color: var(--green-color);
+
+}
+
+.social .follow-content .follow-icon:hover a i {
+    transform: scale(1.1);
+    /* background: linear-gradient(200deg, rgba(76, 104, 215, 1) 35%, rgba(138, 58, 185, 1) 45%, rgba(188, 42, 141, 1) 55%, rgba(233, 89, 80, 1) 65%, rgba(251, 173, 80, 1) 75%, rgba(252, 204, 99, 1) 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+}
 
 /* ============
 Inquiry Area

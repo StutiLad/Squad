@@ -34,7 +34,32 @@
     <header>
         <div class="fixed-top" id="top-nav">
             <!-- ----- Navigation Bar Top -----  -->
-            <div class="row m-auto w-100 info-bar d-inline-flex justify-content-between">
+            <!-- <marquee behavior="" direction="">
+                <div class="row m-auto w-100 info-bar d-inline-flex justify-content-between">
+                    <div class="col-5 left-info d-inline-flex float-start  py-0 w-100 ">
+                        <div class="d-inline-flex justify-content-between align-items-center w-100 ">
+                            <p class="pe-5"><i class="uil-clock-eight me-2"></i> Sun-Thu 11.00am to 9.30pm</p>
+                            <p class="pe-5">Fri-Sat 11.00am to 10.00pm</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-7 right-info d-inline-flex py-0 justify-content-end py-sm-2 py-lg-0 py-md-2 w-100">
+                        <div
+                            class="info-contact d-inline-flex justify-content-around w-45 pb-sm-2 pb-lg-0 pb-md-2 w-100">
+                            <p class="me-sm-3"><i class="uil-phone me-2"></i>location 1</p>
+                            <p><b>+00 (0) 12 3456 7890</b><i class="uil uil-angle-down ms-2"></i></p>
+                        </div>
+                        <div
+                            class="info-detail d-inline-flex justify-content-end   w-100 pt-0 ">
+                            <P>Now offering an exclusive rewards programme for you<i
+                                    class="uil uil-angle-right ms-2"></i>
+                            </P>
+                        </div>
+                    </div>
+                </div>
+            </marquee> -->
+
+            <!-- <div class="row m-auto w-100 info-bar d-inline-flex justify-content-between">
                 <div class="col-lg-5 col-md-12 left-info d-inline-flex float-start py-sm-2 py-lg-0 py-md-2">
                     <div class="d-inline-flex justify-content-between w-75 ">
                         <p><i class="uil-clock-eight me-2"></i> Sun-Thu 11.00am to 9.30pm</p>
@@ -45,7 +70,7 @@
                     class="col-lg-7 col-md-12 right-info d-inline-flex flex-lg-row flex-sm-column py-sm-2 py-lg-0 py-md-2 justify-content-lg-end justify-content-start">
                     <div
                         class="info-contact d-inline-flex justify-content-lg-around justify-content-md-start w-45 pb-sm-2 pb-lg-0 pb-md-2">
-                        <p class="me-sm-3"><i class="uil-phone me-2"></i>Loaction 1</p>
+                        <p class="me-sm-3"><i class="uil-phone me-2"></i>location 1</p>
                         <p><b>+00 (0) 12 3456 7890</b><i class="uil uil-angle-down ms-2"></i></p>
                     </div>
                     <div
@@ -54,18 +79,22 @@
                         </P>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ----- Navigation Bar -----  -->
             <nav class="navbar navbar-expand-lg py-0" id="nav">
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand d-inline-flex align-items-center px-3" href="#">Food
+                    <a class="navbar-brand d-inline-flex align-items-center px-3 me-0" href="#">Food
                         <span class="text-orange ps-1">Hub</span>
                         <img src="./images/logo.png" class="bg-transparent border-0 mx-1">
                     </a>
                     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                        aria-label="Toggle navigation"></button>
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="uil uil-align-center-alt"></i>
+                        </span>
+                    </button>
 
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav ms-auto me-5 mt-2 mt-lg-0">
@@ -73,19 +102,19 @@
                                 <a class="nav-link active" href="#" aria-current="page">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="#banner">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Menu</a>
+                                <a class="nav-link" href="#menu">Menu</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Order Online</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
+                                <a class="nav-link" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Locations</a>
+                                <a class="nav-link" href="#location">Locations</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Careers</a>
@@ -96,7 +125,7 @@
                         </ul>
                         <ul class="navbar-nav px-5">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -119,33 +148,37 @@
     <main>
 
         <!-- ---------- Banner Area ---------- -->
-        <section class="banner base bg-black pb-3">
+        <section class="banner base bg-black pb-3" id="banner">
             <div class="container">
                 <div class="row banner-spacing pb-0">
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="banner-image">
-                            <img src="./images/banner.png" alt="sapgetti">
+                        <div class="banner-image position-relative">
+                            <div class="circle-text">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="350px"
+                                    height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300"
+                                    xml:space="preserve" class="d-none d-lg-block">
+                                    <defs>
+                                        <path id="criclePath" d=" M 150, 150  
+                                                m 0, 0  
+                                                a 30,30 0 0,1 146,0  
+                                                a 30,30 0 0,1 -146,0 " />
+                                    </defs>
+                                    <g>
+                                        <use xlink:href="#criclePath" fill="none" /> <text fill="#fff">
+                                            <textPath xlink:href="#criclePath">
+                                                Globle Sourcing Local . Delivering
+                                            </textPath>
+                                        </text>
+                                    </g>
+                                </svg>
+                            </div>
+                            <img src="./images/banner.jpg" alt="sapgetti">
                         </div>
-                        <!-- <div class="circle-text">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="350px" height="300px"
-                                viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-                                <defs>
-                                    <path id="criclePath"
-                                        d=" M 150, 150 m 0, a 30,30 0 0,1 146,  a 30,30 0 0,1 -146,0 " />
-                                </defs>
-                                <g>
-                                    <use xlink:href="#criclePath" fill="none" /> <text fill="#fff">
-                                        <textPath xlink:href="#criclePath">Globle Sourcing Local &#9679; Delivering
-                                        </textPath>
-                                    </text>
-                                </g>
-                            </svg>
-                        </div> -->
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 pt-lg-3 pt-md-5 pt-sm-5">
-                        <div class="section-content ps-lg-5 ps-md-0">
-                            <div class="section-heading d-inline-flex align-items-center">
+                        <div class="section-content ps-lg-5 ps-md-0 pt-lg-5">
+                            <div class="section-heading d-inline-flex align-items-center pt-lg-5">
                                 love all serve all
                                 <img src="./images/logo.png" class="img-fluid bg-transparent border-0 mx-2">
                             </div>
@@ -160,7 +193,7 @@
                                 </p>
                             </div>
                             <div class="section-footer">
-                                <p>Discover more</p>
+                                <p><a href="/">Discover more</a></p>
                                 <img src="./images/arrow.png" alt="arrow" class="img-fluid">
                             </div>
                         </div>
@@ -204,7 +237,7 @@
 
                             <div class="sub-section-content pt-0">
                                 <div class="sub-heading">
-                                    Loaction 1
+                                    location 1
                                     <span></span>
                                 </div>
                                 <div class="sub-text">
@@ -231,7 +264,7 @@
 
                             <div class="sub-section-content">
                                 <div class="sub-heading">
-                                    Loaction 2
+                                    location 2
                                     <span></span>
                                 </div>
                                 <div class="sub-text">
@@ -258,7 +291,7 @@
 
                             <div class="sub-section-content">
                                 <div class="sub-heading">
-                                    Loaction 3
+                                    location 3
                                     <span></span>
                                 </div>
                                 <div class="sub-text">
@@ -309,7 +342,7 @@
                         <div class="col-lg-6 col-md-12 serivce-image">
                             <img src="./images/service.png" alt="service">
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 pt-lg-3 pt-md-0 pt-sm-5">
+                        <div class="col-lg-6 col-md-12 col-sm-12 pt-lg-3 pt-md-0 pt-sm-0">
                             <div class="section-content ps-lg-5 ps-md-0">
                                 <div class="section-heading d-inline-flex align-items-center">
                                     service & quality control
@@ -324,7 +357,7 @@
                                     </p>
                                 </div>
                                 <div class="section-footer">
-                                    <p>Discover more</p>
+                                    <p><a href="/">Discover more</a></p>
                                     <img src="./images/arrow.png" alt="arrow" class="img-fluid">
                                 </div>
                             </div>
@@ -336,12 +369,12 @@
         </section>
 
         <!-- ---------- Menu Area ---------- -->
-        <section class="menu  base" id="menu">
+        <section class="menu base" id="menu">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-md-1"></div>
                     <div class="col-lg-8 col-md-10 col-sm-12">
-                        <div class="section-content d-flex flex-column align-items-center">
+                        <div class="section-content d-flex flex-column align-items-center pb-4">
                             <div class="section-heading">
                                 Our menu
                             </div>
@@ -350,107 +383,520 @@
                             </div>
                         </div>
 
-                        <div class="menu-card d-flex align-items-start row">
+                        <div class="row menu-card">
 
-                            <div class="left-menu col-sm-12 col-lg-6">
-                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
-                                    aria-orientation="vertical">
+                            <div class="left-menu col-lg-6 col-md-12">
 
-                                    <button class="nav-link active" id="v-pills-starter-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-starter" type="button" role="tab"
-                                        aria-controls="v-pills-starter" aria-selected="true"><i
-                                            class="fa-solid fa-caret-right"></i> Starters
-                                    </button>
+                                <div class="menu-list">
+                                    <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
 
-                                    <button class="nav-link" id="v-pills-pizza-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-pizza" type="button" role="tab"
-                                        aria-controls="v-pills-pizza" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Pizzas
-                                    </button>
+                                        <a href="#v-pills-starter" class="w-100 text-decoration-none">
+                                            <button class="nav-link active" id="v-pills-starter-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-starter" type="button"
+                                                role="tab" aria-controls="v-pills-starter" aria-selected="true">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Starters
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-burger-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-burger" type="button" role="tab"
-                                        aria-controls="v-pills-burger" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Burgers & Wraps <div class="right">
-                                        </div></button>
+                                        <a href="#v-pills-pizza" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-pizza-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-pizza" type="button" role="tab"
+                                                aria-controls="v-pills-pizza" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Pizzas
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-curries-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-curries" type="button" role="tab"
-                                        aria-controls="v-pills-curries" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Curries
-                                    </button>
+                                        <a href="#v-pills-burger" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-burger-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-burger" type="button" role="tab"
+                                                aria-controls="v-pills-burger" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Burgers & Wraps
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-south-indian-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-south-indian" type="button" role="tab"
-                                        aria-controls="v-pills-south-indian" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> South Indian
-                                    </button>
+                                        <a href="#v-pills-curries" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-curries-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-curries" type="button" role="tab"
+                                                aria-controls="v-pills-curries" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Curries
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-noodles-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-noodles" type="button" role="tab"
-                                        aria-controls="v-pills-noodles" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Indo-Chinese &
-                                        Noodles </button>
+                                        <a href="#v-pills-south-indian" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-south-indian-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-south-indian" type="button" role="tab"
+                                                aria-controls="v-pills-south-indian" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                South Indian
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-rice-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-rice" type="button" role="tab"
-                                        aria-controls="v-pills-rice" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Indo-Chinese Rice <div class="right">
-                                        </div></button>
+                                        <a href="#v-pills-noodles" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-noodles-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-noodles" type="button" role="tab"
+                                                aria-controls="v-pills-noodles" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Indo-Chinese & Noodles
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-naan-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-naan" type="button" role="tab"
-                                        aria-controls="v-pills-naan" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Naan/Roti
-                                    </button>
+                                        <a href="#v-pills-rice" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-rice-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-rice" type="button" role="tab"
+                                                aria-controls="v-pills-rice" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Indo-Chinese Rice
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-drink-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-drink" type="button" role="tab"
-                                        aria-controls="v-pills-drink" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Drinks
-                                    </button>
+                                        <a href="#v-pills-naan" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-naan-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-naan" type="button" role="tab"
+                                                aria-controls="v-pills-naan" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Naan/Roti
+                                            </button>
+                                        </a>
 
-                                    <button class="nav-link" id="v-pills-thali-tab" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-thali" type="button" role="tab"
-                                        aria-controls="v-pills-thali" aria-selected="false"><i
-                                            class="fa-solid fa-caret-right"></i> Lunch Thali
-                                    </button>
+                                        <a href="#v-pills-drink" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-drink-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-drink" type="button" role="tab"
+                                                aria-controls="v-pills-drink" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Drinks
+                                            </button>
+                                        </a>
+
+                                        <a href="#v-pills-thali" class="w-100 text-decoration-none">
+                                            <button class="nav-link" id="v-pills-thali-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-thali" type="button" role="tab"
+                                                aria-controls="v-pills-thali" aria-selected="false">
+                                                <i class="fa-solid fa-caret-right"></i>
+                                                Lunch Thali
+                                            </button>
+                                        </a>
+
+                                    </div>
                                 </div>
+
                             </div>
 
-                            <div class="right-menu col-sm-12 col-lg-6">
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active" id="v-pills-starter" role="tabpanel"
-                                        aria-labelledby="v-pills-starter-tab" tabindex="0">starter</div>
+                            <div class="right-menu col-lg-6 col-md-12">
 
-                                    <div class="tab-pane fade" id="v-pills-pizza" role="tabpanel"
-                                        aria-labelledby="v-pills-pizza-tab" tabindex="0">pizza</div>
+                                <div class="menu-item">
 
-                                    <div class="tab-pane fade" id="v-pills-burger" role="tabpanel"
-                                        aria-labelledby="v-pills-burger-tab" tabindex="0">Burgers & Wraps</div>
+                                    <div class="tab-content" id="v-pills-tabContent">
 
-                                    <div class="tab-pane fade" id="v-pills-curries" role="tabpanel"
-                                        aria-labelledby="v-pills-curries-tab" tabindex="0">curries</div>
+                                        <div class="tab-pane fade show active" id="v-pills-starter" role="tabpanel"
+                                            aria-labelledby="v-pills-starter-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        Starters
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <div class="tab-pane fade" id="v-pills-south-indian" role="tabpanel"
-                                        aria-labelledby="v-pills-south-indian-tab" tabindex="0">south-indian</div>
+                                        <div class="tab-pane fade" id="v-pills-pizza" role="tabpanel"
+                                            aria-labelledby="v-pills-pizza-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        Pizzas
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    Margarita pizza
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    cheese pizza
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    panner tikka pizza
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    farm house pizza
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <div class="tab-pane fade" id="v-pills-noodles" role="tabpanel"
-                                        aria-labelledby="v-pills-noodles-tab" tabindex="0">noodles</div>
+                                        <div class="tab-pane fade" id="v-pills-burger" role="tabpanel"
+                                            aria-labelledby="v-pills-burger-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        Burgers & Wraps
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn burger
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble wrap
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom wrap
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <div class="tab-pane fade" id="v-pills-rice" role="tabpanel"
-                                        aria-labelledby="v-pills-rice-tab" tabindex="0">rice</div>
+                                        <div class="tab-pane fade" id="v-pills-curries" role="tabpanel"
+                                            aria-labelledby="v-pills-curries-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        Curries
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <div class="tab-pane fade" id="v-pills-naan" role="tabpanel"
-                                        aria-labelledby="v-pills-naan-tab" tabindex="0">naan</div>
+                                        <div class="tab-pane fade" id="v-pills-south-indian" role="tabpanel"
+                                            aria-labelledby="v-pills-south-indian-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        south-indian
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <div class="tab-pane fade" id="v-pills-drink" role="tabpanel"
-                                        aria-labelledby="v-pills-drink-tab" tabindex="0">drink</div>
+                                        <div class="tab-pane fade" id="v-pills-noodles" role="tabpanel"
+                                            aria-labelledby="v-pills-noodles-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        Indo-Chinese & Noodles
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <div class="tab-pane fade" id="v-pills-thali" role="tabpanel"
-                                        aria-labelledby="v-pills-thali-tab" tabindex="0">thali</div>
+                                        <div class="tab-pane fade" id="v-pills-rice" role="tabpanel"
+                                            aria-labelledby="v-pills-rice-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        Indo-Chinese rice
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="v-pills-naan" role="tabpanel"
+                                            aria-labelledby="v-pills-naan-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        naan/roti
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="v-pills-drink" role="tabpanel"
+                                            aria-labelledby="v-pills-drink-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        drink
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="v-pills-thali" role="tabpanel"
+                                            aria-labelledby="v-pills-thali-tab" tabindex="0">
+                                            <div class="items">
+                                                <div class="section-content">
+                                                    <div class="section-heading">
+                                                        thali
+                                                        <span></span>
+                                                    </div>
+                                                    <div class="section-text">
+                                                        <ul class="list-unstyled dots">
+                                                            <li>
+                                                                <span>
+                                                                    purple corn tostada
+                                                                </span>
+                                                                <span>$36</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    bruno's scribble
+                                                                </span>
+                                                                <span>$30</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    fresh oysters dozen
+                                                                </span>
+                                                                <span>$59</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>
+                                                                    wild mushroom arancini
+                                                                </span>
+                                                                <span>$18</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-1"></div>
@@ -480,11 +926,11 @@
                                 <img src="./images/gallery-1.png" alt="gallery" class="img-fluid ">
                             </div>
                             <div class="col-lg-6 col-md-12 ">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 pe-lg-0 gallery-image">
+                                <div class="row py-sm-3">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 pe-lg-0 gallery-image pe-0">
                                         <img src="./images/gallery-2.png" alt="gallery" class="img-fluid ">
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 pe-lg-0 gallery-image ">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 pe-lg-0 gallery-image pe-0">
                                         <img src="./images/gallery-3.png" alt="gallery" class="img-fluid">
                                     </div>
                                 </div>
@@ -498,7 +944,7 @@
 
                         <div class="section-content d-flex flex-column align-items-center pt-4">
                             <div class="section-footer">
-                                <p>Discover more</p>
+                                <p><a href="/">Discover more</a></p>
                                 <img src="./images/arrow.png" alt="arrow" class="img-fluid">
                             </div>
                         </div>
@@ -571,23 +1017,71 @@
         <section class="social">
             <div class="container-fluid px-0 overflow-hidden">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <img src="./images/gallery-1.png" alt="" class="img-thumbnail border-0 rounded-0 bg-transparent">
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-1.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
-                            <div class="col-lg-6"><img src="./images/gallery-1.png" alt="" class="img-thumbnail border-0 rounded-0 bg-transparent"></div>
-                            <div class="col-lg-6"><img src="./images/gallery-1.png" alt="" class="img-thumbnail border-0 rounded-0 bg-transparent"></div>
-                            <div class="col-lg-6"><img src="./images/gallery-1.png" alt="" class="img-thumbnail border-0 rounded-0 bg-transparent"></div>
+
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-2.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
+                            </div>
+
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-3.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
+                            </div>
+
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-4.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-4 bg-black">col-lg-4</div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="follow-content">
+                            <div class="follow-icon">
+                                <a href="/"><i class="uil-instagram"></i></a>
+                            </div>
+                            <div class="section-content">
+                                <div class="section-text py-3 p-0">
+                                    <p>get updates and stay connected</p>
+                                </div>
+                                <div class="section-heading px-5">
+                                    Follow us on instagram
+                                </div>
+                            </div>
+                            <div class="pt-3">
+                                <button type="submit" class="btn btn-light page-btn ">@Meerasxpress</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-12">
                         <div class="row">
-                            <div class="col-lg-6">col-lg-6</div>
-                            <div class="col-lg-6">col-lg-6</div>
-                            <div class="col-lg-6">col-lg-6</div>
-                            <div class="col-lg-6">col-lg-6</div>
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-5.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
+                            </div>
+
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-6.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
+                            </div>
+
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-7.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
+                            </div>
+
+                            <div class="col-6 p-0">
+                                <img src="./images/follow-8.png" alt="img"
+                                    class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -599,7 +1093,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 base d-flex align-items-center">
-                        <div class="px-5">
+                        <div class="ps-5">
                             <div class="section-content">
                                 <div class="section-heading">
                                     Any questions? call & talk to us today.
@@ -724,7 +1218,7 @@
                         </div>
                         <div class="footer-text">
                             <ul class="list-unstyled">
-                                <li><a href="#">About us</a></li>
+                                <li><a href="#bannner">About us</a></li>
                                 <li><a href="#menu">Menu</a></li>
                                 <li><a href="#gallery">gallery</a></li>
                                 <li><a href="#location">locations</a></li>
@@ -741,7 +1235,7 @@
                         </div>
                         <div class="footer-text">
                             <ul class="list-unstyled">
-                                <li><a href="#">About us</a></li>
+                                <li><a href="#banner">About us</a></li>
                                 <li><a href="#menu">Menu</a></li>
                                 <li><a href="#gallery">gallery</a></li>
                                 <li><a href="#location">locations</a></li>

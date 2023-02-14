@@ -107,7 +107,11 @@ Text Property
     font-weight: 100;
     line-height: 28px;
     margin: 0;
-    cursor: pointer;
+}
+
+.section-content .section-footer p a {
+    color: white;
+    text-decoration: none;
 }
 
 .section-content .section-footer img {
@@ -115,6 +119,18 @@ Text Property
     width: 20%;
     padding-left: 20px;
     align-self: flex-end;
+}
+
+.section-content .section-footer:hover p {
+    transform: scale(1.1);
+}
+
+.section-content .section-footer:hover img {
+    transform: scale(1.1);
+    margin-left: 30px;
+    /* animation */
+    animation: fadeInLeft;
+    animation-duration: 1s;
 }
 
 /* sub section content */
@@ -163,20 +179,20 @@ Text Property
 }
 
 
-/* path {
+.circle-text path {
     fill: transparent;
 }
 
-svg:first-child {
+.circle-text svg:first-child {
     position: absolute;
-    top: -20px;
-    left: 0;
-    right: 180px;
+    top: -154px;
+    right: -90px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
 }
 
-svg:first-child text {
-    font-size: 28px;
+.circle-text svg:first-child text {
+    font-size: 28.5px;
     font-weight: bold;
-} */
+}
