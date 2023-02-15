@@ -55,6 +55,16 @@
         width: 50%;
     }
 
+    .header-text span.food.position-absolute{
+        font-size: 100px;
+    }
+    .image-slider::after{
+        font-size: 70px;
+        width: 90%;
+        left: 15px;
+        bottom: -24px;
+        text-align: end;
+    }
     .banner .banner-image img,
     .service .serivce-image img {
         width: 95%;
@@ -133,6 +143,18 @@
         font-size: 16px;
     }
 
+    .header-text span.food.position-absolute{
+        font-size: 90px;
+        left: 15%;
+    }
+    .image-slider::after{
+        font-size: 65px;
+        width: 90%;
+        left: 45px;
+        bottom: -24px;
+        text-align: end;
+    }
+
     .service .bg-layer {
         padding: 0;
     }
@@ -186,6 +208,18 @@
 
     .banner .section-content {
         padding-top: 25px;
+    }
+
+    .header-text span.food.position-absolute{
+        font-size: 70px;
+        left: 5%;
+    }
+    .image-slider::after{
+        font-size: 50px;
+        width: 90%;
+        left: 25px;
+        bottom: -19px;
+        text-align: end;
     }
 
     .phone,
