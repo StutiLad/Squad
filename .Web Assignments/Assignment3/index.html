@@ -34,52 +34,28 @@
     <header>
         <div class="fixed-top" id="top-nav">
             <!-- ----- Navigation Bar Top -----  -->
-            <!-- <marquee behavior="" direction="">
-                <div class="row m-auto w-100 info-bar d-inline-flex justify-content-between">
-                    <div class="col-5 left-info d-inline-flex float-start  py-0 w-100 ">
-                        <div class="d-inline-flex justify-content-between align-items-center w-100 ">
+            <marquee behavior="scroll" scrollamount="5" direction="left" width="100%" onMouseOver="this.stop()"
+                onMouseOut="this.start()">
+                <div class="m-auto w-100 info-bar d-inline-flex ">
+                    <div class="left-info d-inline-flex float-start  py-0 ">
+                        <div class="d-inline-flex justify-content-between align-items-center w-50">
                             <p class="pe-5"><i class="uil-clock-eight me-2"></i> Sun-Thu 11.00am to 9.30pm</p>
                             <p class="pe-5">Fri-Sat 11.00am to 10.00pm</p>
                         </div>
                     </div>
-                    <div
-                        class="col-7 right-info d-inline-flex py-0 justify-content-end py-sm-2 py-lg-0 py-md-2 w-100">
-                        <div
-                            class="info-contact d-inline-flex justify-content-around w-45 pb-sm-2 pb-lg-0 pb-md-2 w-100">
-                            <p class="me-sm-3"><i class="uil-phone me-2"></i>location 1</p>
+                    <div class=" right-info d-inline-flex justify-content-end py-0 ">
+                        <div class="info-contact d-inline-flex justify-content-around pb-0 px-2 w-50">
+                            <p><i class="uil-phone me-2"></i>location 1</p>
                             <p><b>+00 (0) 12 3456 7890</b><i class="uil uil-angle-down ms-2"></i></p>
                         </div>
-                        <div
-                            class="info-detail d-inline-flex justify-content-end   w-100 pt-0 ">
+                        <div class="info-detail d-inline-flex justify-content-end   pt-0 px-2">
                             <P>Now offering an exclusive rewards programme for you<i
-                                    class="uil uil-angle-right ms-2"></i>
+                                    class="uil uil-angle-right ms-1"></i>
                             </P>
                         </div>
                     </div>
                 </div>
-            </marquee> -->
-
-            <!-- <div class="row m-auto w-100 info-bar d-inline-flex justify-content-between">
-                <div class="col-lg-5 col-md-12 left-info d-inline-flex float-start py-sm-2 py-lg-0 py-md-2">
-                    <div class="d-inline-flex justify-content-between w-75 ">
-                        <p><i class="uil-clock-eight me-2"></i> Sun-Thu 11.00am to 9.30pm</p>
-                        <p>Fri-Sat 11.00am to 10.00pm</p>
-                    </div>
-                </div>
-                <div
-                    class="col-lg-7 col-md-12 right-info d-inline-flex flex-lg-row flex-sm-column py-sm-2 py-lg-0 py-md-2 justify-content-lg-end justify-content-start">
-                    <div
-                        class="info-contact d-inline-flex justify-content-lg-around justify-content-md-start w-45 pb-sm-2 pb-lg-0 pb-md-2">
-                        <p class="me-sm-3"><i class="uil-phone me-2"></i>location 1</p>
-                        <p><b>+00 (0) 12 3456 7890</b><i class="uil uil-angle-down ms-2"></i></p>
-                    </div>
-                    <div
-                        class="info-detail d-inline-flex justify-content-lg-end justify-content-md-start  w-50 pt-sm-2 pt-lg-0 pt-md-2 ">
-                        <P>Now offering an exclusive rewards programme for you<i class="uil uil-angle-right ms-2"></i>
-                        </P>
-                    </div>
-                </div>
-            </div> -->
+            </marquee>
 
             <!-- ----- Navigation Bar -----  -->
             <nav class="navbar navbar-expand-lg py-0" id="nav">
@@ -131,6 +107,7 @@
                     </div>
                 </div>
             </nav>
+
         </div>
 
         <!-- ----- Slider ----- -->
@@ -151,7 +128,7 @@
         <section class="banner base bg-black pb-3" id="banner">
             <div class="container">
                 <div class="row banner-spacing pb-0">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-8 col-8">
                         <div class="banner-image position-relative">
                             <div class="circle-text">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +153,7 @@
                             <img src="./images/banner.jpg" alt="sapgetti">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 pt-lg-3 pt-md-5 pt-sm-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 pt-lg-3 pt-md-1 pt-sm-4">
                         <div class="section-content ps-lg-5 ps-md-0 pt-lg-5">
                             <div class="section-heading d-inline-flex align-items-center pt-lg-5">
                                 love all serve all
@@ -221,7 +198,7 @@
         <section class="location base" id="location">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 pe-lg-5">
+                    <div class="col-lg-6 col-md-7 col-sm-12 pe-lg-5">
                         <div class="section-content">
 
                             <div class="section-heading d-inline-flex align-items-center">
@@ -242,7 +219,7 @@
                                 </div>
                                 <div class="sub-text">
                                     <div class="row">
-                                        <div class="col-md-6 col-sm-12">
+                                        <div class="col-md-10 col-sm-6">
                                             <div class="sub-content">
                                                 <p class="address">000 Lorem Ipsum Road, Kenton,Middlesex ABC 012</p>
                                                 <p>
@@ -250,7 +227,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-12">
+                                        <div class="col-md-12 col-sm-6 pt-md-2">
                                             <div class="sub-content">
                                                 <p><em>Opening Hours :</em> </p>
                                                 <p>Sun - Thu 11:00am to 9:30pm</p>
@@ -269,7 +246,7 @@
                                 </div>
                                 <div class="sub-text">
                                     <div class="row">
-                                        <div class="col-md-6 col-sm-12">
+                                        <div class="col-md-10 col-sm-6">
                                             <div class="sub-content">
                                                 <p class="address">000 Lorem Ipsum Road, Kenton,Middlesex ABC 012</p>
                                                 <p>
@@ -277,7 +254,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-12">
+                                        <div class="col-md-12 col-sm-6 pt-md-2">
                                             <div class="sub-content">
                                                 <p><em>Opening Hours :</em> </p>
                                                 <p>Sun - Thu 11:00am to 9:30pm</p>
@@ -296,7 +273,7 @@
                                 </div>
                                 <div class="sub-text">
                                     <div class="row">
-                                        <div class="col-md-6 col-sm-12">
+                                        <div class="col-md-10 col-sm-6">
                                             <div class="sub-content">
                                                 <p class="address">000 Lorem Ipsum Road, Kenton,Middlesex ABC 012</p>
                                                 <p>
@@ -304,7 +281,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-sm-12">
+                                        <div class="col-md-12 col-sm-6 pt-md-2">
                                             <div class="sub-content">
                                                 <p><em>Opening Hours :</em> </p>
                                                 <p>Sun - Thu 11:00am to 9:30pm</p>
@@ -318,7 +295,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-6 col-md-5 col-sm-10">
                         <img src="./images/location.png" alt="location">
                     </div>
                 </div>
@@ -327,22 +304,13 @@
 
         <!-- ---------- Service Area ---------- -->
         <section class="service base pb-0">
-            <div class="container-fluid bg-black">
-                <div class="row bg-layer pb-md-0">
-                    <div class="layer-image  py-md-0">
-                        <img src="./images/service.png" alt="">
-                    </div>
-
-                </div>
-            </div>
-
             <div class="bg-black service-layer p-0">
                 <div class="container">
                     <div class="row base bg-upper-layer">
-                        <div class="col-lg-6 col-md-12 serivce-image">
+                        <div class="col-lg-6 col-md-6 col-sm-10 serivce-image">
                             <img src="./images/service.png" alt="service">
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 pt-lg-3 pt-md-0 pt-sm-0">
+                        <div class="col-lg-6 col-md-6 col-sm-12 pt-lg-3 pt-md-0 pt-sm-4 pt-4">
                             <div class="section-content ps-lg-5 ps-md-0">
                                 <div class="section-heading d-inline-flex align-items-center">
                                     service & quality control
@@ -370,11 +338,11 @@
 
         <!-- ---------- Menu Area ---------- -->
         <section class="menu base" id="menu">
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="col-lg-2 col-md-1"></div>
                     <div class="col-lg-8 col-md-10 col-sm-12">
-                        <div class="section-content d-flex flex-column align-items-center pb-4">
+                        <div class="section-content d-flex flex-column align-items-center pb-4 pb-sm-1">
                             <div class="section-heading">
                                 Our menu
                             </div>
@@ -385,7 +353,7 @@
 
                         <div class="row menu-card">
 
-                            <div class="left-menu col-lg-6 col-md-12">
+                            <div class="left-menu col-lg-6 col-md-6 col-sm-6">
 
                                 <div class="menu-list">
                                     <div class="nav nav-pills me-3" id="v-pills-tab" role="tablist"
@@ -486,7 +454,7 @@
 
                             </div>
 
-                            <div class="right-menu col-lg-6 col-md-12">
+                            <div class="right-menu col-lg-6 col-md-6 col-sm-6">
 
                                 <div class="menu-item">
 
@@ -494,7 +462,7 @@
 
                                         <div class="tab-pane fade show active" id="v-pills-starter" role="tabpanel"
                                             aria-labelledby="v-pills-starter-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         Starters
@@ -534,7 +502,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-pizza" role="tabpanel"
                                             aria-labelledby="v-pills-pizza-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         Pizzas
@@ -574,7 +542,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-burger" role="tabpanel"
                                             aria-labelledby="v-pills-burger-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         Burgers & Wraps
@@ -614,7 +582,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-curries" role="tabpanel"
                                             aria-labelledby="v-pills-curries-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         Curries
@@ -654,7 +622,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-south-indian" role="tabpanel"
                                             aria-labelledby="v-pills-south-indian-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         south-indian
@@ -694,7 +662,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-noodles" role="tabpanel"
                                             aria-labelledby="v-pills-noodles-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         Indo-Chinese & Noodles
@@ -734,7 +702,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-rice" role="tabpanel"
                                             aria-labelledby="v-pills-rice-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         Indo-Chinese rice
@@ -774,7 +742,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-naan" role="tabpanel"
                                             aria-labelledby="v-pills-naan-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         naan/roti
@@ -814,7 +782,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-drink" role="tabpanel"
                                             aria-labelledby="v-pills-drink-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         drink
@@ -854,7 +822,7 @@
 
                                         <div class="tab-pane fade" id="v-pills-thali" role="tabpanel"
                                             aria-labelledby="v-pills-thali-tab" tabindex="0">
-                                            <div class="items">
+                                            <div class="items px-lg-5 px-md-2 px-sm-1">
                                                 <div class="section-content">
                                                     <div class="section-heading">
                                                         thali
@@ -908,8 +876,8 @@
         <section class="gallery bg-black base" id="gallery">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-1 col-md-1"></div>
-                    <div class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10 col-md-12 col-sm-12">
                         <div class="section-content d-flex flex-column align-items-center">
                             <div class="section-heading">
                                 Food gallery
@@ -922,24 +890,29 @@
                         <!-- gallery -->
 
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 pe-lg-0 pe-sm-0 gallery-image">
+                            <div class="col-lg-6 col-md-5 col-sm-5 col-12 pe-lg-0 pe-sm-0 gallery-image">
                                 <img src="./images/gallery-1.png" alt="gallery" class="img-fluid ">
                             </div>
-                            <div class="col-lg-6 col-md-12 ">
-                                <div class="row py-sm-3">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 pe-lg-0 gallery-image pe-0">
+
+                            <div class="col-lg-6 col-md-7 col-sm-7 col-12">
+
+                                <div class="row pb-sm-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 pe-lg-0 col-6 gallery-image pe-0">
                                         <img src="./images/gallery-2.png" alt="gallery" class="img-fluid ">
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 pe-lg-0 gallery-image pe-0">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 pe-lg-0 gallery-image">
                                         <img src="./images/gallery-3.png" alt="gallery" class="img-fluid">
                                     </div>
-                                </div>
+                                </div> 
+
                                 <div class="row">
                                     <div class="col-lg-12 pe-lg-0 pe-sm-0 gallery-image  pt-lg-2 ">
-                                        <img src="./images/gallery-4.png" alt="gallery" class="img-fluid pt-1">
+                                        <img src="./images/gallery-4.png" alt="gallery" class="img-fluid pt-lg-1 pt-md-1 pt-sm-1">
                                     </div>
                                 </div>
+
                             </div>
+
                         </div>
 
                         <div class="section-content d-flex flex-column align-items-center pt-4">
@@ -950,7 +923,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="col-lg-1"></div>
                 </div>
 
             </div>
@@ -961,11 +934,54 @@
         <section class="offer base">
             <div class="container-fluid px-0 overflow-hidden">
                 <div class="row">
-                    <div class="col-lg-2 col-md-1"></div>
-                    <div class="col-lg-8 col-md-10 m-auto text-center">
-                        <img src="./images/offer-1.png" alt="offer img-fluid">
+                    <div class="col-lg-3 col-md-1"></div>
+                    <div class="col-lg-6 col-md-10 m-auto text-center">
+
+                        <div class="offer-content">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-5  position-relative">
+                                    <img src="./images/phone.png" alt="phone" class="phone img-fluid">
+                                    <div class="logo-text position-absolute">
+                                        <img src="./images/logo.png" class="bg-transparent border-0 mx-1" width="25px"
+                                            height="25px">
+                                        <span>Food</span>
+                                        <span class="text-orange">Hub</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-12 ">
+                                    <div class="offer-text text-start">
+                                        <div class="section-content">
+                                            <div class="section-text">
+                                                <span class="text-orange">20% off your first order*</span>
+                                            </div>
+                                            <div class="section-heading">
+                                                Order Online <br>
+                                                FoodHubXpress.com
+                                            </div>
+                                            <div class="play-store">
+                                                <button
+                                                    class="btn btn-dark bg-black d-flex justify-content-center align-items-center p-1">
+                                                    <span><img src="./images/playstore.png" alt="play store"
+                                                            class="img-fluid">
+                                                    </span>
+                                                    <div class="store-text d-flex flex-column px-1 text-start">
+                                                        <span>get it on</span>
+                                                        <span>Google Play</span>
+                                                    </div>
+
+                                                </button>
+                                            </div>
+                                            <div class="section-text pt-0">
+                                                <span class="text-black">*T&C's apply.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-lg-2 col-md-1"></div>
+                    <div class="col-lg-3 col-md-1"></div>
                 </div>
             </div>
         </section>
@@ -974,37 +990,37 @@
         <section class="contact bg-black base" id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-6 col-md-5 col-sm-10">
                         <img src="./images/contact.png" alt="contact" class="img-fluid h-100">
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <form class="p-lg-5">
+                    <div class="col-lg-6 col-md-7 col-sm-10">
+                        <form class="p-lg-5 p-md-5 pe-md-0  py-sm-4">
                             <div class="section-content mb-3">
                                 <div class="section-heading">
                                     contact us
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 mb-sm-2">
                                 <input type="text"
                                     class="form-control bg-transparent rounded-0 border-end-0 border-start-0 border-top-0 px-0"
                                     name="name" id="name" placeholder="Name" />
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 mb-sm-2">
                                 <input type="tel"
                                     class="form-control bg-transparent rounded-0 border-end-0 border-start-0 border-top-0 px-0"
                                     name="phone" id="phone" placeholder="Phone" />
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 mb-sm-2">
                                 <input type="email"
                                     class="form-control bg-transparent rounded-0 border-end-0 border-start-0 border-top-0 px-0"
                                     name="email" id="email" placeholder="Email" />
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 mb-sm-2">
                                 <textarea type="text"
                                     class="form-control bg-transparent rounded-0 border-end-0 border-start-0 border-top-0 px-0"
-                                    name="message" id="message" cols="1" rows="4" placeholder="Message"></textarea>
+                                    name="message" id="message" cols="1" rows="3" placeholder="Message"></textarea>
                             </div>
-                            <div class="pt-3">
+                            <div class="pt-3 mb-sm-3">
                                 <button type="submit" class="btn btn-light page-btn ">Send Message</button>
                             </div>
                         </form>
@@ -1019,35 +1035,35 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
                         <div class="row">
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-1.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
 
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-2.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
 
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-3.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
 
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-4.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 m-auto">
                         <div class="follow-content">
                             <div class="follow-icon">
                                 <a href="/"><i class="uil-instagram"></i></a>
                             </div>
                             <div class="section-content">
-                                <div class="section-text py-3 p-0">
+                                <div class="section-text py-lg-3 py-md-2 p-0">
                                     <p>get updates and stay connected</p>
                                 </div>
                                 <div class="section-heading px-5">
@@ -1062,22 +1078,22 @@
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="row">
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-5.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
 
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-6.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
 
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-7.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
 
-                            <div class="col-6 p-0">
+                            <div class="col-lg-6 col-md-3 col-sm-3 col-3 p-0">
                                 <img src="./images/follow-8.png" alt="img"
                                     class="img-fluid img-thumbnail border-0 rounded-0 bg-transparent p-0">
                             </div>
@@ -1092,8 +1108,8 @@
         <section class="inquiry bg-black">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 base d-flex align-items-center">
-                        <div class="ps-5">
+                    <div class="col-lg-6 col-md-8 col-sm-8 col-8 base d-flex align-items-center">
+                        <div class="ps-lg-5 ps-md-4 ps-sm-0 ps-3">
                             <div class="section-content">
                                 <div class="section-heading">
                                     Any questions? call & talk to us today.
@@ -1104,9 +1120,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 base pb-0 inquiry-img text-start h-100 ">
+                    <div class="col-lg-6 col-md-4 col-sm-4 col-4 pt-md-5 inquiry-img text-center h-100">
                         <img src="./images/inquiry.avif" alt="inquiry"
-                            class="img-fluid img-thumbnail border-0 bg-transparent rounded-0 w-50 p-0 mx-5 ">
+                            class="img-fluid img-thumbnail border-0 bg-transparent rounded-0  p-0 ">
                     </div>
                 </div>
             </div>
@@ -1114,22 +1130,21 @@
 
     </main>
 
-
     <!-- ==========Footer Area ========== -->
     <footer class="base">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 footer-location">
-                    <ul class="list-unstyled d-inline-flex flex-wrap flex-lg-row flex-row">
-                        <li class="pe-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 my-2 right-border">
                             <div class="section-content">
                                 <div class="section-heading d-inline-flex align-items-center">
                                     call us now
                                     <img src="./images/logo.png" class=" img-fluid bg-transparent border-0 mx-2">
                                 </div>
                             </div>
-                        </li>
-                        <li class="px-5">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 my-2 right-border d-flex justify-content-lg-center">
                             <div class="section-content">
                                 <div class="sub-section-content">
                                     <div class="sub-heading">
@@ -1142,8 +1157,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="px-5">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 my-2 right-border d-flex justify-content-md-center">
                             <div class="section-content">
                                 <div class="sub-section-content">
                                     <div class="sub-heading">
@@ -1156,8 +1171,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="ps-5">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-4 my-2 d-flex justify-content-md-center">
                             <div class="section-content">
                                 <div class="sub-section-content">
                                     <div class="sub-heading">
@@ -1170,13 +1185,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="footer-border"></div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-12">
                     <div class="footer-content">
                         <div class="footer-heading">
                             About Company
@@ -1211,7 +1227,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-5 col-sm-5 col-5 mt-md-4 ">
                     <div class="footer-content">
                         <div class="footer-heading">
                             quick links
@@ -1228,7 +1244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 d-inline-flex align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-7 mt-md-4 d-inline-flex align-items-center about-company">
                     <div class="footer-content w-100">
                         <div class="footer-heading ">
                             about company
@@ -1244,7 +1260,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="top justify-content-end">
+                    <div class="top w-25 justify-content-end">
                         <div class="top-icon animate__animated animate__pulse animate__infinite animate__delay-2s	">
                             <a href="#" class="animate__animated animate__pulse animate__infinite animate__delay-2s"><i
                                     class="uil uil-arrow-up"></i></a>

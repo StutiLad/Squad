@@ -1,7 +1,8 @@
 :root {
     --orange-color: rgb(233, 105, 6);
     --green-color: rgb(100, 187, 83);
-    --glass-background: rgba(249, 244, 238, 0.541);
+    --glass-background: rgba(249, 244, 238, 0.85);
+    --offer-background:rgba(249, 251, 252, 0.85);
     --footer-background: rgb(29, 29, 29);
 }
 
@@ -13,20 +14,6 @@
 .base {
     padding: 5rem 0;
 }
-
-
-/* ============
-Width Property
-=============== */
-
-.w-65 {
-    width: 65%;
-}
-
-.w-45 {
-    width: 45%;
-}
-
 
 
 /* ============
