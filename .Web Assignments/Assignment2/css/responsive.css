@@ -13,7 +13,7 @@
 @media (max-width: 991px) {
     nav {
         display: flex !important;
-        background-color: rgba(0, 0, 0, 0.329) !important;
+        background-color: rgba(0, 0, 0, 0.75) !important;
     }
 
     nav .brand-min {
@@ -21,15 +21,35 @@
     }
 
     nav .navbar-toggler {
-        border: 1px solid white;
-        background-color: #ffffff54;
+        border: 0;
+        
+    }
+
+    .navbar-toggler:active,
+    .navbar-toggler:focus {
+        outline-offset: 0;
+        border: 0;
+        box-shadow: none;
+    }
+    
+    .navbar-toggler {
+        color: white;
+        border: 0;
+    }
+    
+    .navbar-toggler .navbar-toggler-icon {
+        background-image: none;
+        font-size: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .base {
         padding: 2rem 0;
     }
 
-    .discover .section-button .btn{
+    .discover .section-button .btn {
         width: 160px;
         font-size: 12px;
         padding: 0 4px;
@@ -91,7 +111,7 @@
         font-size: 14px;
     }
 
-    .discover .section-button .btn{
+    .discover .section-button .btn {
         width: 100px;
         font-size: 9px;
         padding: 0 4px;
@@ -100,8 +120,43 @@
     }
 }
 
-@media (max-width: 499px){
-    .testimonial-card .card.slick-active.slick-center{
+@media (max-width: 499px) {
+    .testimonial-card .card.slick-active.slick-center {
         transform: scale(1);
     }
+
+}
+
+@media (max-width: 481px) {
+
+    .header-content .header-text, .header-content .header-title{
+        font-size: 40px;
+    }
+    footer form {
+        flex-direction: column;
+    }
+
+    footer form input[type='text'] {
+        width: 100% !important;
+    }
+
+    .footer-1 form button {
+        width: 35% !important;
+        margin-top: 0.5rem;
+    }
+
+    .discover .section-button .btn {
+        width: 40% !important;
+        font-size: 12PX;
+    }
+
+    .section-button button {
+        padding: 2% 8%;
+        font-size: 13px;
+    }
+
+    .wheel .img-bottom{
+        bottom: -380px;
+    }
+
 }

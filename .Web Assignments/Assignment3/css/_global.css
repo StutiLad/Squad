@@ -165,6 +165,10 @@ Text Property
     color: var(--orange-color);
 }
 
+/* ============
+Circle text 
+=============== */
+
 
 .circle-text path {
     fill: transparent;

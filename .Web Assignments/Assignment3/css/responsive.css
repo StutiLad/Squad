@@ -55,16 +55,18 @@
         width: 50%;
     }
 
-    .header-text span.food.position-absolute{
+    .header-text span.food.position-absolute {
         font-size: 100px;
     }
-    .image-slider::after{
+
+    .image-slider::after {
         font-size: 70px;
         width: 90%;
         left: 15px;
         bottom: -24px;
         text-align: end;
     }
+
     .banner .banner-image img,
     .service .serivce-image img {
         width: 95%;
@@ -143,11 +145,12 @@
         font-size: 16px;
     }
 
-    .header-text span.food.position-absolute{
+    .header-text span.food.position-absolute {
         font-size: 90px;
         left: 15%;
     }
-    .image-slider::after{
+
+    .image-slider::after {
         font-size: 65px;
         width: 90%;
         left: 45px;
@@ -210,11 +213,12 @@
         padding-top: 25px;
     }
 
-    .header-text span.food.position-absolute{
+    .header-text span.food.position-absolute {
         font-size: 70px;
         left: 5%;
     }
-    .image-slider::after{
+
+    .image-slider::after {
         font-size: 50px;
         width: 90%;
         left: 25px;
@@ -248,18 +252,29 @@
     }
 
     .section-content .section-heading {
-        font-size: 26px;
+        font-size: 23px;
     }
 
     .section-content .section-text {
-        padding: 10px 0;
+        padding: 10px 0 !important;
         font-size: 14px;
+        line-height: 20px;
+    }
+
+    
+    .section-content .sub-section-content .sub-heading{
+        font-size: 17PX;
+    }
+
+    .section-content .sub-section-content .sub-text a{
+        font-size: 15PX;
     }
 
     .location .section-content .section-text p,
     .gallery .section-content .section-text p {
         font-size: 14px;
         padding: 0;
+        font-weight: 400;
     }
 
     .location .section-content .section-text p,
@@ -272,15 +287,17 @@
         font-size: 15px;
     }
 
-
-    .banner .section-content ,
-    .contact .section-content{
+    .banner .section-content,
+    .contact .section-content {
         padding-top: 25px;
     }
 
-    .location .section-content,
+    .location .section-content{
+        padding-bottom: 0;
+    }
     .location .sub-section-content {
         padding: 0;
+        padding-bottom: 20px;
     }
 
     .location img {
@@ -290,23 +307,25 @@
     .menu .menu-card .right-menu .menu-item .items {
         padding: 30px 15px;
     }
-    .contact form div:last-child{
+
+    .contact form div:last-child {
         padding-bottom: 20px;
     }
 
-    .gallery-image img{
+    .gallery-image img {
         padding: 10px 0;
     }
 
-    .copy-right{
+    .copy-right {
         padding: 10px 0;
         flex-direction: column;
     }
-    .copy-right p{
+
+    .copy-right p {
         margin-bottom: 1px;
     }
-    
-    footer .footer-content .footer-text .copy-right p:last-child a{
+
+    footer .footer-content .footer-text .copy-right p:last-child a {
         border: 0;
         padding: 0 !important;
     }
@@ -316,23 +335,54 @@
         font-size: 20px;
     }
 
-    .inquiry .page-btn{
+    .inquiry .page-btn {
         width: 50%;
     }
 
-    footer .footer-content .footer-text p:first-child{
+    .inquiry-img img{
+        padding-top: 95px !important;
+    }
+
+    footer .footer-content .footer-text p:first-child {
         margin-bottom: 5px;
     }
-    footer .footer-content .footer-heading{
+
+    footer .footer-content .footer-heading {
         font-size: 17px;
     }
 
     footer .about-company {
         flex-direction: column;
-        padding-bottom: 3rem ;
+        padding-bottom: 3rem;
     }
 
-    footer .about-company .top{
+    footer .about-company .top {
         width: 100% !important;
     }
+}
+
+/* less than 430 px */
+@media (max-width: 430px) {
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 15px
+    }
+
+    .header-text span.food.position-absolute {
+        font-size: 50px;
+    }
+
+    .image-slider::after {
+        left: 0;
+        width: 100%;
+        font-size: 38px;
+        text-align: center;
+        bottom: -13px;
+    }
+
+    .section-content .sub-section-content .sub-text p {
+        font-size: 14px;
+    }
+
 }
