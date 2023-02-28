@@ -26,6 +26,17 @@
         padding-left: 0 !important;
     }
 
+    .header-text span.food.position-absolute {
+        font-size: 120px;
+        text-align: center;
+        left: 0;
+        width: 100%;
+    }
+
+    .image-slider::after{
+        padding-left: 0;
+    }
+
     .service .serivce-image img {
         width: 100%;
         height: 100%;
@@ -41,6 +52,10 @@
     .section-content .sub-section-content .sub-text .sub-content .address {
         line-height: 25px;
     }
+
+    footer .footer-content .footer-text p:first-child {
+        padding-right: 0 !important;
+    }
 }
 
 
@@ -52,19 +67,7 @@
     }
 
     .page-btn {
-        width: 50%;
-    }
-
-    .header-text span.food.position-absolute {
-        font-size: 100px;
-    }
-
-    .image-slider::after {
-        font-size: 70px;
-        width: 90%;
-        left: 15px;
-        bottom: -24px;
-        text-align: end;
+        width: 180px;
     }
 
     .banner .banner-image img,
@@ -147,15 +150,11 @@
 
     .header-text span.food.position-absolute {
         font-size: 90px;
-        left: 15%;
     }
 
     .image-slider::after {
         font-size: 65px;
-        width: 90%;
-        left: 45px;
-        bottom: -24px;
-        text-align: end;
+        bottom: -20px;
     }
 
     .service .bg-layer {
@@ -194,7 +193,7 @@
     .page-btn {
         padding: 10px 0;
         font-size: 12px;
-        width: 35%;
+        width: 170px;
     }
 
     footer .footer-location .right-border:first-child {
@@ -205,6 +204,10 @@
 
 @media (max-width: 576px) {
 
+    .menu {
+        background-size: 150%;
+    }
+
     .section-content .section-text {
         padding: 10px 0;
     }
@@ -214,16 +217,16 @@
     }
 
     .header-text span.food.position-absolute {
-        font-size: 70px;
-        left: 5%;
+        font-size: 90px;
     }
 
     .image-slider::after {
-        font-size: 50px;
-        width: 90%;
-        left: 25px;
-        bottom: -19px;
-        text-align: end;
+        font-size: 55px;
+        bottom: -20px;
+    }
+
+    .gallery .gallery-image img {
+        padding-block: 5px;
     }
 
     .phone,
@@ -235,9 +238,18 @@
         justify-content: center !important;
     }
 
+    .offer-text .section-content,
+    .offer-text .section-content .play-store button {
+        text-align: center !important;
+        margin: auto;
+    }
+
     .inquiry-img img {
         padding-top: 70px !important;
         width: 100%;
+    }
+    .social .follow-content{
+        height: 400px;
     }
 
     .footer-icon {
@@ -260,13 +272,12 @@
         font-size: 14px;
         line-height: 20px;
     }
-
     
-    .section-content .sub-section-content .sub-heading{
+    .section-content .sub-section-content .sub-heading {
         font-size: 17PX;
     }
 
-    .section-content .sub-section-content .sub-text a{
+    .section-content .sub-section-content .sub-text a {
         font-size: 15PX;
     }
 
@@ -292,9 +303,10 @@
         padding-top: 25px;
     }
 
-    .location .section-content{
+    .location .section-content {
         padding-bottom: 0;
     }
+
     .location .sub-section-content {
         padding: 0;
         padding-bottom: 20px;
@@ -336,10 +348,10 @@
     }
 
     .inquiry .page-btn {
-        width: 50%;
+        width: 170px;
     }
 
-    .inquiry-img img{
+    .inquiry-img img {
         padding-top: 95px !important;
     }
 
@@ -369,20 +381,17 @@
         font-size: 15px
     }
 
+    .section-content .sub-section-content .sub-text p {
+        font-size: 14px;
+    }
+
     .header-text span.food.position-absolute {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .image-slider::after {
-        left: 0;
-        width: 100%;
-        font-size: 38px;
-        text-align: center;
-        bottom: -13px;
-    }
-
-    .section-content .sub-section-content .sub-text p {
-        font-size: 14px;
+        font-size: 40px;
+        bottom: -15px;
     }
 
 }

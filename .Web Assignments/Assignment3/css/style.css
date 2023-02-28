@@ -18,6 +18,7 @@ header .info-bar {
     background-color: var(--orange-color);
     color: white;
     padding: 6px 0;
+    border-inline: 1px solid var(--orange-color);
 }
 
 header .info-bar p {
@@ -59,11 +60,25 @@ header nav ul li a {
     font-size: 13.5px !important;
     letter-spacing: 1px;
     font-weight: 400 !important;
+    width: fit-content;
+    line-height: 18px;
 }
 
-header nav ul li:hover a {
-    text-decoration: underline white;
+header nav ul li .nav-link.active::after,
+header nav ul .nav-item .nav-link:hover::after {
+    display: block;
+    content: '';
+    position: relative;
+    bottom: -2px;
+    margin: auto;
+    border-bottom: 1px solid white;
+    width: 80%;
 }
+
+/* header nav ul li .nav-link:hover {
+    /* text-decoration: underline white; 
+    border-bottom: 1px solid white;
+} */
 
 header nav ul li .nav-link.active {
     font-weight: 600 !important;
@@ -98,10 +113,9 @@ Image Slider
     border-bottom: 5px solid var(--orange-color);
 }
 
-
 .image-slider img {
     width: 100%;
-    height: 95vh;
+    height: 600px;
     object-fit: cover;
     filter: brightness(0.3);
 }
@@ -141,10 +155,10 @@ Image Slider
     text-align: center;
     width: 100%;
     bottom: -30px;
+    padding-left: 150px;
 }
 
 .header-text span.food.position-absolute {
-
     font-size: 155px;
     z-index: 1;
     bottom: 40px;
@@ -240,7 +254,7 @@ Menu Area
 
 .menu {
     background-image: url(../images/menu.avif);
-    background-size: cover;
+    background-size: 100%;
     background-position-y: 200px;
     background-origin: content-box;
 }
@@ -330,7 +344,7 @@ Menu Area
 
 /* Menu area right side */
 
-.menu .menu-card .right-menu .menu-item .items {
+.menu .items {
     display: flow-root;
     padding-top: 60px;
 }
@@ -341,27 +355,30 @@ Menu Area
     background-position: right;
 }
 
-.menu .menu-card .right-menu .tab-content .section-content .section-heading,
-.menu .menu-card .right-menu .tab-content .section-content .section-text {
+.menu .right-menu .section-content .section-heading,
+.menu .right-menu .section-content .section-text,
+.menu .menu-accord .section-content .section-heading,
+.menu .menu-accord .section-content .section-text {
     color: white !important;
 }
 
-.menu .menu-card .right-menu .section-content .section-heading {
+.menu .right-menu .section-content .section-heading,
+.menu .menu-accord .section-content .section-heading {
     font-size: 22px;
 }
 
-.menu .menu-card .right-menu .section-content .section-heading span {
+.menu .section-content .section-heading span {
     display: block;
     width: 15%;
     border-bottom: 2px solid var(--green-color);
     margin: 5px 0;
 }
 
-.menu .menu-card .right-menu .section-content .section-text ul li:first-child {
+.menu .section-content .section-text ul li:first-child {
     padding-top: 20px;
 }
 
-.menu .menu-card .right-menu .section-content .section-text ul li span {
+.menu .section-content .section-text ul li span {
     text-transform: capitalize;
     font-weight: 400;
     font-size: 16px;
@@ -369,13 +386,13 @@ Menu Area
     overflow-x: hidden;
 }
 
-.menu .menu-card .right-menu .section-content .section-text ul li {
+.menu .section-content .section-text ul li {
     max-width: 40em;
     padding: 0;
     overflow-x: hidden;
 }
 
-.menu .menu-card .right-menu .tab-pane.active .section-content .section-text ul li::after {
+.menu .tab-pane.active .section-content .section-text ul li::after {
     float: left;
     width: 0;
     white-space: nowrap;
@@ -386,20 +403,77 @@ Menu Area
         " . . . "
 }
 
-.menu .menu-card .right-menu .section-content .section-text ul.dots span:first-child {
+.menu .section-content .section-text ul.dots span:first-child {
     padding-right: 0.7em;
     background: inherit;
     float: left;
 }
 
-.menu .menu-card .right-menu .section-content .section-text ul.dots span:last-child {
+.menu .section-content .section-text ul.dots span:last-child {
     float: right;
 }
 
-.menu .menu-card .right-menu .section-content .section-text ul.dots span+span {
+.menu .section-content .section-text ul.dots span+span {
     background: inherit;
     position: relative;
     z-index: 1;
+}
+
+/* accordion */
+.accordion-item:first-of-type .accordion-button,
+.accordion-item .accordion-button,
+.accordion-item:last-of-type .accordion-collapse,
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(0);
+}
+
+.accordion-item {
+    background: transparent !important;
+}
+
+.menu-accord .accordion-item .collapsed {
+    background-color: var(--glass-background) !important;
+}
+
+.menu-accord .accordion-item .accordion-button:not(.collapsed) {
+    background-color: var(--orange-color);
+    color: #fff;
+}
+
+.accordion-body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0.7) 100%), url(../images/menu2.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.menu .menu-accord .items {
+    padding-top: 20px;
+}
+
+.menu .accordion-body .section-content .section-text ul li::after {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+        ". . . . . . . . . . ."
+        " . . . . . . . . . . . ."
+        " . . . . . . . . . . . ."
+        " . . . . . . . . . . . ."
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+    border: 0;
+    box-shadow: none;
+}
+
+.menu .menu-accord .section-content .section-heading span {
+    width: 6%;
 }
 
 /* ============
@@ -420,17 +494,24 @@ Gallery Area
 }
 
 .gallery .section-content .section-footer img {
-    width: 10%;
+    width: 80px;
+}
+
+.gallery .gallery-image {
+    overflow: hidden;
 }
 
 .gallery .gallery-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(0.99);
+    opacity: 0.89;
 }
 
-.gallery .gallery-image img:hover {
-    opacity: 0.6;
+.gallery .gallery-image:hover img {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* ============
@@ -518,6 +599,10 @@ Offer Area
     font-weight: 500;
 }
 
+.offer .offer-content .offer-text .play-store button:hover {
+    transform: scale(1.01);
+}
+
 /* ============
 Contact Area
 =============== */
@@ -526,21 +611,51 @@ Contact Area
     object-fit: cover;
 }
 
-.contact input {
-    color: white;
-}
-
+.contact input,
+.contact textarea,
 .contact input:focus,
 .contact input:active,
 .contact textarea:focus,
 .contact textarea:active {
-    border-color: var(--orange-color);
+    color: white;
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    background: transparent;
+    padding-inline: 0;
+}
+
+.contact input:hover,
+.contact textarea:hover,
+.contact input:focus,
+.contact input:active,
+.contact textarea:focus,
+.contact textarea:active {
+    border-bottom: 2px solid white;
     box-shadow: none;
     color: white;
 }
 
 .contact textarea {
     resize: none;
+}
+
+.contact input:hover::placeholder,
+.contact textarea:hover::placeholder,
+.contact input:focus::placeholder,
+.contact input:active::placeholder,
+.contact textarea:focus::placeholder,
+.contact textarea:active::placeholder {
+    color: white !important;
+    font-weight: 400;
+}
+
+.contact input:-webkit-autofill,
+.contact input:-webkit-autofill:hover,
+.contact input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
+    -webkit-text-fill-color: white;
+    background-color: transparent;
 }
 
 /* ============
@@ -551,11 +666,12 @@ Social Media Area
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.9;
 }
 
 .social img:hover {
-    opacity: 0.7;
-    background-color: black;
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .social .follow-content .follow-icon a i,
@@ -669,7 +785,6 @@ footer .section-content .sub-section-content .sub-text a {
 }
 
 footer .section-content .sub-section-content .sub-text a:hover {
-    font-weight: 700;
     color: var(--green-color) !important;
 }
 
@@ -717,19 +832,16 @@ footer .footer-content .footer-text a {
 
 footer .footer-content .footer-text .copy-right a:hover {
     text-decoration: underline;
-    font-weight: 600;
     color: var(--orange-color);
 }
 
 footer .footer-content .footer-text ul li:nth-child(2n) a:hover {
     text-decoration: underline;
-    font-weight: 600;
     color: var(--orange-color);
 }
 
 footer .footer-content .footer-text ul li:nth-child(2n+1) a:hover {
     text-decoration: underline;
-    font-weight: 600;
     color: var(--green-color);
 }
 
@@ -770,7 +882,6 @@ Go to top button
 =============== */
 
 footer .top {
-    width: -webkit-fill-available;
     text-align: right;
 }
 

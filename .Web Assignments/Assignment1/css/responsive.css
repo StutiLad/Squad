@@ -1,0 +1,195 @@
+@media (min-width: 992px) {
+    .show-m {
+        display: none;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .base-p {
+        padding: 2rem 0;
+    }
+
+    .base {
+        margin: 2rem 0;
+    }
+
+    .show-l {
+        display: none;
+    }
+
+    .show-m {
+        padding-block: 10px;
+    }
+
+    .copyrights {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .about_area .about-carousel {
+        margin-top: 0.5rem !important;
+    }
+
+    .mt-3 {
+        margin-top: 0rem !important;
+    }
+
+    .mt-5 {
+        margin-top: 1rem !important;
+    }
+
+    .ms-5 {
+        margin-left: 0rem !important;
+    }
+
+    .places .places-card .col {
+        margin-top: 1rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .mx-5,
+    .mx-4,
+    .mx-3,
+    .mx-2,
+    .mx-1,
+    .my-5,
+    .my-4,
+    .my-3,
+    .my-2,
+    .my-1,
+    .me-5,
+    .me-4,
+    .me-3,
+    .me-2,
+    .me-1,
+    .ms-5,
+    .ms-4,
+    .ms-3,
+    .ms-2,
+    .ms-1,
+    .mt-4,
+    .mt-3,
+    .mt-2,
+    .mt-1,
+    .mb-5,
+    .mb-4,
+    .mb-3,
+    .mb-2,
+    .mb-1 {
+        margin: 0 !important;
+    }
+
+    .show-l {
+        display: none;
+    }
+
+    .copyrights {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .footer-left.col-sm-6.ps-0 {
+        padding-left: 13px !important;
+    }
+
+    .card {
+        margin-top: 1rem;
+    }
+
+    .fr {
+        margin-top: 2rem !important;
+    }
+
+    .card-icon {
+        margin-top: 0.5rem !important;
+    }
+
+    .card-icon span {
+        margin-right: 10px !important;
+    }
+
+    .card-icon span i,
+    .card-icon a i {
+        margin-right: 8px !important;
+    }
+
+    .place-filter,
+    .about_area .about-btn {
+        margin-block: 1rem !important;
+    }
+
+    .service ul {
+        flex-direction: column;
+    }
+
+    .places .places-card .col {
+        margin-top: 1rem;
+    }
+
+    .places .places-card .card .card-body .card-title {
+        margin-block: 0.5rem;
+    }
+
+    .offer_area .card:hover .card-content {
+        transform: translateY(-3rem);
+    }
+
+    .card .card-content p {
+        margin: 0.9rem 0;
+    }
+
+    .rooms_areas .card .card-content .section-text {
+        margin-inline: 4rem;
+    }
+
+    .fr {
+        order: 1;
+    }
+
+    .fl {
+        order: 2;
+    }
+
+    .section-title h3 {
+        padding-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .places .places-card .col {
+        padding-inline: 0.5rem !important;
+        margin-top: 1rem;
+    }
+
+    .section-content .section-text p {
+        margin-inline: 1rem;
+    }
+
+    .fl .footer-left.row.section-content h5 {
+        padding-top: 15px !important;
+    }
+}
+
+
+@media (max-width: 481px) {
+    .service ul {
+        flex-direction: column;
+    }
+
+    .places-card .card .card-icon {
+        margin-top: 0.5rem !important;
+    }
+
+    .places .places-card .col {
+        padding-inline: 1rem !important;
+    }
+
+    .section-content .section-title h5 {
+        margin-block: 20px;
+    }
+
+}

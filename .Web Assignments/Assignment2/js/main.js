@@ -57,6 +57,12 @@ $('.follow-slider').slick({
             },
         },
         {
+            breakpoint: 1150,
+            settings: {
+                slidesToShow: 5,
+            },
+        },
+        {
             breakpoint: 1200,
             settings: {
                 slidesToShow: 6,

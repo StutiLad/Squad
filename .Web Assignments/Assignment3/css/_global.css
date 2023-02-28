@@ -2,7 +2,7 @@
     --orange-color: rgb(233, 105, 6);
     --green-color: rgb(100, 187, 83);
     --glass-background: rgba(249, 244, 238, 0.85);
-    --offer-background:rgba(249, 251, 252, 0.85);
+    --offer-background:rgba(249, 251, 252, 0.95);
     --footer-background: rgb(29, 29, 29);
 }
 
@@ -24,7 +24,6 @@ color Property
     color: var(--orange-color);
 }
 
-
 /* ============
 Buttons
 =============== */
@@ -38,7 +37,7 @@ Buttons
     letter-spacing: 1px;
     border-radius: 0px;
     padding: 15px 0;
-    width: 40%;
+    width: 200px;
     background: linear-gradient(to right, var(--green-color) 50%, var(--orange-color) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -108,10 +107,14 @@ Text Property
     align-self: flex-end;
 }
 
-.section-content .section-footer:hover p {
-    transform: scale(1.1);
+.section-content .section-footer:hover p{
+    transform: scale(1.1) ;
 }
 
+.section-content .section-footer:hover p a{
+    color: var(--orange-color);
+}
+ 
 .section-content .section-footer:hover img {
     transform: scale(1.1);
     margin-left: 30px;
@@ -161,7 +164,6 @@ Text Property
 }
 
 .section-content .sub-section-content .sub-text a:hover {
-    font-weight: 700;
     color: var(--orange-color);
 }
 

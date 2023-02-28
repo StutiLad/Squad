@@ -1,0 +1,435 @@
+@import url(./_global.css);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ===== Navigation Bar ===== */
+
+.header_area .main_nav nav a h3,
+.header_area .main_nav nav a h6 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header_area .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .55);
+    border: 0;
+}
+
+.header_area .navbar-light .nav-link {
+    font-weight: 600;
+}
+
+.header_area .navbar-light .nav-link.active,
+.header_area .navbar-light .nav-link:hover {
+    color: var(--orange-color);
+
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ===== Main Area ===== */
+
+/* ---------- Banner Area -----------*/
+.banner_area {
+    background-color: var(--grey-background);
+}
+
+.banner_area .banner-img img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner_area .banner-content {
+    color: var(--darkgrey-color);
+}
+
+.service ul {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/* .service ul li{
+    width:  100%
+} */
+/* ---------- Room Area ---------- */
+
+/* Card */
+
+.rooms_areas col {
+    background-size: cover;
+}
+
+.rooms_areas .card {
+    border: 0;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+}
+
+.rooms_areas .card div {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rooms_areas .card h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.rooms_areas .card .section-text p{
+    margin-inline: 2rem;
+}
+.rooms_areas .card .card-content {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transform: translateY(4rem);
+    transform: translatey(4rem);
+}
+
+.rooms_areas .card .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.rooms_areas .card:hover h5 {
+    transition: transform var(--d) var(--e);
+    position: absolute;
+    opacity: 1;
+    transform: translateY(-4rem);
+}
+
+.rooms_areas .card:hover .card-content {
+    transition: transform var(--d) var(--e);
+    position: absolute;
+    opacity: 1;
+    transform: translateY(2rem);
+}
+
+.rooms_areas .card:hover .card-content button {
+    transition: transform var(--d * 1.5) var(--e * 1.5);
+}
+
+.room-card-1 .card {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/room/cozy.jpg");
+}
+
+.room-card-2 .card {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/room/comfy.jpg");
+}
+
+.room-card-3 .card {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/room/roomy.jpg");
+}
+
+
+/* ---------- Places ---------- */
+
+.places .place-filter {
+    display: inline-flex;
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.places .place-filter .filter-item {
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 8px 20px 8px 20px;
+    line-height: 1.2;
+    border-bottom: 1px solid var(--darkgrey-color);
+    color: var(--darkgrey-color);
+}
+
+.places .place-filter .filter-item.active {
+    font-weight: bolder;
+}
+
+.places .place-filter .filter-item.active,
+.places .place-filter .filter-item:hover {
+    color: var(--orange-color);
+    border-bottom: 2px solid var(--orange-color);
+}
+
+.places .places-card .card {
+    border: 0;
+}
+
+.places .places-card .card .card-body .card-title {
+    margin: 1rem 0;
+}
+
+.places .places-card .card img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border: 0;
+}
+
+.places .places-card .card img:hover {
+    opacity: 0.9;
+    filter: drop-shadow(0px 0px 1px black);
+}
+
+.places .places-card .card .card-body p {
+    line-height: 25px;
+}
+
+.places .places-card .card .card-body i,
+.places .places-card .card .card-body a {
+    color: var(--orange-color);
+}
+
+.places .places-card .card .card-body .card-icon {
+    margin-top: 1rem !important;
+}
+
+.places .places-card .card .card-body .card-icon:hover a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.places .places-card .card .card-body .card-icon:hover a i {
+    color: var(--darkgrey-color);
+}
+
+/* ---------- Offers ---------- */
+
+.offer_area {
+    background-color: var(--blue-background);
+    color: var(--white-color);
+}
+
+.offer_area .col {
+    background-size: cover;
+}
+
+.offer_area .offer-slider .col-4 div {
+    padding: 0 20px;
+}
+
+
+.offer_area .card {
+    border: 0;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+}
+
+.offer_area .card .section-content {
+    padding-bottom: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+.offer_area .card div {
+    display: flex;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.offer_area .card h5 {
+    position: absolute;
+    top: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    transform: translatey(-1rem);
+}
+
+.offer_area .card .card-content {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(0rem);
+}
+
+.offer_area .card .card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.offer_area .card:hover h5 {
+    /* transition: transform var(--d) var(--e); */
+    position: absolute;
+    opacity: 1;
+    transform: translateY(-9.5rem);
+}
+
+.offer_area .card:hover .card-content {
+    /* transition: transform var(--d) var(--e); */
+    position: absolute;
+    opacity: 1;
+    transform: translateY(-1rem);
+    padding-left: 0px;
+}
+
+.offer-card-1 .card {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/offer/city.jpg");
+}
+
+.offer-card-2 .card {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/offer/food.jpg");
+}
+
+.offer-card-3 .card {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/offer/family.jpg");
+}
+
+.offer-card-4 .card {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/offer/food.jpg");
+}
+
+/* ---------- About ---------- */
+
+.about_area .section-content .section-title {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about_area .section-content .section-title h3 {
+    font-size: 32px;
+}
+
+.about_area .about-carousel {
+    margin-top: 1.5rem;
+}
+
+.about_area .about-carousel .card:hover img {
+    opacity: 0.9;
+}
+
+.about_area .about-carousel .col-2 {
+    padding: 0;
+}
+
+.about_area .about-carousel img {
+    height: 215px;
+    object-fit: cover;
+}
+
+.about_area .about-carousel .card {
+    height: fit-content;
+    border: 0;
+
+}
+
+/* ===== Footer Area ===== */
+
+footer {
+    background-color: var(--grey-background);
+}
+
+/* footer section  */
+
+.footer .footer-content {
+    text-align: start;
+}
+
+.footer .footer-content .footer-title {
+    text-transform: uppercase;
+}
+
+.footer .footer-content .footer-text,
+.footer .footer-left .section-text,
+.footer .footer-left .section-text ul li a,
+.footer .footer-left .section-text ul li a img {
+    color: var(--darkgrey-color);
+    text-decoration: none;
+}
+
+.footer .footer-left .section-text ul {
+    list-style-type: none;
+}
+
+
+.footer .footer-left .section-text .follow-icon {
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.footer .footer-left .section-text .follow-icon i:hover {
+    color: var(--orange-color);
+
+}
+
+.footer .footer-left .section-text .follow-icon li {
+    margin-right: 1rem;
+}
+
+.footer .footer-right .footer-content .footer-text {
+    border: 1px solid black !important;
+    padding: 10px 0;
+}
+
+.footer-text.footer-input {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.footer-right .footer-input button {
+    margin: 0 1rem;
+}
+
+.footer-right .footer-map {
+    margin: 1.5rem 0;
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.footer .copyrights {
+    text-transform: capitalize;
+}
+
+.footer .direction a {
+    color: var(--orange-color);
+}
+
+.footer .direction:hover a {
+    color: black;
+}
+
+.footer .section-text ul li {
+    margin: 10px 0;
+}
+
+.footer .section-text ul li a:hover {
+    color: var(--orange-color);
+    text-decoration: underline;
+}
