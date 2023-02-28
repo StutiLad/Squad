@@ -172,6 +172,9 @@
     .fl .footer-left.row.section-content h5 {
         padding-top: 15px !important;
     }
+    .offer_area .card:hover h5{
+        transform: translateY(-11rem);
+    }
 }
 
 
@@ -192,4 +195,21 @@
         margin-block: 20px;
     }
 
+    .offer_area .card:hover h5{
+        transform: translateY(-12rem);
+    }
+
+}
+
+@media (max-width: 370px){
+    .offer_area .card h5{
+        font-size: 22px;
+    }
+    .offer_area .card:hover h5{
+        
+        transform: translateY(-13rem);
+    }
+    .offer_area .card-text .text-start .ms-0{
+        margin: 0;
+    }
 }
