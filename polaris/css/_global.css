@@ -1,0 +1,132 @@
+:root {
+	--yellow-color: #e7c145;
+	--nav-color: #232017;
+	--grey-background: rgba(241, 242, 246, 0.9);
+	--footer-links: #1d1c1c;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+main, footer {
+	overflow: hidden;
+}
+
+.base {
+	padding-block: 94px;
+}
+
+/* .container{
+	max-width: 1450px !important;
+} */
+
+/* ==========
+   Button 
+=============*/
+
+.site-btn {
+	width: 219px;
+	height: 56px;
+	border-radius: 28px;
+	font-weight: 600;
+	background-color: var(--yellow-color);
+	border: 0ch;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* ===============
+   Review Section 
+================== */
+.review-section {
+	width: 229px;
+	height: 45px;
+	background-color: white;
+	border-radius: 5px;
+	display: inline-flex;
+	padding: 1px 5px;
+	color: black;
+}
+
+.review-section .content {
+	display: flex;
+	flex-direction: column;
+	width: -webkit-fill-available;
+}
+
+/* ===============
+   Content Section 
+================== */
+.content-section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.content-section .section-heading h3 {
+	font-size: 50px;
+	line-height: 1.1;
+	margin-bottom: 17px;
+	width: 1005px;
+	height: 110px;
+	font-weight: bold;
+}
+
+.content-section .section-text h5 {
+	font-size: 24px;
+	line-height: 1.38;
+	margin: 17px 113px 24px;
+	width: 780px;
+	height: 33px;
+	font-weight: 600;
+}
+
+.content-section .section-heading h4 {
+	font-size: 40px;
+	line-height: 1.28;
+	margin-bottom: 17px;
+	font-weight: bold;
+}
+
+.content-section .section-text h6 {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.content-section .section-text p {
+	font-size: 14px;
+	line-height: 1.64;
+}
+
+/* ===============
+   Icon Box 
+================== */
+
+.work .icon-box,
+.faq .icon-box {
+	position: absolute;
+	background-color: var(--yellow-color);
+	border-radius: 6px;
+	bottom: 0;
+	left: -120px;
+	color: black;
+}
+
+.work .icon-box .icon i,
+.faq .icon-box .icon i {
+	font-size: 50px;
+}
+
+
+.work .icon-box .icon-text h6,
+.faq .icon-box .icon-text h6 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.work .icon-box .icon-text span,
+.faq .icon-box .icon-text span {
+	font-size: 22px;
+	font-weight: 600;
+}

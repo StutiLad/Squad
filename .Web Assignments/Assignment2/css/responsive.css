@@ -22,7 +22,7 @@
 
     nav .navbar-toggler {
         border: 0;
-        
+
     }
 
     .navbar-toggler:active,
@@ -31,12 +31,12 @@
         border: 0;
         box-shadow: none;
     }
-    
+
     .navbar-toggler {
         color: white;
         border: 0;
     }
-    
+
     .navbar-toggler .navbar-toggler-icon {
         background-image: none;
         font-size: 30px;
@@ -118,8 +118,9 @@
         font-weight: 300 !important;
         letter-spacing: 1px;
     }
+
     .footer-1 .section-content .section-text,
-    .footer-1 .section-content .section-text .footer-list{
+    .footer-1 .section-content .section-text .footer-list {
         margin: 0;
     }
 }
@@ -129,13 +130,21 @@
         transform: scale(1);
     }
 
+
+
 }
 
 @media (max-width: 481px) {
 
-    .header-content .header-text, .header-content .header-title{
+    .header-content .header-text,
+    .header-content .header-title {
         font-size: 40px;
     }
+
+    .testimonial-card .card .card-body {
+        padding-inline: 90px;
+    }
+
     footer form {
         flex-direction: column;
     }
@@ -160,7 +169,7 @@
         font-size: 13px;
     }
 
-    .wheel .img-bottom{
+    .wheel .img-bottom {
         bottom: -380px;
     }
 
