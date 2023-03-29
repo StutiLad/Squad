@@ -7,10 +7,13 @@
 
 * {
 	box-sizing: border-box;
+
 }
 
-main, footer {
+main,
+footer {
 	overflow: hidden;
+
 }
 
 .base {
@@ -34,6 +37,16 @@ main, footer {
 	border: 0ch;
 	font-size: 18px;
 	font-weight: 600;
+	/* border: 1px solid var(--yellow-color); */
+	-webkit-transition: ease-out .5s;
+	-moz-transition: ease-out .5s;
+	transition: ease-out .5s;
+}
+
+.site-btn:hover {
+	background-color: black;
+	color: var(--yellow-color);
+	/* border: 1px solid var(--yellow-color); */
 }
 
 /* ===============
@@ -53,6 +66,8 @@ main, footer {
 	display: flex;
 	flex-direction: column;
 	width: -webkit-fill-available;
+	width: fill-available;
+	width: -moz-available;
 }
 
 /* ===============
@@ -67,7 +82,7 @@ main, footer {
 .content-section .section-heading h3 {
 	font-size: 50px;
 	line-height: 1.1;
-	margin-bottom: 17px;
+	margin-bottom: 15px;
 	width: 1005px;
 	height: 110px;
 	font-weight: bold;
@@ -76,7 +91,7 @@ main, footer {
 .content-section .section-text h5 {
 	font-size: 24px;
 	line-height: 1.38;
-	margin: 17px 113px 24px;
+	margin-bottom:15px;
 	width: 780px;
 	height: 33px;
 	font-weight: 600;
@@ -129,4 +144,38 @@ main, footer {
 .faq .icon-box .icon-text span {
 	font-size: 22px;
 	font-weight: 600;
+}
+
+/* ===================
+   Slick button Hover 
+====================== */
+
+button.slick-prev:hover,
+button.slick-next:hover {
+	background-color: var(--yellow-color) !important;
+}
+
+
+
+/* .info .info-content .content-section .section-text ul i{
+	display: none !important;
+} */
+
+.info .info-content .content-section .section-text ul li::before,
+.about .second-about .content-section .section-text ul li::before{
+	font-family: unicons-line;
+	content: '\e9c3';
+	display: inline-flex;
+	justify-content: center;	
+	align-items: center;
+	background-color: var(--yellow-color);
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	font-size: 18px;
+	padding: 12px;
+	margin-right: 10px;
+	position:absolute;
+	top: 0;
+	left: 0;
 }
